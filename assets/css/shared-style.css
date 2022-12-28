@@ -74,3 +74,130 @@ html {
 ::-webkit-scrollbar-thumb:hover{
     background-color:#628ca591 !important;
 }
+
+/******** global *****/
+ h1 {
+    font-size: 43px;
+    font-weight: 500;
+    line-height: 70px;
+    width: max-content;
+}
+
+ h1::after,
+ h1::before {
+    position: absolute;
+    content: '';
+    width: 102px;
+    height: 3px;
+}
+
+ h1::after {
+    right: 0;
+    bottom: -2px;
+}
+
+ h1::before {
+    right: 92px;
+    bottom: -10px;
+}
+
+ p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 34px;
+    font-family: var(--main-font-normal);
+}
+
+ h1::before,
+ h1::after {
+    background-color: var(--main-brown-color);
+}
+
+ h3 {
+    font-size: 34px;
+    line-height: 56px;
+    white-space: nowrap;
+}
+
+@media (max-width:1600px) {
+     h1 {
+        font-size: 30px;
+        line-height: 47px;
+    }
+
+     p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+     h3 {
+        font-size: 25px;
+        line-height: 27px;
+    }
+
+     h1::after,
+     h1::before {
+        width: 80px ;
+    }
+
+     h1::before {
+        right: 70px ;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:991.95px) {
+
+    h1 {
+        font-size: 27px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    h1::after,
+    h1::before {
+        width: 70px;
+    }
+
+    h1::before {
+        right: 60px;
+    }
+}
+
+@media (max-width:575px) {
+     h1 {
+        font-size: 23px;
+
+    }
+    p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 16px;
+    }
+     h1::after,
+     h1::before {
+        width: 70px;
+    }
+
+     h1::before {
+        right: 60px;
+    }
+}

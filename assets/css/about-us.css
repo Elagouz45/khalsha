@@ -1,49 +1,7 @@
-.about-us h1 {
-    font-size: 43px;
-    font-weight: 500;
-    line-height: 70px;
-    width: max-content;
-}
-
-.about-us h1::after,
-.about-us h1::before {
-    position: absolute;
-    content: '';
-    width: 102px;
-    height: 3px;
-}
-
-.about-us h1::after {
-    right: 0;
-    bottom: 0px;
-}
-
-.about-us h1::before {
-    right: 90px;
-    bottom: -10px;
-}
-
-.about-us p {
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 34px;
-}
-
-.about-us h1::before,
-.about-us h1::after {
-    background-color: var(--main-brown-color);
-}
-
-.about-us h3 {
-    font-size: 34px;
-    line-height: 56px;
-}
-
 /**** about-khalasha ****/
 .about-us .about-khalasha {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86.6426%);
 }
-
 .about-us .about-khalasha h1::after,
 .about-us .about-khalasha h1::before {
     background-color: white;
@@ -52,7 +10,6 @@
 .about-us .about-khalasha p {
     margin-top: 32px;
 }
-
 
 /***** our mission *****/
 .about-us .our-mission {
@@ -64,14 +21,9 @@
     color: #505050;
     margin-top: 24px;
 }
-
-
-
 /***** strategy *****/
 .our-strategy .bg-img {
-    padding-top: 36px;
-    padding-bottom: 51px;
-    clip-path: polygon(0 17%, 100% 0, 100% 100%, 0 100%);
+    padding: 36px 0;
 }
 
 .our-strategy h1 {
@@ -98,18 +50,21 @@
 }
 
 .our-strategy .img {
-    width: 100%;
+    width: 85%;
 }
-
 /*** integration-speceficatipns****/
 .integration-speceficatipns h1 {
-    margin-top: 88px;
-    margin-bottom: 36px;
+    margin: 88px 0 36px;
 }
 
-.integration-speceficatipns .bg-img {
-    padding-top: 110px;
-    padding-bottom: 125px;
+.integration-speceficatipns .bg-img,
+.our-message {
+    padding: 110px 0 125px;
+}
+
+.our-strategy .bg-img,
+.integration-speceficatipns .bg-img,
+.our-message {
     clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
 
@@ -117,31 +72,70 @@
     width: calc(93% /3);
 }
 
-
 /**** our-message ****/
-.our-message{
+.our-message {
     margin-top: 68px;
-    padding-top: 115px;
-    padding-bottom: 200px;
-    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
-.our-message h1{
+
+.our-message h1 {
     margin-bottom: 86px;
 }
-.our-message img{
+
+.our-message img {
     margin-left: 24px;
+    width: 85px;
+    height: 85px;
 }
 
+@media (max-width:1600px) {
+    .py-150 {
+        padding: 100px 0;
+    }
 
+    /**** about-khalasha ****/
 
+    .about-us .our-mission {
+        margin-top: -56px;
+    }
 
+    .our-strategy .bg-img {
+        padding-top: 36px;
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+    }
 
+    .our-strategy .img {
+        width: 80%;
+    }
 
+    .integration-speceficatipns h1 {
+        margin-top: 45px;
+    }
 
+    .integration-speceficatipns .item {
+        width: calc(65% / 3);
+    }
 
+    .integration-speceficatipns .bg-img {
+        padding-bottom: 60px;
+    }
 
+    .our-message , .integration-speceficatipns .bg-img {
+        clip-path: polygon(0 12%, 100% 0, 100% 100%, 0 100%);
+    }
 
+    .our-message h1 {
+        margin-bottom: 50px;
+    }
 
+    .our-message {
+        padding-top: 90px 0 50px; 
+    }
+
+    .our-message img {
+        width: 55px;
+        height: 55px;
+    }
+}
 
 @media (max-width:991.95px) {
     .py-150 {
@@ -156,21 +150,12 @@
         margin-top: -45px;
     }
 
-    .about-us h1 {
-        font-size: 30px;
-        line-height: 47px;
+    .our-strategy .item {
+        padding-right: 25px;
     }
-
-    .about-us p {
-        font-size: 18px;
-        line-height: 30px;
+    .our-strategy .item::before {
+        height: 50px;
     }
-
-    .about-us h3 {
-        font-size: 20px;
-        line-height: 25px;
-    }
-
     .integration-speceficatipns .bg-img {
         padding: 75px 0;
     }
@@ -179,8 +164,11 @@
         margin-top: 36px;
     }
 
-    .integration-speceficatipns .container {
+    .integration-speceficatipns .bg-img .container {
         max-width: 910px;
+    }
+    .integration-speceficatipns .item {
+        width: calc(75% / 3);
     }
 }
 
@@ -194,25 +182,15 @@
     }
 
     .about-us .our-mission {
-        margin-top: -62px;
-    }
-
-    .about-us h1 {
-        font-size: 25px;
-        line-height: 47px;
-    }
-
-    .about-us h1::after,
-    .about-us h1::before {
-        width: 80px;
-    }
-
-    .about-us h1::before {
-        right: 70px;
+        margin-top: -50px;
     }
 
     .our-strategy .bg-img {
         clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
     }
 
+    .integration-speceficatipns .item {
+        width: 80%;
+        margin:0 auto 20px;
+    }
 }
