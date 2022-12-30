@@ -6,9 +6,11 @@
     clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 75%);
     z-index: 2;
 }
-.my-account section{
+
+.my-account section {
     margin-bottom: 50px;
 }
+
 .my-account .sidebar {
     padding: 86px 0;
     border-left: 1px solid #D3D3D3;
@@ -120,11 +122,14 @@
     height: 42px;
     font-size: 18px;
 }
-
+.my-account form,
+.my-account .notifications ul,
+.my-order .table-responsive{
+    margin: 52px 70px;
+}
 
 /********* notifications ***********/
 .my-account .notifications ul {
-    margin: 52px 70px;
     width: 80%;
     font-size: 18px;
 }
@@ -174,8 +179,27 @@
 }
 
 
+.my-account .my-order table th,
+.my-account .my-order table td {
+    height: 81px;
+    line-height: 81px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 18px;
+    font-family: var(--main-font-bold);;
+}
 
+.my-account .my-order table td {
+    color: #7E7E7E;
+}
 
+.my-account .my-order table tbody tr:nth-child(odd) {
+    background: #F3F3F3;
+}
+
+.my-account .my-order table tbody tr:nth-child(even) {
+    background: white;
+}
 
 
 @media (max-width:1600px) {
@@ -191,6 +215,13 @@
     .my-account .notifications li p,
     .my-account .notifications li span {
         font-size: 14px !important;
+    }
+
+    .my-account .my-order table th,
+    .my-account .my-order table td {
+        height: 50px;
+        line-height: 48px;
+        font-size: 14px;
     }
 }
 
@@ -234,21 +265,28 @@
         height: 30px;
         margin-bottom: 20px;
     }
+.my-account form,
+.my-account .notifications ul,
+.my-order .table-responsive {
+    margin: 0;
+}
     .my-account .notifications ul {
-        margin: 0;
         width: 100%;
         font-size: 16px;
         overflow: auto;
     }
-    .my-account .notifications li{
+
+    .my-account .notifications li {
         padding: 15px;
         height: auto;
     }
-    .my-account .notifications li::before{
+
+    .my-account .notifications li::before {
         right: 10px;
     }
+
     .my-account .notifications li p,
-    .my-account .notifications li span{
+    .my-account .notifications li span {
         margin-right: 14px;
     }
 
@@ -273,33 +311,45 @@
         height: 33px;
         font-size: 14px;
     }
+
     .my-account .sidebar .account-info .img {
         width: 75px;
         height: 75px;
         line-height: 70px;
         font-size: 12px;
     }
+
     .my-account .sidebar span {
         font-size: 10px;
     }
+
     .sidebar ul li {
         padding: 5px 0;
         font-size: 12px !important;
     }
-    
+
     .my-account .leftSide {
         padding-top: 75px;
     }
+
     .my-account .notifications li p {
         margin-right: 6px;
     }
 
     .my-account .notifications li p,
-     .my-account .notifications li span {
+    .my-account .notifications li span {
         font-size: 11px !important;
     }
-    .my-account .notifications li::before{
+
+    .my-account .notifications li::before {
         width: 8px;
         height: 8px;
+    }
+
+    .my-account .my-order table th,
+    .my-account .my-order table td {
+        height: 30px;
+        line-height: 28px;
+        font-size: 11px;
     }
 }

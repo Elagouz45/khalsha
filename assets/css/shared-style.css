@@ -32,7 +32,7 @@
     color: var(--main-blue-color);
 }
 .text-main-brown{
-    color: var(--main-brown-color);
+    color: var(--main-brown-color) !important;
 }
 .font-bold{
     font-family: var(--main-font-bold);
