@@ -120,11 +120,40 @@
 /********* notifications ***********/
 .my-account .notifications ul{
     margin: 52px 70px;
-    width: 70%;
+    width: 80%;
     font-size: 18px;
 }
+.my-account .notifications li{
+    height: 70px;
+    padding-right: 29px;
+    padding-left: 57px;
+}
+.my-account .notifications li::before{
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    right: 29px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #8A8A8A;
+}
+.my-account .notifications li.active::before{
+    background-color: var(--main-brown-color);
+}
+.my-account .notifications li:nth-child(odd){
+background-color: #F1F1F1;
+}
+.my-account .notifications li:nth-child(even){
+    background-color: white;
+}
 .my-account .notifications li p{
-
+    margin-right: 27px;
+    color: #8A8A8A;
+}
+.my-account .notifications li.active p{
+    color: var(--main-brown-color)
 }
 .my-account .notifications li span{
     color: #8A8A8A;
