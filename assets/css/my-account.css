@@ -124,7 +124,8 @@
 }
 .my-account form,
 .my-account .notifications ul,
-.my-order .table-responsive{
+.my-order .table-responsive,
+.bills .table-responsive{
     margin: 52px 70px;
 }
 
@@ -178,9 +179,11 @@
     color: #8A8A8A;
 }
 
-
-.my-account .my-order table th,
-.my-account .my-order table td {
+.my-account .bills table{
+    border: 1px solid #D3D3D3;
+}
+.my-account  table th,
+.my-account  table td {
     height: 81px;
     line-height: 81px;
     text-align: center;
@@ -189,15 +192,18 @@
     font-family: var(--main-font-bold);;
 }
 
-.my-account .my-order table td {
+.my-account  table td {
     color: #7E7E7E;
 }
 
-.my-account .my-order table tbody tr:nth-child(odd) {
+.my-account .my-order  table tbody tr:nth-child(odd) {
     background: #F3F3F3;
 }
+.my-account .bills  table tbody tr:nth-child(odd) {
+    background: #F1F1F1;
+}
 
-.my-account .my-order table tbody tr:nth-child(even) {
+.my-account  table tbody tr:nth-child(even) {
     background: white;
 }
 
@@ -217,8 +223,8 @@
         font-size: 14px !important;
     }
 
-    .my-account .my-order table th,
-    .my-account .my-order table td {
+    .my-account  table th,
+    .my-account table td {
         height: 50px;
         line-height: 48px;
         font-size: 14px;
@@ -267,7 +273,8 @@
     }
 .my-account form,
 .my-account .notifications ul,
-.my-order .table-responsive {
+.my-order .table-responsive ,
+.bills .table-responsive{
     margin: 0;
 }
     .my-account .notifications ul {
@@ -346,8 +353,8 @@
         height: 8px;
     }
 
-    .my-account .my-order table th,
-    .my-account .my-order table td {
+    .my-account  table th,
+    .my-account  table td {
         height: 30px;
         line-height: 28px;
         font-size: 11px;
