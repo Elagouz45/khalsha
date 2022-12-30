@@ -1,16 +1,19 @@
 .my-account .overlay {
-    height: 752px;
+    height: 100%;
     top: 0px;
     right: 0;
     width: 100%;
     clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 75%);
     z-index: 2;
 }
-
+.my-account section{
+    margin-bottom: 50px;
+}
 .my-account .sidebar {
     padding: 86px 0;
     border-left: 1px solid #D3D3D3;
     border-right: 1px solid #D3D3D3;
+    height: 100%;
 }
 
 .my-account .sidebar .account-info .img {
@@ -39,13 +42,15 @@
     height: 80px;
     width: 68px;
 }
+
 .my-account .sidebar .my-order .img {
     height: 85px;
-    width: 96px;    
+    width: 96px;
 }
+
 .my-account .sidebar .bills .img {
     height: 87px;
-    width: 99px; 
+    width: 99px;
 }
 
 .my-account .sidebar span {
@@ -118,17 +123,19 @@
 
 
 /********* notifications ***********/
-.my-account .notifications ul{
+.my-account .notifications ul {
     margin: 52px 70px;
     width: 80%;
     font-size: 18px;
 }
-.my-account .notifications li{
+
+.my-account .notifications li {
     height: 70px;
     padding-right: 29px;
     padding-left: 57px;
 }
-.my-account .notifications li::before{
+
+.my-account .notifications li::before {
     position: absolute;
     content: '';
     top: 50%;
@@ -139,22 +146,160 @@
     border-radius: 50%;
     background: #8A8A8A;
 }
-.my-account .notifications li.active::before{
+
+.my-account .notifications li.active::before {
     background-color: var(--main-brown-color);
 }
-.my-account .notifications li:nth-child(odd){
-background-color: #F1F1F1;
+
+.my-account .notifications li:nth-child(odd) {
+    background-color: #F1F1F1;
 }
-.my-account .notifications li:nth-child(even){
+
+.my-account .notifications li:nth-child(even) {
     background-color: white;
 }
-.my-account .notifications li p{
+
+.my-account .notifications li p {
     margin-right: 27px;
     color: #8A8A8A;
+    font-size: 18px;
 }
-.my-account .notifications li.active p{
+
+.my-account .notifications li.active p {
     color: var(--main-brown-color)
 }
-.my-account .notifications li span{
+
+.my-account .notifications li span {
     color: #8A8A8A;
+}
+
+
+
+
+
+
+@media (max-width:1600px) {
+    .my-account .leftSide>div h2 {
+        font-size: 30px;
+    }
+
+    .my-account .leftSide .account-info label {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .my-account .notifications li p,
+    .my-account .notifications li span {
+        font-size: 14px !important;
+    }
+}
+
+
+@media (max-width:991.95px) {
+    .my-account .sidebar {
+        padding: 40px 0;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .my-account .sidebar .account-info .img {
+        width: 90px;
+        height: 90px;
+        line-height: 85px;
+        font-size: 14px;
+    }
+
+    .sidebar ul li {
+        padding: 10px 0;
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width:768.95px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .my-account .leftSide>div h2 {
+        font-size: 22px;
+    }
+
+    .my-account .overlay {
+        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 85%);
+    }
+
+    .my-account .leftSide .account-info input {
+        height: 30px;
+        margin-bottom: 20px;
+    }
+    .my-account .notifications ul {
+        margin: 0;
+        width: 100%;
+        font-size: 16px;
+        overflow: auto;
+    }
+    .my-account .notifications li{
+        padding: 15px;
+        height: auto;
+    }
+    .my-account .notifications li::before{
+        right: 10px;
+    }
+    .my-account .notifications li p,
+    .my-account .notifications li span{
+        margin-right: 14px;
+    }
+
+}
+
+@media (max-width:575.95px) {
+    .col-sm-4 {
+        width: calc((100% / 12)*5);
+    }
+
+    .col-sm-8 {
+        width: calc((100% / 12)*7);
+    }
+
+    .my-account .sidebar .logout {
+        width: auto;
+        margin-top: 150px;
+        font-size: 13px;
+    }
+
+    .my-account .leftSide .account-info button {
+        height: 33px;
+        font-size: 14px;
+    }
+    .my-account .sidebar .account-info .img {
+        width: 75px;
+        height: 75px;
+        line-height: 70px;
+        font-size: 12px;
+    }
+    .my-account .sidebar span {
+        font-size: 10px;
+    }
+    .sidebar ul li {
+        padding: 5px 0;
+        font-size: 12px !important;
+    }
+    
+    .my-account .leftSide {
+        padding-top: 75px;
+    }
+    .my-account .notifications li p {
+        margin-right: 6px;
+    }
+
+    .my-account .notifications li p,
+     .my-account .notifications li span {
+        font-size: 11px !important;
+    }
+    .my-account .notifications li::before{
+        width: 8px;
+        height: 8px;
+    }
 }
