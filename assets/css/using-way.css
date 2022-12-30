@@ -1,41 +1,56 @@
 .pt-115 {
-    padding: 115px 0;
+    padding: 115px 0 145px;
 }
-
+h1::before {
+    left: 50% !important;
+    bottom: -10px !important;
+    right: unset !important;
+    transform: translateX(-80px) !important;
+}
+h1::after {
+    right: 50% !important;
+    bottom: -2px !important;
+    left: unset !important;
+    transform: translateX(80%) !important;
+}
 .using-way .dalil p {
     margin-top: 28px;
 }
 
-.source{
+.using-way .source,
+.using-way .services{
     margin-bottom: 154px;
 }
 
-.source .card {
+.using-way .card {
     box-shadow: 2.95631px 0px 14.7816px rgba(0, 0, 0, 0.25);
     border-radius: 42px;
     overflow: hidden;
 }
 
-.source .slider .item {
+.using-way .slider .item {
     padding: 64px;
 }
 
-.source .card .slider .item:first-of-type {
+.using-way .card .slider .item:first-of-type {
     background: #FCFCFC;
 }
 
-.source .card .slider .item:nth-of-type(2) {
+.using-way .card .slider .item:nth-of-type(2) {
     background: #F8F8F8;
     box-shadow: 2.95631px 0px 14.7816px rgba(0, 0, 0, 0.25);
 }
-.source .owl-carousel .w-100{
+.using-way .source .owl-carousel .w-100{
     height: 570px;
 }
-.source .owl-carousel .slider,
-.source .owl-carousel .item:nth-of-type(2){
-    height: 100%;
+.using-way .services .owl-carousel .w-100{
+    height: 650px;
 }
-.source .owl-carousel .header {
+.using-way .owl-carousel .slider,
+.using-way .owl-carousel .item:nth-of-type(2){
+    height: 100% !important;
+}
+.using-way .owl-carousel .header {
     border-radius: 0px 0px 19.7087px 19.7087px;
     top: 0;
     right: 50%;
@@ -43,20 +58,20 @@
     padding: 14px 92px 11px;
 }
 
-.source .owl-carousel h4 {
+.using-way .owl-carousel h4 {
     margin-top: 90px;
     font-size: 28px;
     white-space: nowrap;
 }
-.source .owl-carousel.blue h4 {
+.using-way .owl-carousel.blue h4 {
     border-bottom: 3px solid var(--main-blue-color);
 }
 
-.source .owl-carousel.brown h4 {
+.using-way .owl-carousel.brown h4 {
     border-bottom: 3px solid var(--main-brown-color);
 }
 
-.source .owl-carousel h4 span{
+.using-way .owl-carousel h4 span{
     color: #F8F8F8;
     border-radius: 2px;
     line-height: 41px;
@@ -64,14 +79,14 @@
     margin-left: 15px;
 }
 
-.source .owl-carousel ul{
+.using-way .owl-carousel ul{
     list-style: inside;
     margin: 37px 0;
 }
-.source .owl-carousel ul li{
+.using-way .owl-carousel ul li{
    padding-bottom: 20px;
 }
-.source .owl-carousel ul li:not(.source .owl-carousel ul li:last-child)::before{
+.using-way .owl-carousel ul li:not(.using-way .owl-carousel ul li:last-child)::before{
     position: absolute;
     right: 2px;
     width: 1px;
@@ -81,7 +96,7 @@
     top: 16px;
 }
 
-.source ul li p{
+.using-way ul li p{
     color:  #6B6B6B;
     display: inline
 }
@@ -120,59 +135,77 @@
 }
 
 
+.using-way .source .overlay,
+.using-way .services .overlay{
+    z-index: 1;
+    left: 0;
+    width: 100%;
+    height: 90%;
+}
 
+.using-way .source .overlay{
+    top: -100px;
+    transform: skewY(4deg);
+}
+.using-way .services .overlay{
+    top: 40px;
+    transform: skewY(-3deg);
+}
 
 @media (max-width:1600px) {
-    .source .owl-carousel h4 {
+    .using-way .owl-carousel h4 {
         font-size: 22px;
     }
-    .source .owl-carousel h4 span{
+    .using-way .owl-carousel h4 span{
         line-height: 30px;
         margin-left: 10px;
     }
-    .source .slider .item{
+    .using-way .slider .item{
         padding: 40px;
     }
 }
 @media (max-width:1024.95px) {
-    .source {
-        margin-bottom: 60px;
+    .using-way .source , .using-way .services {
+        margin-bottom: 100px;
     }
-    .source .owl-carousel h4 {
+    .using-way .owl-carousel h4 {
         font-size: 20px;
     }
-    .source .owl-carousel h4 span{
+    .using-way .owl-carousel h4 span{
         line-height: 27px;
         margin-left: 10px;
     }
-    .source .slider .item{
+    .using-way .slider .item{
         padding: 20px;
     }
-    .source .owl-carousel ul li {
+    .using-way .owl-carousel ul li {
         padding-bottom: 15px;
     }
-    .source .owl-carousel ul li p {
+    .using-way .owl-carousel ul li p {
         line-height: 22px;
         font-size: 15px;
     }
-    .source .owl-carousel .w-100{
-        height: 480px;
+    .using-way .source .owl-carousel .w-100{
+        height: 480;
     }
     
 }
 
 @media (max-width:768.95px) {
-    .source .owl-carousel h4 {
+    .using-way .owl-carousel h4 {
         font-size: 16px;
     }
-    .source .card .slider .item:first-of-type{
+    .using-way .card .slider .item:first-of-type{
         width: 40% !important;
     }
-    .source .card .slider .item:nth-of-type(2){
+    .using-way .card .slider .item:nth-of-type(2){
         width: 60% !important;
     }
     .pt-115 {
         padding: 80px 0;
+    }
+    .using-way .source .overlay{
+        top: -60px;
     }
 }
 
@@ -180,20 +213,34 @@
     .pt-115 {
         padding: 50px 0;
     }
-    .source .card .slider .item:first-of-type{
+    .using-way .card .slider .item:first-of-type{
         display: none !important;
     }
-    .source .card .slider .item:nth-of-type(2){
+    .using-way .card .slider .item:nth-of-type(2){
         width: 100% !important;
         margin: auto;
     }
-    .source .owl-carousel .header{
+    .using-way .owl-carousel .header{
         padding: 14px 55px 11px;
     }
-    .source .owl-carousel .w-100 {
+    .using-way .source .owl-carousel .w-100{
         height: 530px;
+    }
+    .using-way .services .owl-carousel .w-100{
+        height: 600px;
+    }
+    .using-way .owl-carousel ul li p {
+        line-height: 16px;
+        font-size: 12px;
     }
     .dalil p {
         width: 90% !important;
+    }
+    .using-way .source .overlay{
+        top: -60px;
+        transform: skewY(4deg);
+    }
+    .using-way .source .overlay{
+        top: -30px;
     }
 }

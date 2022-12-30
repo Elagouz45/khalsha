@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حسابي</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/shared-style.css">
+    <link rel="stylesheet" href="assets/css/my-account.css">
+</head>
+
+<body>
+
+
+    <div class="my-account position-relative">
+        <div class="overlay bg-overlay position-absolute"></div>
+        <section  class="position-relative" style="z-index: 3;">
+            <div class="container">
+               <div class="row">
+                <div class="col-3">
+                    <div class="sidebar text-center">
+
+                        <div class="account-info content d-block">
+                            <div class="img m-auto">
+                                <input type="file" hidden id="file">
+                                <label class="text-black font-bold d-block" for="file" class="text-main-blue">
+                                    اضف صورة
+                                </label>
+                            </div>
+                            <p class="font-bold text-main-blue">عبد الكريم محمد</p>
+                            <span>مستورد / مصدر</span>
+                        </div>
+
+                        <div class="notifications content d-none">
+                            <div class="img m-auto">
+                                <img width="100%" src="assets/images/Ellipse 108 (1).png">
+                             </div>
+                        </div>
+  
+                        <div class="my-order content d-none">
+                            <div class="img m-auto">
+                                <img width="100%" src="assets/images/Ellipse 108 (1).png">
+                            </div>
+                        </div>
+                      
+                        <div class="bills content d-none">
+                            <div class="img m-auto">
+                                <img width="100%" src="assets/images/Ellipse 108 (1).png">
+                            </div>
+                        </div>
+                       
+                        <ul class="list-unstyled  p-0">
+                            <li  data-target="account-info" class="active">معلومات الحساب</li>
+                            <li  data-target="notifications">الإشعارات</li>
+                            <li  data-target="my-order">طلباتي</li>
+                            <li  data-target="bills">الفواتير</li>
+                        </ul>
+
+                        <button class="btn logout font-bold">تسجيل الخروج</button>
+                    </div>
+                </div>
+                <div class="col-9 leftSide">
+                    <div class="account-info content d-block">
+                        <h2 class="font-bold text-main-brown">تعديل الحساب</h2>
+                        <hr>
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label class="text-black font-bold d-block">الإسم</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="text-black font-bold d-block">السجل التجاري</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="text-black font-bold d-block">رقم الجوال</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6 ">
+                                    <label class="text-black font-bold d-block">الشهادة الضريبية</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="text-black font-bold d-block">الإيميل</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label class="text-black font-bold d-block">الرقم السري</label>
+                                    <input type="text">
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="btn font-bold">تعديل</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="notifications content d-none">
+                        <h2 class="font-bold text-main-brown">
+                            الإشعارات الحالية
+                        </h2>
+                        <hr>
+                        <ul class="p-0 w-75">
+                            <li class="d-flex w-100 justify-content-between">
+                                <p class="text-main-brown">تفقد شحنتك قد وصلت إلي الميناء.</p>
+                                <span>الإنتقال</span>
+                            </li>
+                            <li class="d-flex w-100 justify-content-between">
+                                <p >تم قبول عرض السعر الذي أرسلته إلي شركة النبهان.</p>
+                                <span>الإنتقال</span>
+                            </li>
+
+                            <li class="d-flex w-100 justify-content-between">
+                                <p >
+                                    تم استخلاص الأوراق اللازمة للشحنة رقم #1332.
+                                </p>
+                                <span>الإنتقال</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="my-order content  d-none">three</div>
+                    <div class="bills content  d-none">three</div>
+                </div>
+               </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,131 @@
+.my-account .overlay {
+    height: 752px;
+    top: 0px;
+    right: 0;
+    width: 100%;
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 75%);
+    z-index: 2;
+}
+
+.my-account .sidebar {
+    padding: 86px 0;
+    border-left: 1px solid #D3D3D3;
+    border-right: 1px solid #D3D3D3;
+}
+
+.my-account .sidebar .account-info .img {
+    width: 111px;
+    height: 111px;
+    margin: auto;
+    background: #F3F3F3;
+    border: 6px solid #B9B9B9;
+    border-radius: 50%;
+    line-height: 110px;
+    font-size: 17px;
+}
+
+.my-account .sidebar .account-info .img {
+    width: 111px;
+    height: 111px;
+    background: #F3F3F3;
+    border: 6px solid #B9B9B9;
+    border-radius: 50%;
+    line-height: 110px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.my-account .sidebar .notifications .img {
+    height: 80px;
+    width: 68px;
+}
+.my-account .sidebar .my-order .img {
+    height: 85px;
+    width: 96px;    
+}
+.my-account .sidebar .bills .img {
+    height: 87px;
+    width: 99px; 
+}
+
+.my-account .sidebar span {
+    font-size: 14px;
+    color: #5B5B5B;
+}
+
+.my-account .sidebar ul {
+    margin-top: 30px;
+}
+
+.sidebar ul li {
+    width: 100%;
+    padding: 18px 80px 17px;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--main-blue-color);
+    background: #F4F4F4;
+    border-top: 1px solid #D3D3D3;
+    cursor: pointer;
+    transition: .5s all;
+}
+
+.sidebar ul li.active {
+    background: var(--main-blue-color);
+    color: white;
+}
+
+.my-account .sidebar .logout {
+    width: 155px;
+    height: 32px;
+    margin-top: 200px;
+    font-size: 14px;
+}
+
+.my-account .sidebar .logout,
+.my-account .leftSide .account-info button {
+    background: #D9D9D9;
+    border-radius: 6px;
+    color: #5B5B5B;
+}
+
+.my-account .leftSide {
+    padding-top: 120px;
+}
+
+.my-account .leftSide>div h2 {
+    font-size: 37px;
+}
+
+.my-account .leftSide .account-info label {
+    font-size: 14px;
+    margin-bottom: 13px;
+}
+
+.my-account .leftSide .account-info input {
+    border: 1px solid #898989;
+    height: 42px;
+    margin-bottom: 28px;
+    width: 100%;
+    border-radius: 3px;
+    max-width: 355px;
+}
+
+.my-account .leftSide .account-info button {
+    width: 144px;
+    height: 42px;
+    font-size: 18px;
+}
+
+
+/********* notifications ***********/
+.my-account .notifications ul{
+    margin: 52px 70px;
+    width: 70%;
+    font-size: 18px;
+}
+.my-account .notifications li p{
+
+}
+.my-account .notifications li span{
+    color: #8A8A8A;
+}
