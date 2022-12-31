@@ -2,14 +2,8 @@
 
 $(document).ready(function () {
 
-  //my-account page
-  $(".sidebar ul li").click(function () {
-    $(".sidebar ul li").removeClass("active");
-    $(this).addClass("active");
-  });
 
-
-  function changeContent(links,content) {
+  function changeContent(links, content) {
 
     var linksList = Array.from(document.querySelectorAll(links));
     var contentList = Array.from(document.querySelectorAll(content));
@@ -31,18 +25,27 @@ $(document).ready(function () {
     });
   }
 
+  function toggleActiveClass(item) {
+    $(item).click(function () {
+      $(item).removeClass("active");
+      $(this).addClass("active");
+    });
+  }
 
-  changeContent('.sidebar ul li','.my-account  .content')
-  changeContent('.account-details .steps span','.account-details .steper .content')
+  // account-steper-detais
+  toggleActiveClass('.account-details .steper .steps span:nth-child(odd)')
+  changeContent('.account-details .steps span:nth-child(odd)', '.account-details .steper .content')
 
 
+
+  //my-account page
+  toggleActiveClass(".sidebar ul li")
+  changeContent('.sidebar ul li', '.my-account  .content')
 
 
   //register page
-  $(".toggle-active-btn").click(function () {
-    $(".toggle-active-btn").removeClass("active");
-    $(this).addClass("active");
-  });
+  toggleActiveClass(".toggle-active-btn")
+
 
   // using-way
   $(".using-way .owl-carousel").owlCarousel({
