@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/shared-style.css">
+    <link rel="stylesheet" href="assets/css/register.css">
+</head>
+
+<body>
+
+    <div class="register">
+        <section class="position-relative">
+            <div class="overlay position-absolute bg-overlay"></div>
+            <div class="position-relative container form" style="z-index: 2;">
+                <div class="row">
+                    <div class="col-lg-6  col-md-7">
+                        <div class="card text-center">
+
+                            <div class="buttons bg-main-blue ">
+                                <button class="btn  toggle-active-btn font-bold active">مستورد / مصدر</button>
+                                <button class="btn  toggle-active-btn font-bold "> مقدم خدمات لوجيستية</button>
+                            </div>
+
+                            <h2 class="font-bold ">
+                                سجل دخولك
+                            </h2>
+                            <p>
+                                <span class="font-bold">هل سجلت سابقاً ؟</span>
+                                <span>دخول</span>
+                            </p>
+                            <hr>
+                            <form class="postion-relative">
+
+                                <div class="input-group">
+                                    <label class="font-bold">الاسم</label>
+                                    <input type="text ">
+                                </div>
+
+
+                                <div class="input-group">
+                                    <label class="font-bold">البريد الإلكتروني</label>
+                                    <input type="email">
+                                </div>
+
+                                <div class="input-group">
+                                    <label class="font-bold">الرقم السري</label>
+                                    <input type="password">
+                                </div>
+
+                                <div class="input-group">
+                                    <label class="font-bold">السجل التجاري</label>
+                                    <input type="text">
+                                </div>
+
+                                <button class="btn font-bold">
+                                    تسجيـل
+                                </button>
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-5 d-flex align-items-center justify-content-center ">
+                        <div class="text text-center">
+                            <div class="img bg-main-blue ">
+                                <img src="assets/images/Ellipse 109.png" width="100%" height="100%">
+                            </div>
+
+                            <p class="font-bold">أنت على بعد 30 ثانية من أن تكون فردًا من عائلتنا!</p>
+                            <button class="btn font-bold login" data-bs-toggle="modal" data-bs-target="#staticBackdrop">تسجيل الدخول</button>
+                            
+
+                            <div class="buttons position-relative   ">
+                                <button class="btn position-absolute text-white    ">استمر مع فيسبوك</button>
+                                <button class="btn position-absolute text-white    ">استمر مع جوجل</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header justify-content-center">
+          <h5 class="modal-title font-bold text-center text-main-blue" id="staticBackdropLabel">سجل دخولك</h5>
+          <button type="button" class="btn-close position-absolute text-white " data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-6 mb-sm-0 mb-3">
+                <label class="font-bold">البريد الإلكتروني</label>
+                <input type="email">
+            </div>
+            <div class="col-sm-6 mb-sm-0 mb-3">
+                <label class="font-bold">الرقم السري</label>
+                <input type="password">
+            </div>
+
+            <button class="d-block btn font-bold  login">تسجيل الدخول</button>
+
+            <div class="buttons justify-content-center d-flex  w-100 ">
+                <button class="btn  tex  ">استمر مع فيسبوك</button>
+                <button class="btn  text ">استمر مع جوجل</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer"></div>
+      </div>
+    </div>
+  </div>
+
+    <script src="assets/js/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+
+</html>
