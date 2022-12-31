@@ -36,6 +36,22 @@ $(document).ready(function () {
   toggleActiveClass('.account-details .steper .steps span:nth-child(odd)')
   changeContent('.account-details .steps span:nth-child(odd)', '.account-details .steper .content')
 
+  var step = 200;
+		var scrolling = true;
+
+		$(".preSlide").bind("click", function(event) {
+			event.preventDefault();
+			$(".slideouter").animate({
+				scrollLeft: "+=" + step + "px"
+			});
+		});
+
+		$(".nextSlide").bind("click", function(event) {
+			event.preventDefault();
+			$(".slideouter").animate({
+				scrollLeft: "-=" + step + "px"
+			});
+		})
 
 
   //my-account page

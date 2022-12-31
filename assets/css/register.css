@@ -4,11 +4,11 @@
 }
 
 .register .overlay {
-    height: 768px;
-    top: -70px;
+    height: 70%;
+    top: 0px;
     right: 0;
     width: 100%;
-    transform: skewY(4deg);
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 82%);
 }
 
 .register .card {
@@ -291,10 +291,6 @@ form button.btn {
         height: 45px;
         font-size: 20px;
         width: 225px;
-    }
-
-    .register .overlay {
-        transform: skewY(17deg);
     }
 
     .modal-dialog .modal-body label {
