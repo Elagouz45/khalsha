@@ -1,6 +1,8 @@
 $(document).ready(function () {
     $(".home-header-slider").owlCarousel({
         autoplay: true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
         smartSpeed: 800,
         dots: true,
         mouseDrag: true,
@@ -11,6 +13,8 @@ $(document).ready(function () {
     }) ;
     $(".about-us-slider").owlCarousel({
         autoplay: true,
+        animateIn: 'fadeIn',
+        animateOut: 'fadeOut',
         smartSpeed: 800,
         dots: true,
         mouseDrag: true,
@@ -26,7 +30,6 @@ $(document).ready(function () {
 
 
   function changeContent(links, content) {
-
     var linksList = Array.from(document.querySelectorAll(links));
     var contentList = Array.from(document.querySelectorAll(content));
     linksList.forEach((element) => {
