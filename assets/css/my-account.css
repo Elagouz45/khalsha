@@ -278,6 +278,23 @@
   line-height: 15px;
   border-radius: 50%;
 }
+.statistics table{
+  margin-top: 18px;
+}
+.statistics table th,
+.statistics table td{
+  border:  1px solid #D3D3D3;
+  height: 32px !important;
+  line-height: unset !important;
+  font-size: 14px;
+  text-align: right;
+  padding-right: 10px;
+}
+.statistics table thead th:first-child{
+  width: 32px !important;
+}
+
+
 @media (max-width: 1600px) {
   .my-account .leftSide > div h2 {
     font-size: 30px;
@@ -295,9 +312,9 @@
 
   .my-account table th,
   .my-account table td {
-    height: 50px !important;
-    line-height: 48px !important;
-    font-size: 14px !important;
+    height: 50px ;
+    line-height: 48px ;
+    font-size: 14px ;
   }
 }
 
