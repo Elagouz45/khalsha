@@ -56,8 +56,8 @@
 }
 
 .account-details .steper .steps span:nth-child(odd).active {
-    color: white;
-    background-color: var(--main-blue-color);
+    color: white !important;
+    background-color: var(--main-blue-color) !important;
 }
 
 .account-details .steper .steps span:nth-child(even) {
