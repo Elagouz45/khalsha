@@ -96,7 +96,10 @@ form button.btn {
     right: 50%;
     transform: translateX(50%);
 }
-
+form button.btn:hover{
+    background-color: var(--main-blue-color) !important;
+    color: white;
+}
 .register .col-lg-6 {
     margin-bottom: 70px;
 }

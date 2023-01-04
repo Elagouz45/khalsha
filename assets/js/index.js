@@ -1,37 +1,14 @@
-$(document).ready(function () {
-    $(".home-header-slider").owlCarousel({
-        autoplay: true,
-        animateIn: 'fadeIn',
-        animateOut: 'fadeOut',
-        smartSpeed: 800,
-        dots: true,
-        mouseDrag: true,
-        margin: 10,
-        navigation: true,
-        slideBy: 1,
-        items: 1,
-    }) ;
-    $(".about-us-slider").owlCarousel({
-        autoplay: true,
-        animateIn: 'fadeIn',
-        animateOut: 'fadeOut',
-        smartSpeed: 800,
-        dots: true,
-        mouseDrag: true,
-        margin: 10,
-        navigation: true,
-        slideBy: 1,
-        items: 1,
-    })
-});
 
 
 $(document).ready(function () {
 
 
   function changeContent(links, content) {
+    
     var linksList = Array.from(document.querySelectorAll(links));
     var contentList = Array.from(document.querySelectorAll(content));
+
+
     linksList.forEach((element) => {
       element.addEventListener('click', () => {
         let href = element.getAttribute('data-target')?.toString();
@@ -47,9 +24,12 @@ $(document).ready(function () {
         });
 
       });
+
     });
+
   }
 
+  
   function toggleActiveClass(item) {
     $(item).click(function () {
       $(item).removeClass("active");
@@ -57,26 +37,27 @@ $(document).ready(function () {
     });
   }
 
-  // account-steper-detais
-  toggleActiveClass('.account-details .steper .steps span:nth-child(odd)')
+ // account-steper-detais
   changeContent('.account-details .steps span:nth-child(odd)', '.account-details .steper .content')
+  toggleActiveClass('.account-details .steper .steps span:nth-child(odd)')
 
-  var step = 200;
-		var scrolling = true;
+  changeContent('.account-details button.creation-price', '.account-details .content')
 
-		$(".preSlide").bind("click", function(event) {
-			event.preventDefault();
-			$(".slideouter").animate({
-				scrollLeft: "+=" + step + "px"
-			});
-		});
+  var step = 300;
 
-		$(".nextSlide").bind("click", function(event) {
-			event.preventDefault();
-			$(".slideouter").animate({
-				scrollLeft: "-=" + step + "px"
-			});
-		})
+  $(".preSlide").bind("click", function (event) {
+    event.preventDefault();
+    $(".slideouter").animate({
+      scrollLeft: "+=" + step + "px"
+    });
+  });
+
+  $(".nextSlide").bind("click", function (event) {
+    event.preventDefault();
+    $(".slideouter").animate({
+      scrollLeft: "-=" + step + "px"
+    });
+  })
 
 
   //my-account page

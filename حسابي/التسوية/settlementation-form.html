@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حسابي</title>
+    <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../../assets/css/shared-style.css">
+    <link rel="stylesheet" href="./../../assets/css/settlementation-form.css">
+</head>
+
+<body>
+
+
+    <div class="settlementation position-relative">
+
+        <div class="overlay1 bg-overlay w-100 top-0 position-absolute"></div>
+
+        <section class="position-relative header" style="z-index: 3;">
+            <div class="container d-flex justify-content-between  align-items-center  ">
+                <p class="font-bold text-black"> فاتورة رقم #1586</p>
+                <p class="font-bold text-black"> / تسوية</p>
+            </div>
+            <hr class="m-0">
+        </section>
+
+        <section class="position-relative settlementation-form  " style="z-index: 3;">
+
+            <div class="container ">
+
+                <div class="w-50 m-auto data-entry  ">
+
+                    <div class="bg-white opacity-100">
+                        <p class="bg-main-brown font-bold text-center text-white ">ادخال بيانات البطاقة</p>
+
+
+                        <form>
+
+                            <label class="text-bold-gray fs-18 font-bold">عنوان البريد الإلكتروني</label>
+                            <div class="input-group mb-2 mr-sm-2">
+                                <input type="text" class="form-control rounded-0 ">
+                            </div>
+
+
+                            <label class="text-bold-gray fs-18 font-bold"> رقم البطاقة </label>
+                            <div class="input-group text-center mb-2 mr-sm-2">
+
+                                <input type="text" class="form-control fs-18 text-center rounded-0 " placeholder="CVV">
+
+                                <input type="text" class="form-control fs-18 text-center rounded-0 "
+                                    placeholder="MM/YY">
+
+                                <input type="text" class="form-control fs-18 text-center w-50 rounded-0 "
+                                    placeholder="رقم البطاقة">
+                            </div>
+
+
+                            <label class="text-bold-gray fs-18 font-bold"> اسم صاحب البطاقة </label>
+                            <div class="input-group mb-2 mr-sm-2">
+                                <input type="text" class="form-control rounded-0 ">
+                            </div>
+
+
+
+                            <label class="text-bold-gray fs-18 font-bold">عنوان وصول الفواتير</label>
+                            <div class="input-group text-center mb-2 mr-sm-2">
+
+
+                                <input type="text" class="form-control w-100 m-0 fs-18 text-start rounded-0 "
+                                    placeholder="العنوان">
+
+                                <input type="text" class="form-control w-50 fs-18 text-center rounded-0 "
+                                    placeholder="رقم البريدي">
+
+                                <input type="text" class="form-control w-50 fs-18 text-center w-50 rounded-0 "
+                                    placeholder="المدينة">
+                            </div>
+
+
+
+                        </form>
+                        <hr>
+
+                        <div class="d-flex flex-wrap total">
+                            <span class="w-50 fs-18 font-bold text-end">المجموع الفرعي</span>
+                            <span class="w-50 fs-18 font-bold text-start">$ 80</span>
+
+                            <span class="w-50 fs-18 font-bold text-end">الضريبة</span>
+                            <span class="w-50 fs-18 font-bold text-start">(20%)</span>
+
+                            <span class="w-50 fs-18 font-bold text-main-brown text-end">الإجمالي</span>
+                            <span class="w-50 fs-18 font-bold text-main-brown text-start">$ 100</span>
+
+                            <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                                class="w-100 btn text-bold-gray font-bold">
+                                دفع التسوية
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-0 text-bold-gray">
+                <div class="modal-header position-relative border-0 ">
+                    <button type="button"
+                        class="btn-close opacity-100 position-absolute top-0 rounded-0 start-0 bg-main-brown m-0 text-white "
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center font-bold">تمت عملية دفع التسوية بنجاح </p>
+                </div>
+                <div class="modal-footer border-0 position-relative m-0">
+                    <button class="btn position-absolute start-50  fs-18  back text-white  ">الرجوع</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./../../assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./../../assets/js/bootstrap.min.js"></script>
+    <script src="./../../assets/js/index.js"></script>
+
+</body>
+
+</html>

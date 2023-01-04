@@ -14,22 +14,23 @@
     --main-font-normal:fontFamilyNormal;
     --main-bg-gray: #f5f5f580;
     --bg-overlay: #F5F5F5;
+    --gray-bold-color:#5B5B5B
 }
 
 .bg-main-blue{
-    background-color: var(--main-blue-color);
+    background-color: var(--main-blue-color) !important;
 }
 .bg-main-brown{
-    background-color: var(--main-brown-color);
+    background-color: var(--main-brown-color) !important;
 }
 .bg-gray{
-    background-color: var(--main-bg-gray);
+    background-color: var(--main-bg-gray) !important;
 }
 .bg-overlay{
-    background-color: var(--bg-overlay);
+    background-color: var(--bg-overlay) !important;
 }
 .text-main-blue{
-    color: var(--main-blue-color);
+    color: var(--main-blue-color) !important;
 }
 .text-main-brown{
     color: var(--main-brown-color) !important;
@@ -39,6 +40,12 @@
 }
 .font-normal{
     font-family: var(--main-font-normal);
+}
+.bg-bold-gray{
+    background-color: var(--gray-bold-color) !important;
+}
+.text-bold-gray{
+    color: var(--gray-bold-color) !important;
 }
 .py-150{
     padding-top: 150px ;
@@ -157,6 +164,9 @@ border-radius: 32px;
     }
 }
 
+.btn:hover{
+    background-color: var(--main-blue-color) !important;
+}
 
 
 
