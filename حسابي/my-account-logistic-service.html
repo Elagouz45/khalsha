@@ -338,51 +338,98 @@
 
 
 
-                            <div class="leaflets ">
-                                <span class="position-relative font-bold bg-main-brown text-white d-inline-block text-center">
+                            <div class="leaflets one">
+                                <span data-target="accepted-leaflets" class="position-relative font-bold text-bold-gray active text-white
+                                     d-inline-block text-center">
                                     منشورات مقبولة
+                                    <sup class="position-absolute  ">2</sup>
                                 </span>
-                                <span class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
+                                <span data-target="waiting-leaflets"
+                                    class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
                                     منشورات بالإنتظار
                                     <sup class="position-absolute  ">2</sup>
                                 </span>
-                                <span class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
-
+                                <span data-target="rejected-leaflets"
+                                    class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
                                     منشورات مرفوضة
                                     <sup class="position-absolute  ">2</sup>
                                 </span>
                             </div>
 
 
-                            <table class="mini-table w-100">
-                                <thead>
-                                    <th ></th>
-                                    <th class="text-bold-gray">الطلب</th>
-                                    <th class="text-bold-gray">بواسطة</th>
-                                    <th class="text-bold-gray">تاريخ الإضافة</th> 
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-black">التخليص الجمركي</td>
-                                        <td class="text-black">شركة النبهان</td>
-                                        <td class="text-black">12 /12 /2022 الساعة 10:33</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive mini-table one accepted-leaflets d-block">
+                                <table class=" w-100 ">
+                                    <thead>
+                                        <th></th>
+                                        <th class="text-bold-gray">الطلب</th>
+                                        <th class="text-bold-gray">بواسطة</th>
+                                        <th class="text-bold-gray">تاريخ الإضافة</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td class="text-black">التخليص الجمركي</td>
+                                            <td class="text-black">شركة النبهان</td>
+                                            <td class="text-black">12 /12 /2022 الساعة 10:33</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="table-responsive mini-table one d-none waiting-leaflets">
+                                <table class=" w-100">
+                                    <thead>
+                                        <th></th>
+                                        <th class="text-bold-gray">الطلب</th>
+                                        <th class="text-bold-gray">بواسطة</th>
+                                        <th class="text-bold-gray">تاريخ الإضافة</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td class="text-black">التخليص الجمركي</td>
+                                            <td class="text-black">شركة النبهان</td>
+                                            <td class="text-black">12 /12 /2022 الساعة 10:33</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                            <div class="table-responsive mini-table one d-none rejected-leaflets">
+                                <table class=" w-100  ">
+                                    <thead>
+                                        <th></th>
+                                        <th class="text-bold-gray">الطلب</th>
+                                        <th class="text-bold-gray">بواسطة</th>
+                                        <th class="text-bold-gray">تاريخ الإضافة</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td class="text-black">التخليص الجمركي</td>
+                                            <td class="text-black">شركة النبهان</td>
+                                            <td class="text-black">12 /12 /2022 الساعة 10:33</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
 
 
-                            <div class="leaflets ">
-                                <span class="position-relative font-bold bg-main-brown text-white d-inline-block text-center">
+                            <div class="leaflets two ">
+                                <span data-target="accepted-offer"
+                                    class="position-relative font-bold active text-bold-gray text-white d-inline-block text-center">
                                     عروض مقبولة
-                                    <sup class="position-absolute  bg-main-brown">2</sup>
+                                    <sup class="position-absolute  ">2</sup>
                                 </span>
-                                <span class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
+                                <span data-target="waiting-offer"
+                                    class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
                                     عروض بالإنتظار
                                     <sup class="position-absolute  ">2</sup>
                                 </span>
-                                <span class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
+                                <span data-target="rejected-offer"
+                                    class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
 
                                     عروض مرفوضة
                                     <sup class="position-absolute  ">2</sup>
@@ -390,34 +437,88 @@
                             </div>
 
 
-                            <table class="mini-table w-100">
-                                <thead>
-                                    <th ></th>
-                                    <th class="text-bold-gray">الطلب</th>
-                                    <th class="text-bold-gray">بواسطة</th>
-                                    <th class="text-bold-gray">تاريخ الإضافة</th> 
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td></td>
-                                        <td class="text-black">التخليص الجمركي</td>
-                                        <td class="text-black">شركة النبهان</td>
-                                        <td class="text-black">12 /12 /2022 الساعة 10:33</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive mini-table two accepted-offer d-block">
+                                <table class=" w-100  ">
+                                    <thead>
+                                        <th></th>
+                                        <th class="text-bold-gray">الطلب</th>
+                                        <th class="text-bold-gray">بواسطة</th>
+                                        <th class="text-bold-gray">تاريخ الإضافة</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td class="text-black">التخليص الجمركي</td>
+                                            <td class="text-black">شركة النبهان</td>
+                                            <td class="text-black">12 /12 /2022 الساعة 10:33</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                            <div class="table-responsive mini-table two waiting-offer d-none">
+                                <table class=" w-100  ">
+                                    <thead>
+                                        <th></th>
+                                        <th class="text-bold-gray">الطلب</th>
+                                        <th class="text-bold-gray">بواسطة</th>
+                                        <th class="text-bold-gray">تاريخ الإضافة</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td class="text-black">التخليص الجمركي</td>
+                                            <td class="text-black">شركة النبهان</td>
+                                            <td class="text-black">12 /12 /2022 الساعة 10:33</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
+                            <div class="table-responsive mini-table two rejected-offer d-none">
+                                <table class=" w-100  ">
+                                    <thead>
+                                        <th></th>
+                                        <th class="text-bold-gray">الطلب</th>
+                                        <th class="text-bold-gray">بواسطة</th>
+                                        <th class="text-bold-gray">تاريخ الإضافة</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
+                                            <td class="text-black">التخليص الجمركي</td>
+                                            <td class="text-black">شركة النبهان</td>
+                                            <td class="text-black">12 /12 /2022 الساعة 10:33</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                          
 
-                            <div class="leaflets ">
-                                <span class="position-relative font-bold bg-main-brown text-white d-inline-block text-center">
+                            <div class="leaflets three">
+                                <span data-target="current-week"
+                                    class="position-relative font-bold active text-bold-gray d-inline-block text-center">
                                     الأسبوع الحالي
                                 </span>
-                                <span class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
+                                <span data-target="current-month"
+                                    class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
                                     الشهر الحالي
                                 </span>
-                                <span class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
+                                <span data-target="current-year"
+                                    class="position-relative font-bold text-bold-gray d-inline-block text-center   ">
                                     علي مدار السنة
                                 </span>
+                            </div>
+
+                            <div  class="current-week chart d-block">
+                                <canvas id="week"></canvas>
+                            </div>
+
+                            <div  class="current-month chart d-none ">
+                                <canvas id="month"></canvas>
+                            </div>
+                            <div  class="current-year chart d-none">
+                                <canvas id="year"></canvas>
                             </div>
 
 
@@ -533,6 +634,84 @@
     <script src="./../assets/js/jquery-3.6.3.min.js"></script>
     <script src="./../assets/js/bootstrap.min.js"></script>
     <script src="./../assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+    <script>
+        const week = document.getElementById('week');
+        const month = document.getElementById('month');
+        const year = document.getElementById('year');
+
+        new Chart(year, {
+            type: 'line',
+            data: {
+                labels: ['6/2022', '7/2022', '8/2022', '9/2022', '10/2022'],
+                datasets: [{
+                    label: 'الاحصائيات',
+                    data: [12, 19, 3, 5, 2],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        // display:false
+                    }
+                }
+            }
+        });
+        new Chart(week, {
+            type: 'line',
+            data: {
+                labels: ['6/2022', '7/2022', '8/2022', '9/2022', '10/2022'],
+                datasets: [{
+                    label: 'الاحصائيات',
+                    data: [12, 19, 3, 5, 2],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        // display:false
+                    }
+                }
+            }
+        });
+        new Chart(month, {
+            type: 'line',
+            data: {
+                labels: ['6/2022', '7/2022', '8/2022', '9/2022', '10/2022'],
+                datasets: [{
+                    label: 'الاحصائيات',
+                    data: [12, 19, 3, 5, 2],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        // display:false
+                    }
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>

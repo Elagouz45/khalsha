@@ -3,7 +3,7 @@
 $(document).ready(function () {
 
 
-  function changeContent(links, content) {
+  function changeContent(links, content , className) {
     
     var linksList = Array.from(document.querySelectorAll(links));
     var contentList = Array.from(document.querySelectorAll(content));
@@ -15,11 +15,11 @@ $(document).ready(function () {
 
         contentList.forEach((content) => {
           if (content.classList.contains(href)) {
-            content.classList.add('d-block');
+            content.classList.add(className);
             content.classList.remove('d-none');
           } else {
             content.classList.add('d-none');
-            content.classList.remove('d-block');
+            content.classList.remove(className);
           }
         });
 
@@ -38,10 +38,18 @@ $(document).ready(function () {
   }
 
  // account-steper-detais
-  changeContent('.account-details .steps span:nth-child(odd)', '.account-details .steper .content')
-  toggleActiveClass('.account-details .steper .steps span:nth-child(odd)')
+  changeContent('.leaflets.two span', '.mini-table.two','d-block')
+  changeContent('.leaflets.one span', '.mini-table.one','d-block')
+  changeContent('.leaflets.three span', '.chart','d-block')
+  toggleActiveClass('.leaflets.two span')
+  toggleActiveClass('.leaflets.one span')
+  toggleActiveClass('.leaflets.three span')
 
-  changeContent('.account-details button.creation-price', '.account-details .content')
+
+
+  changeContent('.account-details .steps span:nth-child(odd)', '.account-details .steper .content','d-block')
+  toggleActiveClass('.account-details .steper .steps span:nth-child(odd)')
+  changeContent('.account-details button.creation-price', '.account-details .content','d-block')
 
   var step = 300;
 
