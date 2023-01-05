@@ -1,9 +1,11 @@
-.border-gray{
+.border-gray {
     border: 1px solid #D3D3D3;
 }
-.fs-18{
+
+.fs-18 {
     font-size: 18px;
 }
+
 .account-details {
     padding: 80px 0;
 }
@@ -67,7 +69,7 @@
 
 .account-details .order-informations button,
 .account-details .offers button,
-.account-details .order-status button,
+.account-details .order-status button:not(.transition),
 .account-details .bill button.first,
 .creation-offer-price button:not(.add-term) {
     width: 189px;
@@ -122,7 +124,8 @@
     background: white;
 }
 
-.account-details .order-status .w-85,.slideouter {
+.account-details .order-status .w-85,
+.slideouter {
     width: 85%;
 }
 
@@ -140,7 +143,7 @@
 }
 
 .slideouter .srcl .circle {
-    left:  calc(var(--i)*200px);
+    left: calc(var(--i)*200px);
 }
 
 .srcl .circle::after {
@@ -182,10 +185,15 @@
     border-radius: 50%;
     line-height: 48px;
 }
-.srcl .circle span,.create-offer,.account-details .steper .steps span ,
-.account-details .btn.back ,.srcl .circle::after{
+
+.srcl .circle span,
+.create-offer,
+.account-details .steper .steps span,
+.account-details .btn.back,
+.srcl .circle::after {
     background-color: #D9D9D9;
 }
+
 .srcl .circle.done span {
     background-color: var(--main-blue-color);
 }
@@ -211,22 +219,29 @@
     width: 144px;
     background-color: var(--main-brown-color);
 }
-.current-status h5::after,.bill-paper::before,.bill-paper::after,.bill-paper h2::after,.srcl .circle::after {
+
+.current-status h5::after,
+.bill-paper::before,
+.bill-paper::after,
+.bill-paper h2::after,
+.srcl .circle::after {
     position: absolute;
-    content: '';   
+    content: '';
 }
 
 .current-status h5::after,
 .bill-paper h2::after,
-.add-term{
+.add-term {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .current-status h5::after,
-.bill-paper h2::after{
+.bill-paper h2::after {
     bottom: -10px;
     height: 3px;
 }
+
 .preSlide,
 .nextSlide {
     transform: translateY(-50%);
@@ -236,6 +251,7 @@
 .nextSlide {
     left: 10px;
 }
+
 .preSlide {
     right: 10px;
 }
@@ -333,17 +349,62 @@
     height: 41px;
     width: 143px;
     bottom: -20px;
-    
+
 }
 
+.order-status .form.card {
+    padding: 34px 60px;
+    margin-top: 104px;
+}
+
+.order-status .form.card,
+.order-status .form.card input {
+    border: 1px solid var(--gray-bold-color);
+}
+.order-status .form.card .d-flex{
+    margin-bottom: 52px;
+}
+.order-status .form.card .confirm,
+.order-status .form.card .upload {
+    height: 41px;
+    width: 143px;
+    border-radius: 6px;
+    margin: 0 !important;
+}
+
+.order-status .form.card .confirm {
+    background: #9E9E9E;
+}
+
+.order-status .form.card .upload {
+    background: #F0F0F0;
+    color:  #8D8D8D;
+}
+.order-status .form.card input{
+    margin-bottom: 37px;
+}
+.order-status .form.card ::placeholder{
+    color: #AAAAAA;
+}
+.order-status .form.card .transition{
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 41px;
+width: 210px;
+background: #9E9E9E;
+border-radius: 6px;
+font-size: 18px;
+
+}
 @media (max-width:1600px) {
-    .fs-18{
+    .fs-18 {
         font-size: 14px !important;
     }
 
     .account-details .order-informations button,
     .account-details .offers button,
-    .account-details .order-status button,
+    .account-details .order-status button:not(.transition),
     .account-details .bill button.first {
         width: 160px;
     }
@@ -352,6 +413,7 @@
         font-size: 20px !important;
         width: 400px !important;
     }
+
     .modal-footer .aggree {
         height: 35px;
         bottom: -19px;
@@ -379,7 +441,7 @@
     }
 
     .account-details .offers button,
-    .account-details .order-status button,
+    .account-details .order-status button:not(.transition),
     .account-details .bill button.first {
         width: 130px;
     }
@@ -425,13 +487,14 @@
         font-size: 11px !important;
         padding-right: 2px !important;
     }
-    .account-details .order-informations p span:nth-child(even){
+
+    .account-details .order-informations p span:nth-child(even) {
         padding-right: 8px !important;
     }
 
     .account-details .order-informations button,
     .account-details .offers button,
-    .account-details .order-status button,
+    .account-details .order-status button:not(.transition),
     .account-details .bill button.first {
         margin-top: 30px;
     }
@@ -444,6 +507,7 @@
     .creation-offer-price span.total-bill {
         width: 150px;
     }
+
     .creation-offer-price .card-bill {
         padding: 19px 19px 55px;
     }

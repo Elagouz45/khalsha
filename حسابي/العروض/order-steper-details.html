@@ -32,9 +32,11 @@
             <div class="container ">
 
                 <div class="steps m-auto  d-flex justify-content-center align-items-center overflow-auto">
-                    <span data-target="order-describtion" class="active text-bold-gray text-center text-nowrap font-bold">وصف الطلب</span>
+                    <span data-target="order-describtion"
+                        class="active text-bold-gray text-center text-nowrap font-bold">وصف الطلب</span>
                     <span></span>
-                    <span data-target="order-status" class="text-bold-gray text-center text-nowrap font-bold" onclick="changeOrderStatus()">حالة الطلب</span>
+                    <span data-target="order-status" class="text-bold-gray text-center text-nowrap font-bold"
+                        onclick="changeOrderStatus()">حالة الطلب</span>
                     <span></span>
                     <span data-target="bill" class="text-bold-gray text-center text-nowrap font-bold">الفاتورة</span>
                 </div>
@@ -139,7 +141,7 @@
                                     <span class=" fs-18 text-nowrap w-50">نعم </span>
                                 </p>
 
-                             
+
 
                                 <p class="d-flex justify-content-evenly text-bold-gray">
                                     <span class=" fs-18 text-nowrap font-bold w-50">خدمة التركيب</span>
@@ -165,7 +167,8 @@
                         </div>
 
                         <div class="w-75 m-auto">
-                            <button class="btn d-block back fs-18 me-auto font-bold text-bold-gray" onclick="navigation('order-status')">الــعــروض</button>
+                            <button class="btn d-block back fs-18 me-auto font-bold text-bold-gray"
+                                onclick="navigation('order-status')">الــعــروض</button>
                         </div>
 
                     </div>
@@ -214,13 +217,48 @@
 
 
                         </div>
-                        <div class="m-auto w-75 text-center current-status">
+                        <div class="m-auto  text-center current-status">
                             <p class="text-bold-gray">الحالة الحالية</p>
                             <h5 class="text-main-brown position-relative font-bold">حالة استلام التفويض</h5>
+
+
+
+                            <div class="form w-50 mx-auto card position-relative">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="font-bold text-bold-gray">المرحلة الحالية تمت</p>
+                                    <button class="text-white confirm btn">تأكيد</button>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="font-bold text-bold-gray">ارفاق ملفــــات </p>
+                                    <input type="file" multiple hidden id="files">
+                                    <label for="files">
+                                        <span class=" upload btn">تحميل</span>
+                                    </label>
+                                </div>
+
+                                <input type="text" class="form-control text-center" placeholder="ملاحظــات">
+                                <button class="btn transition position-absolute text-white  ">الإنتقال للمرحلة
+                                    التالية</button>
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+
                         </div>
                         <div class="w-75 m-auto buttons justify-content-between d-flex">
-                            <button class="btn d-block back fs-18 text-bold-gray font-bold" onclick="navigation('order-describtion')"> عروض الاسعار </button>
-                            <button class="btn d-block back fs-18 text-bold-gray font-bold" onclick="navigation('bill')"> الفاتورة</button>
+                            <button class="btn d-block back fs-18 text-bold-gray font-bold"
+                                onclick="navigation('order-describtion')"> عروض الاسعار </button>
+                            <button class="btn d-block back fs-18 text-bold-gray font-bold"
+                                onclick="navigation('bill')"> الفاتورة</button>
                         </div>
                     </div>
                 </div>
@@ -263,11 +301,13 @@
                                     <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">رقم بيان الإستيراد</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">رقم بيان
+                                        الإستيراد</span>
                                     <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">تاريخ بيان الإستيراد</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">تاريخ بيان
+                                        الإستيراد</span>
                                     <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
                                 </div>
 
@@ -275,13 +315,14 @@
                                  font-bold text-center" style="margin-bottom: 14px;">إجمالي الفاتورة</span>
                                 <div class="w-50 me-auto">
                                     <span class=" d-block  m-auto fs-18
-                                 font-bold text-center total-bill ">2100  ريال </span>
+                                 font-bold text-center total-bill ">2100 ريال </span>
                                 </div>
                             </div>
 
                         </div>
                         <div class="w-75 mx-auto button-back" style="margin-top: 147px;">
-                            <button class="btn d-block back fs-18 text-bold-gray font-bold" onclick="navigation('order-status');changeOrderStatus()">حالة الطلب</button>
+                            <button class="btn d-block back fs-18 text-bold-gray font-bold"
+                                onclick="navigation('order-status');changeOrderStatus()">حالة الطلب</button>
                         </div>
                     </div>
                 </div>
