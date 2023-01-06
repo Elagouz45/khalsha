@@ -1,362 +1,484 @@
 .my-account .overlay {
-    height: 100%;
-    top: 0px;
-    right: 0;
-    width: 100%;
-    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%);
-    z-index: 2;
+  height: 100%;
+  top: 0px;
+  right: 0;
+  width: 100%;
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 80%);
+  z-index: 2;
 }
 
 .my-account section {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .my-account .sidebar {
-    padding: 86px 0;
-    border-left: 1px solid #D3D3D3;
-    border-right: 1px solid #D3D3D3;
-    height: 100%;
+  padding: 86px 0;
+  border-left: 1px solid #d3d3d3;
+  border-right: 1px solid #d3d3d3;
+  height: 100%;
 }
 
 .my-account .sidebar .account-info .img {
-    width: 111px;
-    height: 111px;
-    margin: auto;
-    background: #F3F3F3;
-    border: 6px solid #B9B9B9;
-    border-radius: 50%;
-    line-height: 110px;
-    font-size: 17px;
+  width: 111px;
+  height: 111px;
+  margin: auto;
+  background: #f3f3f3;
+  border: 6px solid #b9b9b9;
+  border-radius: 50%;
+  line-height: 110px;
+  font-size: 17px;
 }
 
 .my-account .sidebar .account-info .img {
-    width: 111px;
-    height: 111px;
-    background: #F3F3F3;
-    border: 6px solid #B9B9B9;
-    border-radius: 50%;
-    line-height: 110px;
-    font-size: 17px;
-    cursor: pointer;
+  width: 111px;
+  height: 111px;
+  background: #f3f3f3;
+  border: 6px solid #b9b9b9;
+  border-radius: 50%;
+  line-height: 110px;
+  font-size: 17px;
+  cursor: pointer;
 }
 
 .my-account .sidebar .notifications .img {
-    height: 80px;
-    width: 68px;
+  height: 80px;
+  width: 68px;
 }
 
 .my-account .sidebar .my-order .img {
-    height: 85px;
-    width: 96px;
+  height: 85px;
+  width: 96px;
 }
 
 .my-account .sidebar .bills .img {
-    height: 87px;
-    width: 99px;
+  height: 87px;
+  width: 99px;
 }
 
 .my-account .sidebar span {
-    font-size: 14px;
-    color: #5B5B5B;
+  font-size: 14px;
+  color: #5b5b5b;
 }
 
 .my-account .sidebar ul {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .sidebar ul li {
-    width: 100%;
-    padding: 18px 80px 17px;
-    font-size: 18px;
-    line-height: 30px;
-    color: var(--main-blue-color);
-    background: #F4F4F4;
-    border-top: 1px solid #D3D3D3;
-    cursor: pointer;
-    transition: .5s all;
+  width: 100%;
+  padding: 18px 80px 17px;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--main-blue-color);
+  background: #f4f4f4;
+  border-top: 1px solid #d3d3d3;
+  cursor: pointer;
+  transition: 0.5s all;
 }
 
 .sidebar ul li.active {
-    background: var(--main-blue-color);
-    color: white;
+  background: var(--main-blue-color);
+  color: white;
 }
 
 .my-account .sidebar .logout {
-    width: 155px;
-    height: 32px;
-    margin-top: 200px;
-    font-size: 14px;
+  width: 155px;
+  height: 32px;
+  margin-top: 200px;
+  font-size: 14px;
 }
 
 .my-account .sidebar .logout,
 .my-account .leftSide .account-info button {
-    background: #D9D9D9;
-    border-radius: 6px;
-    color: #5B5B5B;
+  background: #d9d9d9;
+  border-radius: 6px;
+  color: #5b5b5b;
 }
 
 .my-account .leftSide {
-    padding-top: 120px;
+  padding-top: 120px;
 }
 
-.my-account .leftSide>div h2 {
-    font-size: 37px;
+.my-account .leftSide > div h2 {
+  font-size: 37px;
 }
 
 .my-account .leftSide .account-info label {
-    font-size: 14px;
-    margin-bottom: 13px;
+  font-size: 14px;
+  margin-bottom: 13px;
 }
 
 .my-account .leftSide .account-info input {
-    border: 1px solid #898989;
-    height: 42px;
-    margin-bottom: 28px;
-    width: 100%;
-    border-radius: 3px;
-    max-width: 355px;
+  border: 1px solid #898989;
+  height: 42px;
+  margin-bottom: 28px;
+  width: 100%;
+  border-radius: 3px;
+  max-width: 355px;
 }
 
 .my-account .leftSide .account-info button {
-    width: 144px;
-    height: 42px;
-    font-size: 18px;
+  width: 144px;
+  height: 42px;
+  font-size: 18px;
 }
 .my-account form,
 .my-account .notifications ul,
 .my-order .table-responsive,
-.bills .table-responsive{
-    margin: 52px 70px;
+.bills .table-responsive {
+  margin: 52px 70px;
 }
 
 /********* notifications ***********/
 .my-account .notifications ul {
-    width: 80%;
-    font-size: 18px;
+  width: 80%;
+  font-size: 18px;
 }
 
 .my-account .notifications li {
-    height: 70px;
-    padding-right: 29px;
-    padding-left: 57px;
+  height: 70px;
+  padding-right: 29px;
+  padding-left: 57px;
 }
 
 .my-account .notifications li::before {
-    position: absolute;
-    content: '';
-    top: 50%;
-    transform: translateY(-50%);
-    right: 29px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: #8A8A8A;
+  position: absolute;
+  content: "";
+  top: 50%;
+  transform: translateY(-50%);
+  right: 29px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #8a8a8a;
 }
 
 .my-account .notifications li.active::before {
-    background-color: var(--main-brown-color);
+  background-color: var(--main-brown-color);
 }
 
 .my-account .notifications li:nth-child(odd) {
-    background-color: #F1F1F1;
+  background-color: #f1f1f1;
 }
 
 .my-account .notifications li:nth-child(even) {
-    background-color: white;
+  background-color: white;
 }
 
 .my-account .notifications li p {
-    margin-right: 27px;
-    color: #8A8A8A;
-    font-size: 18px;
+  margin-right: 27px;
+  color: #8a8a8a;
+  font-size: 18px;
 }
 
 .my-account .notifications li.active p {
-    color: var(--main-brown-color)
+  color: var(--main-brown-color);
 }
 
 .my-account .notifications li span {
-    color: #8A8A8A;
+  color: #8a8a8a;
 }
 
-.my-account .bills table{
-    border: 1px solid #D3D3D3;
+.my-account .bills table {
+  border: 1px solid #d3d3d3;
 }
-.my-account  table th,
-.my-account  table td {
-    height: 81px;
-    line-height: 81px;
-    text-align: center;
+.my-account table th,
+.my-account table td {
+  height: 81px;
+  line-height: 81px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 18px;
+  font-family: var(--main-font-bold);
+}
+
+.my-account table td,
+.my-account table:hover td {
+  color: #7e7e7e;
+}
+.my-account .my-order table tbody tr:nth-child(odd) {
+  background: #f3f3f3;
+}
+.my-account .bills table tbody tr:nth-child(odd) {
+  background: #f1f1f1;
+}
+
+.my-account table tbody tr:nth-child(even) {
+  background: white;
+}
+
+/************ settlement**********/
+.my-account .settlement table th {
+  border-right: 1px solid #d3d3d3;
+  background-color: none !important;
+}
+.my-account .settlement table td {
+  color: #484848;
+  border: 0;
+}
+.my-account .settlement table tr {
+  background: #f1f1f1 !important;
+}
+
+.my-account .hint {
+  color: #c76e61;
+  font-size: 14px;
+}
+
+/********** statistics************/
+.statistics .steps {
+  margin-top: 52px;
+}
+.statistics .steps span {
+  background: #d9d9d9;
+  height: 26px;
+  /* width: 138px; */
+  width: calc(100% / 6);
+  line-height: 26px;
+  margin-left: 9px;
+  font-size: 14px;
+}
+.statistics .steps span:not(:last-child):after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: -9px;
+  width: 9px;
+  height: 3px;
+  background: #d9d9d9;
+}
+.statistics .earnings .col-sm-6 {
+  margin: 17px 0 0;
+}
+.statistics .earnings .col-sm-6 .bg-main-blue {
+  padding: 20px 24px;
+  height: 112px;
+}
+
+.statistics .leaflets {
+  margin-top: 44px;
+}
+
+.statistics .leaflets span {
+  margin-left: 8px;
+  background: #d9d9d9;
+  width: 138px;
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.statistics .leaflets span sup {
+  width: 15px;
+  left: 0;
+  top: -8px;
+  background: #d9d9d9;
+  border: 1px solid #fafafa;
+  height: 15px;
+  line-height: 15px;
+  border-radius: 50%;
+}
+.statistics table{
+  margin-top: 18px;
+}
+.statistics table th,
+.statistics table td{
+  border:  1px solid #D3D3D3;
+  height: 32px !important;
+  line-height: unset !important;
+  font-size: 14px;
+  text-align: right;
+  padding:0 10px;
+}
+.statistics table thead th:first-child{
+  width: 32px !important;
+}
+.statistics .chart{
+  margin-top: -23px;
+}
+.statistics .leaflets span.active,
+.statistics .leaflets span.active sup{
+  background-color: var(--main-brown-color) !important;
+  color: white !important;
+}
+
+@media (max-width: 1600px) {
+  .my-account .leftSide > div h2 {
+    font-size: 30px;
+  }
+
+  .my-account .leftSide .account-info label {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .my-account .notifications li p,
+  .my-account .notifications li span {
+    font-size: 14px !important;
+  }
+
+  .my-account table th,
+  .my-account table td {
+    height: 50px ;
+    line-height: 48px ;
+    font-size: 14px ;
+  }
+}
+
+@media (max-width: 991.95px) {
+  .my-account .sidebar {
+    padding: 40px 0;
+  }
+
+  .container {
+    max-width: 90%;
+  }
+
+  .my-account .sidebar .account-info .img {
+    width: 90px;
+    height: 90px;
+    line-height: 85px;
+    font-size: 14px;
+  }
+
+  .sidebar ul li {
+    padding: 10px 0;
+    font-size: 14px !important;
+  }
+
+  .statistics .steps span {
+    background: #d9d9d9;
+    height: 26px;
+    /* width: 138px; */
+    width: auto !important;
+    padding:0 5px ;
+    line-height: 26px;
+    margin-left: 9px;
+    font-size: 12px;
     white-space: nowrap;
-    font-size: 18px;
-    font-family: var(--main-font-bold);;
+  }
 }
 
-.my-account  table td {
-    color: #7E7E7E;
-}
+@media (max-width: 768.95px) {
+  .container {
+    max-width: 100%;
+  }
 
-.my-account .my-order  table tbody tr:nth-child(odd) {
-    background: #F3F3F3;
-}
-.my-account .bills  table tbody tr:nth-child(odd) {
-    background: #F1F1F1;
-}
+  .my-account .leftSide > div h2 {
+    font-size: 22px;
+  }
 
-.my-account  table tbody tr:nth-child(even) {
-    background: white;
-}
+  .my-account .overlay {
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 85%);
+  }
 
-
-@media (max-width:1600px) {
-    .my-account .leftSide>div h2 {
-        font-size: 30px;
-    }
-
-    .my-account .leftSide .account-info label {
-        font-size: 12px;
-        margin-bottom: 6px;
-    }
-
-    .my-account .notifications li p,
-    .my-account .notifications li span {
-        font-size: 14px !important;
-    }
-
-    .my-account  table th,
-    .my-account table td {
-        height: 50px;
-        line-height: 48px;
-        font-size: 14px;
-    }
-}
-
-
-@media (max-width:991.95px) {
-    .my-account .sidebar {
-        padding: 40px 0;
-    }
-
-    .container {
-        max-width: 90%;
-    }
-
-    .my-account .sidebar .account-info .img {
-        width: 90px;
-        height: 90px;
-        line-height: 85px;
-        font-size: 14px;
-    }
-
-    .sidebar ul li {
-        padding: 10px 0;
-        font-size: 14px !important;
-    }
-}
-
-@media (max-width:768.95px) {
-    .container {
-        max-width: 100%;
-    }
-
-    .my-account .leftSide>div h2 {
-        font-size: 22px;
-    }
-
-    .my-account .overlay {
-        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 85%);
-    }
-
-    .my-account .leftSide .account-info input {
-        height: 30px;
-        margin-bottom: 20px;
-    }
-.my-account form,
-.my-account .notifications ul,
-.my-order .table-responsive ,
-.bills .table-responsive{
+  .my-account .leftSide .account-info input {
+    height: 30px;
+    margin-bottom: 20px;
+  }
+  .my-account form,
+  .my-account .notifications ul,
+  .my-order .table-responsive,
+  .bills .table-responsive {
     margin: 0;
+  }
+  .my-account .notifications ul {
+    width: 100%;
+    font-size: 16px;
+    overflow: auto;
+  }
+
+  .my-account .notifications li {
+    padding: 15px;
+    height: auto;
+  }
+
+  .my-account .notifications li::before {
+    right: 10px;
+  }
+
+  .my-account .notifications li p,
+  .my-account .notifications li span {
+    margin-right: 14px;
+  }
 }
-    .my-account .notifications ul {
-        width: 100%;
-        font-size: 16px;
-        overflow: auto;
-    }
 
-    .my-account .notifications li {
-        padding: 15px;
-        height: auto;
-    }
+@media (max-width: 575.95px) {
+  .col-sm-4 {
+    width: calc((100% / 12) * 5);
+  }
 
-    .my-account .notifications li::before {
-        right: 10px;
-    }
+  .col-sm-8 {
+    width: calc((100% / 12) * 7);
+  }
 
-    .my-account .notifications li p,
-    .my-account .notifications li span {
-        margin-right: 14px;
-    }
+  .my-account .sidebar .logout {
+    width: auto;
+    margin-top: 150px;
+    font-size: 13px;
+  }
 
+  .my-account .leftSide .account-info button {
+    height: 33px;
+    font-size: 14px;
+  }
+
+  .my-account .sidebar .account-info .img {
+    width: 75px;
+    height: 75px;
+    line-height: 70px;
+    font-size: 12px;
+  }
+
+  .my-account .sidebar span {
+    font-size: 10px;
+  }
+
+  .sidebar ul li {
+    padding: 5px 0;
+    font-size: 12px !important;
+  }
+
+  .my-account .leftSide {
+    padding-top: 75px;
+  }
+
+  .my-account .notifications li p {
+    margin-right: 6px;
+  }
+
+  .my-account .notifications li p,
+  .my-account .notifications li span {
+    font-size: 11px !important;
+  }
+
+  .my-account .notifications li::before {
+    width: 8px;
+    height: 8px;
+  }
+
+  .my-account table th,
+  .my-account table td {
+    height: 30px;
+    line-height: 28px;
+    font-size: 11px;
+  }
+  .statistics .leaflets span {
+    width: 100%;
+    font-size: 12px;
+    margin: 0;
+    border-bottom: 1px solid #eee;
+    text-align: right !important;
+    padding: 5px;
+    line-height: unset;
 }
-
-@media (max-width:575.95px) {
-    .col-sm-4 {
-        width: calc((100% / 12)*5);
-    }
-
-    .col-sm-8 {
-        width: calc((100% / 12)*7);
-    }
-
-    .my-account .sidebar .logout {
-        width: auto;
-        margin-top: 150px;
-        font-size: 13px;
-    }
-
-    .my-account .leftSide .account-info button {
-        height: 33px;
-        font-size: 14px;
-    }
-
-    .my-account .sidebar .account-info .img {
-        width: 75px;
-        height: 75px;
-        line-height: 70px;
-        font-size: 12px;
-    }
-
-    .my-account .sidebar span {
-        font-size: 10px;
-    }
-
-    .sidebar ul li {
-        padding: 5px 0;
-        font-size: 12px !important;
-    }
-
-    .my-account .leftSide {
-        padding-top: 75px;
-    }
-
-    .my-account .notifications li p {
-        margin-right: 6px;
-    }
-
-    .my-account .notifications li p,
-    .my-account .notifications li span {
-        font-size: 11px !important;
-    }
-
-    .my-account .notifications li::before {
-        width: 8px;
-        height: 8px;
-    }
-
-    .my-account  table th,
-    .my-account  table td {
-        height: 30px;
-        line-height: 28px;
-        font-size: 11px;
-    }
+.statistics .leaflets span sup{
+  top: 5px;
+  left: 5px;
+  text-align: center;
+}
+.statistics .chart{
+  margin-top: 20px;
+}
 }
