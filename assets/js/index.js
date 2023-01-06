@@ -1,8 +1,6 @@
 $(document).ready(function () {
     $(".home-header-slider").owlCarousel({
         autoplay: true,
-        animateIn: 'fadeIn',
-        animateOut: 'fadeOut',
         smartSpeed: 800,
         dots: true,
         mouseDrag: true,
@@ -13,8 +11,6 @@ $(document).ready(function () {
     }) ;
     $(".about-us-slider").owlCarousel({
         autoplay: true,
-        animateIn: 'fadeIn',
-        animateOut: 'fadeOut',
         smartSpeed: 800,
         dots: true,
         mouseDrag: true,
