@@ -279,8 +279,142 @@
     background-color: #C76E61;
 
 }
+
 .advantages .item:hover {
     box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
     border-radius: 11.8779px;
     transition: 0.5s all ease-in-out;
+}
+
+.our-services-goals h2 {
+    font-weight: 500;
+    font-size: 27.35px;
+    line-height: 45px;
+    color: #628CA5;
+}
+
+.our-services-goals {
+    background-color: #F3F3F3;
+    padding-top: 132px;
+    padding-bottom: 8rem;
+    transform: skewY(-4deg);
+}
+.transform7deg{
+    transform: skewY(4deg);
+}
+.transform-7deg{
+    transform: skewY(-4deg);
+}
+.our-services-goals p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17.5px;
+    line-height: 28px;
+    text-align: right;
+    color: #5B5B5B;
+}
+
+.our-services-goals .item {
+    background: #FDFDFD;
+    box-shadow: 0px 3.87815px 5.81723px rgba(0, 0, 0, 0.25);
+    border-radius: 42.6597px;
+    padding: 38px 82px 54px 35px;
+    margin: 12px;
+}
+.custom-border-radius{
+    position: absolute;
+    top: 9px;
+    bottom: 0;
+    left: -20px;
+    background-image: url(../images/home/shape-radius.svg);
+    background-repeat: no-repeat;
+    width: 38%;
+    background-size: cover;
+}
+.our-services-goals img {
+    width: 293.53px;
+    height: 295.14px
+}
+
+
+.our-services-goals .owl-theme .owl-dot span {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 2px solid #628CA5;
+}
+
+.our-services-goals .owl-theme .owl-dots .owl-dot.active span {
+    background: #628CA5;
+    border: 2px solid #628CA5;
+
+}
+.our-services-goals .owl-theme .owl-dots{
+    position: absolute;
+    bottom: 43px;
+    right: 90px;
+}
+.ellipse-sec
+ {
+    width: 20rem;
+    height: 10rem;
+    background: #EDD2CE;
+    opacity: 0.6;
+    border-radius: 10rem 10rem 0 0;
+    position: absolute;
+    top: -135px;
+    transform: rotate(-5.4deg);
+    right: 3%;
+}
+.mt-10rem{
+    margin-top: 10rem;
+}
+.our-gaols{
+    padding: 100px 20px;
+}
+.our-gaols h2{
+    font-size: 42.74px;
+    line-height: 50px;
+    color: #C76E61;
+    font-weight: bold;
+}
+.our-gaols::after{
+    content: '';
+    width: 20rem;
+    height: 10rem;
+    background: #C76E61;
+    opacity: 0.6;
+    border-radius: 10rem 10rem 0 0;
+    position: absolute;
+    top: -135px;
+    transform: rotate(-5.4deg);
+    right: 3%;
+}
+.statics{
+    background-color: #F5F5F5;
+    background-image: url("../images/home/arrow.svg");
+    padding: 86px 30px;
+}
+.statics span{
+    font-weight: 700;
+    font-size: 42.74px;
+    line-height: 55px;
+    color: #2A335C;
+}
+.statics h5{
+    font-weight: 700;
+    font-size: 27.35px;
+    line-height: 55px;
+    color: #2A335C;
+}
+.statics .item{
+    margin-bottom: 50px;
+}
+.statics-header{
+    margin-bottom: 80px;
+}
+.statics-header h2{
+    color: #C76E61;
+    font-size: 42px;
+    font-weight: 700;
 }
