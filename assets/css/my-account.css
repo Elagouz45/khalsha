@@ -54,7 +54,14 @@
   height: 87px;
   width: 99px;
 }
-
+.my-account .sidebar .statistics .img {
+  height: 102px;
+  width: 102px;
+}
+.my-account .sidebar .settlement .img {
+  height: 70px;
+  width: 90px;
+}
 .my-account .sidebar span {
   font-size: 14px;
   color: #5b5b5b;

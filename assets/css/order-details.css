@@ -413,6 +413,31 @@
 
 }
 
+.modal.order p{
+    margin-bottom: 17px;
+}
+.modal.order p.text-main-brown{
+    font-size: 14px;
+    margin-top: 7px;
+}
+.modal.order hr{
+    width: 193px;
+background:  #5B5B5B;
+height: 2px;
+}
+.modal.order .modal-dialog{
+    max-width: 55% !important;
+}
+.modal.order .modal-header button{
+    left: -1px;
+    border-radius: 0;
+}
+.modal.order  .w-60{
+    width: 60%;
+}
+.modal.order  .w-40{
+    width: 40%;
+}
 @media (max-width:1600px) {
     .fs-18 {
         font-size: 14px !important;
