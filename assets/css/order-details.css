@@ -352,18 +352,27 @@
 
 }
 
-.order-status .form.card {
+.order-status .form.card,
+.bill .form.card {
     padding: 34px 60px;
     margin-top: 104px;
 }
 
 .order-status .form.card,
-.order-status .form.card input {
+.order-status .form.card input,
+.bill .form.card,
+.bill .form.card input {
     border: 1px solid var(--gray-bold-color);
 }
-.order-status .form.card .d-flex{
+
+.bill .form.card .d-flex input:not(.notes) {
+    margin-right: 40px;
+}
+
+.order-status .form.card .d-flex {
     margin-bottom: 52px;
 }
+
 .order-status .form.card .confirm,
 .order-status .form.card .upload {
     height: 41px;
@@ -378,25 +387,32 @@
 
 .order-status .form.card .upload {
     background: #F0F0F0;
-    color:  #8D8D8D;
+    color: #8D8D8D;
 }
-.order-status .form.card input{
+
+.order-status .form.card .d-flex,
+.bill .form.card .d-flex {
     margin-bottom: 37px;
 }
-.order-status .form.card ::placeholder{
+
+.order-status .form.card ::placeholder,
+.bill .form.card ::placeholder {
     color: #AAAAAA;
 }
-.order-status .form.card .transition{
+
+.order-status .form.card .transition,
+.bill .form.card .transition {
     bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     height: 41px;
-width: 210px;
-background: #9E9E9E;
-border-radius: 6px;
-font-size: 18px;
+    width: 210px;
+    background: #9E9E9E;
+    border-radius: 6px;
+    font-size: 18px;
 
 }
+
 @media (max-width:1600px) {
     .fs-18 {
         font-size: 14px !important;
@@ -426,9 +442,12 @@ font-size: 18px;
         width: 81% !important;
     }
 
-    .bill .w-50 {
+    .bill .w-50.position-relative,
+    .order-status .form.card ,
+    .bill .form.card{
         width: 80% !important;
     }
+
 }
 
 @media (max-width:767.95px) {
@@ -535,5 +554,26 @@ font-size: 18px;
         font-size: 16px !important;
         width: 270px !important;
         height: 42px !important;
+    }
+
+    .order-status .form.card,
+    .bill .form.card {
+        width: 95% !important;
+        padding: 30px;
+        margin-bottom: 70px;
+    }
+
+    .order-status .form.card .transition,
+    .bill .form.card .transition {
+        bottom: -16px;
+        height: 35px;
+        width: 180px;
+        font-size: 14px;
+    }
+    .bill .w-50.position-relative{
+        width: 95% !important;
+    }
+    .bill .form.card .d-flex input:not(.notes) {
+        margin-right: 15px;
     }
 }
