@@ -138,6 +138,90 @@ a{
     box-shadow: 0px 4.21636px 16px rgba(0, 0, 0, 0.25);
 border-radius: 32px;
 }
+/*footer*/
+footer {
+    background-color: #628CA5;
+    padding-top: 60px;
+}
+
+footer p {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+}
+
+footer .list-none li {
+    list-style-type: none;
+    white-space: nowrap;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+footer .header {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+.brand-icon .fa-brands {
+    font-size: 28px;
+}
+
+footer .footer-bottom {
+    background-color: #828282;
+    text-align: center;
+    padding: 25px;
+}
+
+footer .footer-bottom span {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 17.5px;
+    line-height: 29px;
+    /* identical to box height */
+
+    text-align: center;
+}
+
+.fa-google-play {
+    font-size: 40px;
+}
+
+footer .item-brand {
+    border: 2px solid #FFFFFF;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+footer .fa-apple {
+    font-size: 40px;
+}
+/*navbar styles*/
+.navbar .nav-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21.88px;
+    line-height: 36px;
+    color: #456071;
+}
+
+.navbar .nav-link.active {
+    color: #C76E61;
+}
+
+.navbar {
+    padding: 30px;
+}
+
+/*end navbar */
+
 @media (max-width:1600px) {
      h1 {
         font-size: 30px;

@@ -21,9 +21,6 @@
 .navbar{
     background: #F5F5F5;
 }
-.resources .resources-khalasha {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 86.6426%);
-}
 
 .resources .resources-khalasha h1 {
     color: #C76E61;
@@ -57,6 +54,21 @@
     border-radius: 15px;
      padding: 0px 25px 28px 25px;
 }
+ .resources-cards{
+     padding: 80px;
+     margin-top: -171px;
+ }
+ .resources::after{
+     border-top: 191px solid #f5f5f5;
+     border-left: 319pc solid transparent;
+     border-right: 79px solid transparent;
+     content: "";
+     height: 0;
+     left: 0;
+     position: absolute;
+     width: 100%;
+     z-index: -4;
+ }
  .resources-cards .item p{
      font-weight: 500;
      font-size: 14px;
@@ -105,11 +117,41 @@
 .transform-7deg {
     transform: skewY(-4deg);
 }
+.resources-cards .item:hover * {
+    transform: translateY(-10px);
+    transition: 0.75s all ease-in-out;
+}
+.resources-cards .item:hover .icon-header{
+    transform: translateY(-10px);
+    transition: 0.75s all ease-in-out;
+}
+.resources-cards .item:hover .icon-header img{
+    transform: translateY(10px);
+    transition: 0.75s all ease-in-out;
+}
+.resources-cards .item:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+    transition: 0.75s all ease-in-out;
+}
 
-
-
-
-
+.section-bg{
+    width: 100%;
+    height: 50vh;
+    background-color: #f5f5f5;
+    position: relative;
+}
+.section-bg::before {
+    border-bottom: 191px solid #f5f5f5;
+    border-left: 100vw solid transparent;
+    border-right: 79px solid transparent;
+    content: "";
+    height: 0;
+    left: 0;
+    position: absolute;
+    top: -191px;
+    width: 100%;
+    z-index: -4;
+}
 /*footer*/
 footer {
     background-color: #628CA5;
