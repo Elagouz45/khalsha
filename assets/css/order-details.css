@@ -70,7 +70,7 @@
 .account-details .order-informations button,
 .account-details .offers button,
 .account-details .order-status button:not(.transition),
-.account-details .bill button.first,
+.account-details .bill button,
 .creation-offer-price button:not(.add-term) {
     width: 189px;
     height: 43px;
@@ -99,7 +99,7 @@
 }
 
 .account-details .btn.back {
-    border-radius: 6px;
+    border-radius: 6px !important;
 }
 
 .account-details table {
@@ -129,6 +129,9 @@
     width: 85%;
 }
 
+.offers table tr td:last-child {
+    cursor: pointer;
+}
 
 .slideouter {
     margin: 52px auto;
@@ -188,10 +191,13 @@
 
 .srcl .circle span,
 .create-offer,
+.create-offer:hover,
+.create-offer:focus,
 .account-details .steper .steps span,
 .account-details .btn.back,
 .srcl .circle::after {
-    background-color: #D9D9D9;
+    border: 0 !important;
+    background-color: #D9D9D9 !important;
 }
 
 .srcl .circle.done span {
@@ -342,14 +348,16 @@
     line-height: 0;
 }
 
-.modal-footer .aggree {
-    background: #9E9E9E;
+.modal-footer .aggree ,
+.modal-footer .aggree:hover,
+.modal-footer .aggree:focus{
+    background: #9E9E9E !important;
     border-radius: 6px;
     transform: translateX(-50%);
-    height: 41px;
+    height: 41px !important;
     width: 143px;
     bottom: -20px;
-
+    border: 0 !important;
 }
 
 .order-status .form.card,
@@ -413,31 +421,109 @@
 
 }
 
-.modal.order p{
+.modal.order p {
     margin-bottom: 17px;
 }
-.modal.order p.text-main-brown{
+
+.modal.order p.text-main-brown {
     font-size: 14px;
     margin-top: 7px;
 }
-.modal.order hr{
+
+.modal.order hr.min {
     width: 193px;
-background:  #5B5B5B;
-height: 2px;
+    background: #5B5B5B;
+    height: 2px;
 }
-.modal.order .modal-dialog{
+.modal.order .modal-body h2{
+    font-size: 28px;
+}
+.modal.order .modal-dialog {
     max-width: 55% !important;
 }
-.modal.order .modal-header button{
+
+.modal.order .modal-header button {
     left: -1px;
     border-radius: 0;
 }
-.modal.order  .w-60{
+
+.modal.order .w-60 {
     width: 60%;
 }
-.modal.order  .w-40{
+
+.modal.order .w-40 {
     width: 40%;
 }
+
+.modal.order .rates {
+    border: 1px solid var(--main-blue-color);
+    padding: 0 35px;
+    margin-top: 67px;
+}
+
+.modal.order .rates p.opinions {
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0px 20px;
+    font-size: 18px;
+    top: -20px;
+    height: 39px;
+    line-height: 39px;
+}
+
+.modal.order .rates .rate {
+    overflow: auto;
+    height: 203px;
+    border-left: 1px solid #5B5B5B;
+    border-right: 1px solid #5B5B5B;
+    padding: 0 14px;
+}
+
+.modal.order .rates .rate::-webkit-scrollbar {
+    width: 4px;
+}
+
+.modal.order .rates .rate::-webkit-scrollbar-thumb {
+    background-color: #5B5B5B;
+    border-radius: 0 !important;
+}
+
+.modal.order .rate .desc-rate {
+    font-size: 12px;
+}
+
+.modal.order .rate .name,
+.modal.order .col-12 p {
+    font-size: 14px;
+}
+
+.modal.order .col-12 {
+    margin-top: 70px;
+}
+
+.modal.order .col-12 input {
+    width: 24px;
+    height: 24px;
+}
+
+.modal.order .col-12 p {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 11px;
+}
+
+.modal.order .modal-footer button {
+    background: #9E9E9E;
+    font-size: 18px;
+    width: 143px;
+}
+
+.modal.order .trella{
+    height:190px;
+     width:375px;
+     max-width: 100%;
+}
+
 @media (max-width:1600px) {
     .fs-18 {
         font-size: 14px !important;
@@ -446,7 +532,7 @@ height: 2px;
     .account-details .order-informations button,
     .account-details .offers button,
     .account-details .order-status button:not(.transition),
-    .account-details .bill button.first {
+    .account-details .bill button {
         width: 160px;
     }
 
@@ -460,6 +546,11 @@ height: 2px;
         bottom: -19px;
         font-size: 16px;
     }
+
+    .modal.order .modal-body h2{
+        font-size: 25px;
+    }
+
 }
 
 @media (max-width:991.95px) {
@@ -468,11 +559,16 @@ height: 2px;
     }
 
     .bill .w-50.position-relative,
-    .order-status .form.card ,
-    .bill .form.card{
+    .order-status .form.card,
+    .bill .form.card {
         width: 80% !important;
     }
-
+    .modal.order .modal-body h2 {
+        font-size: 18px;
+    }
+    .modal.order .modal-dialog {
+        max-width: 85% !important;
+    }
 }
 
 @media (max-width:767.95px) {
@@ -595,10 +691,33 @@ height: 2px;
         width: 180px;
         font-size: 14px;
     }
-    .bill .w-50.position-relative{
+
+    .bill .w-50.position-relative {
         width: 95% !important;
     }
+
     .bill .form.card .d-flex input:not(.notes) {
         margin-right: 15px;
+    }
+    .modal.order .col-12 input {
+        width: 14px;
+        height: 14px;
+    }
+    .modal.order .rates{
+        padding: 0 15px;
+    }
+    .modal.order .rates,
+    .modal.order .col-12 {
+        margin-top: 10px;
+    }
+    .modal.order .col-12{
+        margin-bottom: 1.5rem;
+    }
+    .modal.order .col-12 p{
+        font-size: 12px;
+    }
+    .modal.order .modal-footer button {
+        font-size: 15px;
+        width: 100px;
     }
 }

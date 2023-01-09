@@ -66,7 +66,12 @@
   font-size: 14px;
   color: #5b5b5b;
 }
-
+select {
+  word-wrap: normal;
+  font-size: 14px;
+  color: #5B5B5B;
+  background: none;
+}
 .my-account .sidebar ul {
   margin-top: 30px;
 }
