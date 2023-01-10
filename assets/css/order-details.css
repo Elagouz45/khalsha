@@ -171,7 +171,7 @@
 }
 
 .srcl .circle.done::after {
-    background-color: var(--main-blue-color);
+    background-color: var(--main-blue-color) !important;
 }
 
 .srcl .circle:nth-child(even)::after {
@@ -201,11 +201,11 @@
 }
 
 .srcl .circle.done span {
-    background-color: var(--main-blue-color);
+    background-color: var(--main-blue-color) !important;
 }
 
 .srcl .circle.inproccess span {
-    background-color: var(--main-brown-color);
+    background-color: var(--main-brown-color) !important;
 }
 
 .srcl .circle p {
@@ -298,19 +298,22 @@
 }
 
 .bill .bill-download {
-    width: 148px;
+    width: 148px !important;
+    border-radius: 0 !important;
 }
 
 .bill .bill-download,
 .bill-paper span.total-bill,
 .creation-offer-price span.total-bill {
     border: 1px solid var(--gray-bold-color);
-    height: 31px;
-    line-height: 28px;
+    height: 31px !important;
+    line-height: 28px !important;
 }
 
 .bill-download {
-    margin-top: 36px;
+    margin-top: 36px !important;
+    display: block;
+    text-align: center;
 }
 
 .bill-paper span.total-bill,
@@ -532,7 +535,8 @@
     .account-details .order-informations button,
     .account-details .offers button,
     .account-details .order-status button:not(.transition),
-    .account-details .bill button {
+    .account-details .bill button ,
+    .account-details .bill a{
         width: 160px;
     }
 

@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حسابي</title>
     <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="./../../assets/css/shared-style.css">
     <link rel="stylesheet" href="./../../assets/css/settlementation-form.css">
 </head>
@@ -41,8 +44,16 @@
                         <form>
 
                             <label class="text-bold-gray fs-18 font-bold">عنوان البريد الإلكتروني</label>
-                            <div class="input-group mb-2 mr-sm-2">
+                            <div class="input-group mb-2 mr-sm-2 position-relative">
+
+                                <div class="position-absolute check-square right">
+                                    <i class="fa-regular fs-4 fa-square-check"></i>
+                                </div>
+
                                 <input type="text" class="form-control rounded-0 ">
+                                <div class="position-absolute check-square left">
+                                    @
+                                </div>
                             </div>
 
 
@@ -56,12 +67,21 @@
 
                                 <input type="text" class="form-control fs-18 text-center w-50 rounded-0 "
                                     placeholder="رقم البطاقة">
+                                    <div class="position-absolute fa-card left">
+                                        <i class="fa-solid fa-id-card"></i>
+                                    </div>
                             </div>
 
 
                             <label class="text-bold-gray fs-18 font-bold"> اسم صاحب البطاقة </label>
                             <div class="input-group mb-2 mr-sm-2">
+                                <div class="position-absolute exclamation  right">
+                                    <i class="fa-solid fa-exclamation"></i>
+                                </div>
                                 <input type="text" class="form-control rounded-0 ">
+                                <div class="position-absolute user left">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
                             </div>
 
 

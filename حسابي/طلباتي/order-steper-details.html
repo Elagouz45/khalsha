@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حسابي</title>
     <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="./../../assets/css/shared-style.css">
     <link rel="stylesheet" href="./../../assets/css/order-details.css">
+
 </head>
 
 <body>
@@ -22,7 +26,7 @@
         <section class="position-relative header" style="z-index: 3;">
             <div class="container d-flex justify-content-between  align-items-center  ">
                 <p class="font-bold text-black">
-                    <img src="./../../assets/images/Vector (11).png" >
+                    <img src="./../../assets/images/Vector (11).png">
                     طلب رقم #1465
                 </p>
                 <p class="font-bold text-black">/ شركة الرياض</p>
@@ -35,11 +39,14 @@
             <div class="container ">
 
                 <div class="steps m-auto  d-flex justify-content-center align-items-center overflow-auto">
-                    <span data-target="order-describtion" class="active text-bold-gray text-center text-nowrap font-bold">وصف الطلب</span>
+                    <span data-target="order-describtion"
+                        class="active text-bold-gray text-center text-nowrap font-bold">وصف الطلب</span>
                     <span></span>
-                    <span data-target="offers" class="text-bold-gray text-center text-nowrap font-bold">عروض أسعار</span>
+                    <span data-target="offers" class="text-bold-gray text-center text-nowrap font-bold">عروض
+                        أسعار</span>
                     <span></span>
-                    <span data-target="order-status" class="text-bold-gray text-center text-nowrap font-bold" onclick="changeOrderStatus()">حالة الطلب</span>
+                    <span data-target="order-status" class="text-bold-gray text-center text-nowrap font-bold"
+                        onclick="changeOrderStatus()">حالة الطلب</span>
                     <span></span>
                     <span data-target="bill" class="text-bold-gray text-center text-nowrap font-bold">الفاتورة</span>
                 </div>
@@ -144,7 +151,7 @@
                                     <span class=" fs-18 text-nowrap w-50">نعم </span>
                                 </p>
 
-                             
+
 
                                 <p class="d-flex justify-content-evenly text-bold-gray">
                                     <span class=" fs-18 text-nowrap font-bold w-50">خدمة التركيب</span>
@@ -170,7 +177,8 @@
                         </div>
 
                         <div class="w-75 m-auto">
-                            <button class="btn d-block back fs-18 me-auto font-bold text-bold-gray" onclick="navigation('offers')">الــعــروض</button>
+                            <button class="btn d-block back fs-18 me-auto font-bold text-bold-gray"
+                                onclick="navigation('offers')">الــعــروض</button>
                         </div>
 
                     </div>
@@ -185,10 +193,18 @@
 
                                     <thead class="text-center font-bold">
                                         <tr>
-                                            <th scope="col" class="text-bold-gray text-nowrap text-center border-gray fs-18"> المستخدم</th>
-                                            <th scope="col" class="text-bold-gray text-nowrap text-center border-gray fs-18">الحالة </th>
-                                            <th scope="col" class="text-bold-gray text-nowrap text-center border-gray fs-18">إجمالي الفاتورة</th>
-                                            <th scope="col" class="text-bold-gray text-nowrap text-center border-gray fs-18">---</th>
+                                            <th scope="col"
+                                                class="text-bold-gray text-nowrap text-center border-gray fs-18">
+                                                المستخدم</th>
+                                            <th scope="col"
+                                                class="text-bold-gray text-nowrap text-center border-gray fs-18">الحالة
+                                            </th>
+                                            <th scope="col"
+                                                class="text-bold-gray text-nowrap text-center border-gray fs-18">إجمالي
+                                                الفاتورة</th>
+                                            <th scope="col"
+                                                class="text-bold-gray text-nowrap text-center border-gray fs-18">---
+                                            </th>
                                         </tr>
                                     </thead>
 
@@ -200,7 +216,8 @@
                                             <td class="text-nowrap text-center fs-18">2000 ريال</td>
                                             <td class="text-nowrap text-center fs-18">انتظار</td>
                                             <td class="text-nowrap text-center fs-18">
-                                                <a class="text-main-brown" data-bs-toggle="modal" data-bs-target="#staticBackdrop">عرض</a>
+                                                <a class="text-main-brown" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop">عرض</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -208,7 +225,8 @@
                                             <td class="text-nowrap text-center fs-18">2100 ريال</td>
                                             <td class="text-nowrap text-center fs-18">انتظار</td>
                                             <td class="text-nowrap text-center fs-18">
-                                                <a class="text-main-brown" data-bs-toggle="modal" data-bs-target="#staticBackdrop">عرض</a>
+                                                <a class="text-main-brown" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop">عرض</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -216,7 +234,8 @@
                                             <td class="text-nowrap text-center fs-18">2200 ريال</td>
                                             <td class="text-nowrap text-center fs-18">انتظار</td>
                                             <td class="text-nowrap text-center fs-18">
-                                                <a class="text-main-brown" data-bs-toggle="modal" data-bs-target="#staticBackdrop">عرض</a>
+                                                <a class="text-main-brown" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop">عرض</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -224,7 +243,8 @@
                                             <td class="text-nowrap text-center fs-18">2300 ريال</td>
                                             <td class="text-nowrap text-center fs-18">انتظار</td>
                                             <td class="text-nowrap text-center fs-18">
-                                                <a class="text-main-brown" data-bs-toggle="modal" data-bs-target="#staticBackdrop">عرض</a>
+                                                <a class="text-main-brown" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop">عرض</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -232,7 +252,8 @@
                                             <td class="text-nowrap text-center fs-18">2400 ريال</td>
                                             <td class="text-nowrap text-center fs-18">انتظار</td>
                                             <td class="text-nowrap text-center fs-18">
-                                                <a class="text-main-brown" data-bs-toggle="modal" data-bs-target="#staticBackdrop">عرض</a>
+                                                <a class="text-main-brown" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop">عرض</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -240,7 +261,8 @@
                                             <td class="text-nowrap text-center fs-18">2400 ريال</td>
                                             <td class="text-nowrap text-center fs-18">انتظار</td>
                                             <td class="text-nowrap text-center fs-18">
-                                                <a class="text-main-brown" data-bs-toggle="modal" data-bs-target="#staticBackdrop">عرض</a>
+                                                <a class="text-main-brown" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop">عرض</a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -248,7 +270,8 @@
                                             <td class="text-nowrap text-center fs-18">2400 ريال</td>
                                             <td class="text-nowrap text-center fs-18">انتظار</td>
                                             <td class="text-nowrap text-center fs-18">
-                                                <a class="text-main-brown" data-bs-toggle="modal" data-bs-target="#staticBackdrop">عرض</a>
+                                                <a class="text-main-brown" data-bs-toggle="modal"
+                                                    data-bs-target="#staticBackdrop">عرض</a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -258,9 +281,11 @@
                         </div>
 
                         <div class="w-75 m-auto buttons flex-wrap justify-content-evenly d-flex">
-                            <button class="btn d-block back fs-18 text-bold-gray font-bold" onclick="navigation('order-describtion')">وصف الطلب
+                            <button class="btn d-block back fs-18 text-bold-gray font-bold"
+                                onclick="navigation('order-describtion')">وصف الطلب
                             </button>
-                            <button class="btn d-block back fs-18 text-bold-gray font-bold" onclick="navigation('order-status');changeOrderStatus()">حالة الطلب</button>
+                            <button class="btn d-block back fs-18 text-bold-gray font-bold"
+                                onclick="navigation('order-status');changeOrderStatus()">حالة الطلب</button>
                         </div>
                     </div>
                 </div>
@@ -312,8 +337,10 @@
                             <h5 class="text-main-brown position-relative font-bold">حالة استلام التفويض</h5>
                         </div>
                         <div class="w-75 m-auto buttons justify-content-between d-flex">
-                            <button class="btn d-block back fs-18 text-bold-gray font-bold" onclick="navigation('offers')"> عروض الاسعار </button>
-                            <button class="btn d-block back fs-18 text-bold-gray font-bold" onclick="navigation('bill')"> الفاتورة</button>
+                            <button class="btn d-block back fs-18 text-bold-gray font-bold"
+                                onclick="navigation('offers')"> عروض الاسعار </button>
+                            <button class="btn d-block back fs-18 text-bold-gray font-bold"
+                                onclick="navigation('bill')"> الفاتورة</button>
                         </div>
                     </div>
                 </div>
@@ -322,7 +349,9 @@
                     <div>
                         <button class="btn first text-main-brown d-block mx-auto border-gray"> الفاتورة </button>
                         <div class="w-50 m-auto position-relative">
-                            <button class="font-bold bill-download">تحميل الفاتورة</button>
+                            <a class="font-bold text-bold-gray  bill-download" onclick="autoclick()">
+                                <i class="fa-solid fa-circle-arrow-down"></i>
+                                تحميل الفاتورة</a>
 
                             <div class="bill-paper position-relative bg-white">
                                 <h2 class="font-bold text-center position-relative text-main-brown">فاتورة طلب رقم #1465
@@ -356,11 +385,13 @@
                                     <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">رقم بيان الإستيراد</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">رقم بيان
+                                        الإستيراد</span>
                                     <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">تاريخ بيان الإستيراد</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray">تاريخ بيان
+                                        الإستيراد</span>
                                     <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
                                 </div>
 
@@ -368,13 +399,14 @@
                                  font-bold text-center" style="margin-bottom: 14px;">إجمالي الفاتورة</span>
                                 <div class="w-50 me-auto">
                                     <span class=" d-block  m-auto fs-18
-                                 font-bold text-center total-bill ">2100  ريال </span>
+                                 font-bold text-center total-bill ">2100 ريال </span>
                                 </div>
                             </div>
 
                         </div>
                         <div class="w-75 mx-auto button-back" style="margin-top: 147px;">
-                            <button class="btn d-block back fs-18 text-bold-gray font-bold" onclick="navigation('order-status');changeOrderStatus()">حالة الطلب</button>
+                            <button class="btn d-block back fs-18 text-bold-gray font-bold"
+                                onclick="navigation('order-status');changeOrderStatus()">حالة الطلب</button>
                         </div>
                     </div>
                 </div>
@@ -386,126 +418,131 @@
     </div>
 
 
-      <!-- Modal -->
-  <div class="modal order fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog mx-auto modal-dialog-centered">
+    <!-- Modal -->
+    <div class="modal order fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog mx-auto modal-dialog-centered">
 
-      <div class="modal-content rounded-0">
-        <div class="modal-header border-0">
-            <button type="button" class="btn-close bg-main-brown top-0 m-0 position-absolute text-white " data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-        <div class="modal-body ">
-          <div class="row">
-
-            <div class="col-lg-6 col-sm-5 mb-3 ">
-                <img src="./../../assets/images/Trella 1.png" class="trella">
-            </div>
-
-            <div class="col-lg-6 col-sm-7 mb-3 ">
-                <div>
-                    <h2 class="font-bold text-black">سيارة تريلا نقل</h2>
-                    <p class="text-bold-gray">شركة متخصصة في النقل البري</p>
-                    <hr class="min">
-                    <h2 class="font-bold text-white bg-main-brown p-1 m-0">إجمالي السعر 2000 ريال</h2>
-                    <p class="text-main-brown m-0">تنوية هناك رسوم آخرى خلال العملية اللوجستية</p>
+            <div class="modal-content rounded-0">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close bg-main-brown top-0 m-0 position-absolute text-white "
+                        data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            </div>
+                <div class="modal-body ">
+                    <div class="row">
 
-            <div class="col-lg-6 col-sm-5 mb-3">
-              <h4>التقييم</h4>
-              <p>
-                <img src="./../../assets/images/Star 5.png" >
-                <img src="./../../assets/images/Star 5.png" >
-                <img src="./../../assets/images/Star 5.png" >
-                <img src="./../../assets/images/Star 5.png" >
-                <img src="./../../assets/images/Star 5.png" >
-              </p>
-                <p class="d-flex text-bold-gray font-bold border-bottom">
-                    <span class="w-60">الطول</span>
-                    <span class="w-40">20 متر</span>
-                </p>
-                <p class="d-flex text-bold-gray font-bold border-bottom">
-                    <span class="w-60">العرض</span>
-                    <span class="w-40">5 متر</span>
-                </p>
-                <p class="d-flex text-bold-gray font-bold border-bottom">
-                    <span class="w-60">الإرتفاع</span>
-                    <span class="w-40">6 متر</span>
-                </p>
-                <p class="d-flex text-bold-gray font-bold ">
-                    <span class="w-60">أقصي حمولة</span>
-                    <span class="w-40">15 طن</span>
-                </p>
-            </div>
+                        <div class="col-lg-6 col-sm-5 mb-3 ">
+                            <img src="./../../assets/images/Trella 1.png" class="trella">
+                        </div>
 
-            <div class="col-lg-6 col-sm-7 mb-3 ">
-                <div class="rates position-relative">
-                    <p class="position-absolute font-bold mb-0 opinions bg-main-blue text-white">اراء العملاء</p>
-                    <div class="rate py-4">
+                        <div class="col-lg-6 col-sm-7 mb-3 ">
+                            <div>
+                                <h2 class="font-bold text-black">سيارة تريلا نقل</h2>
+                                <p class="text-bold-gray">شركة متخصصة في النقل البري</p>
+                                <hr class="min">
+                                <h2 class="font-bold text-white bg-main-brown p-1 m-0">إجمالي السعر 2000 ريال</h2>
+                                <p class="text-main-brown m-0">تنوية هناك رسوم آخرى خلال العملية اللوجستية</p>
+                            </div>
+                        </div>
 
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-black font-bold">ابو حمزة</span>
+                        <div class="col-lg-6 col-sm-5 mb-3">
+                            <h4>التقييم</h4>
                             <p>
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
+                                <img src="./../../assets/images/Star 5.png">
+                                <img src="./../../assets/images/Star 5.png">
+                                <img src="./../../assets/images/Star 5.png">
+                                <img src="./../../assets/images/Star 5.png">
+                                <img src="./../../assets/images/Star 5.png">
+                            </p>
+                            <p class="d-flex text-bold-gray font-bold border-bottom">
+                                <span class="w-60">الطول</span>
+                                <span class="w-40">20 متر</span>
+                            </p>
+                            <p class="d-flex text-bold-gray font-bold border-bottom">
+                                <span class="w-60">العرض</span>
+                                <span class="w-40">5 متر</span>
+                            </p>
+                            <p class="d-flex text-bold-gray font-bold border-bottom">
+                                <span class="w-60">الإرتفاع</span>
+                                <span class="w-40">6 متر</span>
+                            </p>
+                            <p class="d-flex text-bold-gray font-bold ">
+                                <span class="w-60">أقصي حمولة</span>
+                                <span class="w-40">15 طن</span>
                             </p>
                         </div>
 
-                        <span class="desc-rate text-black ">شركة مرة كويسة لكن تم التأخر في الرد.</span>
-                        <hr>
+                        <div class="col-lg-6 col-sm-7 mb-3 ">
+                            <div class="rates position-relative">
+                                <p class="position-absolute font-bold mb-0 opinions bg-main-blue text-white">اراء
+                                    العملاء</p>
+                                <div class="rate py-4">
 
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-black name font-bold">ابو حمزة</span>
-                            <p>
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
-                            </p>
-                        </div>
-                        <span class="desc-rate text-black">شركة مرة كويسة لكن تم التأخر في الرد.</span>
-                        <hr>
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-black font-bold">ابو حمزة</span>
+                                        <p>
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                        </p>
+                                    </div>
 
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-black name font-bold">عبد الكريم محمد</span>
-                            <p>
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
-                                <img src="./../../assets/images/Star 10.png" >
-                            </p>
+                                    <span class="desc-rate text-black ">شركة مرة كويسة لكن تم التأخر في الرد.</span>
+                                    <hr>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-black name font-bold">ابو حمزة</span>
+                                        <p>
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                        </p>
+                                    </div>
+                                    <span class="desc-rate text-black">شركة مرة كويسة لكن تم التأخر في الرد.</span>
+                                    <hr>
+
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <span class="text-black name font-bold">عبد الكريم محمد</span>
+                                        <p>
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                            <img src="./../../assets/images/Star 10.png">
+                                        </p>
+                                    </div>
+                                    <span class="desc-rate text-black">شركة حلوة كتير وسرعة في التواصل والأداء.</span>
+
+                                </div>
+                            </div>
+
                         </div>
-                        <span class="desc-rate text-black">شركة حلوة كتير وسرعة في التواصل والأداء.</span>
-                        
+
+                        <div class="col-12">
+                            <input type="checkbox">
+                            <p class="text-black ">أقر انا علي قراءتي <span class="font-bold">للشروط والأحكام </span>
+                                والموافقة عليها.</p>
+                        </div>
+
                     </div>
                 </div>
-
-            </div>
-
-            <div class="col-12">
-                <input type="checkbox" >
-                <p class="text-black ">أقر انا علي قراءتي <span class="font-bold">للشروط والأحكام </span>   والموافقة عليها.</p>
-            </div>
-
-          </div>
-        </div>
-        <div class="modal-footer border-0 p-0 position-relative">
-            <div class="buttons position-absolute  justify-content-evenly d-flex  w-100 ">
-                <button class="btn text-white  ">موافقة</button>
-                <button class="btn  text-white " data-bs-dismiss="modal" aria-label="Close">رفض</button>
+                <div class="modal-footer border-0 p-0 position-relative">
+                    <div class="buttons position-absolute  justify-content-evenly d-flex  w-100 ">
+                        <button class="btn text-white  ">موافقة</button>
+                        <button class="btn  text-white " data-bs-dismiss="modal" aria-label="Close">رفض</button>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
     </div>
-  </div>
     <script src="./../../assets/js/jquery-3.6.3.min.js"></script>
     <script src="./../../assets/js/bootstrap.min.js"></script>
     <script src="./../../assets/js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
     <script>
         function changeOrderStatus() {
 
@@ -526,14 +563,16 @@
                 status: 'none'
             }]
 
-            let y = Array.from(document.querySelectorAll('.slideinner .circle'))
-            y.forEach((ele, index) => {
+            let listOfCircles = Array.from(document.querySelectorAll('.slideinner .circle'))
+            listOfCircles.forEach((ele, index) => {
                 ele.classList.add(order_status[index].status);
             });
+
 
         }
 
         function navigation(item1) {
+
             console.log(item1)
             var linksList = Array.from(document.querySelectorAll('.account-details .steper .steps span:nth-child(odd)'));
             var contentList = Array.from(document.querySelectorAll('.account-details .steper .content'));
@@ -556,6 +595,21 @@
                 }
             });
         }
+
+
+        function autoclick() {
+            let ele = $(".bill-paper");
+            html2canvas(ele, {
+                onrendered: function (canvas) {
+                    var imageData = canvas.toDataURL("image/jpg");
+                    var newData = imageData.replace(/^data:image\/jpg/, "data:application/octet-stream");
+                    $(".bill-download").attr("download", "image.jpg").attr("href", newData);
+                }
+            })
+        }
+
+
+
     </script>
 </body>
 

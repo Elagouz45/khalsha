@@ -203,7 +203,9 @@ select {
   font-size: 18px;
   font-family: var(--main-font-bold);
 }
-
+.my-account table tr td:last-child{
+  cursor: pointer;
+}
 .my-account table td,
 .my-account table:hover td {
   color: #7e7e7e;
@@ -315,6 +317,7 @@ select {
   color: white !important;
 }
 
+
 @media (max-width: 1600px) {
   .my-account .leftSide > div h2 {
     font-size: 30px;
@@ -335,6 +338,13 @@ select {
     height: 50px ;
     line-height: 48px ;
     font-size: 14px ;
+  }
+  .statistics .earnings .bg-main-blue div img:not(.total){
+    width: 90px;
+  }
+  
+  .statistics .earnings .bg-main-blue div img.total{
+    width: 70px;
   }
 }
 
@@ -370,6 +380,10 @@ select {
     font-size: 12px;
     white-space: nowrap;
   }
+  .statistics .earnings .bg-main-blue div img:not(.total){
+    width: 80px;
+  }
+  
 }
 
 @media (max-width: 768.95px) {
@@ -413,6 +427,12 @@ select {
   .my-account .notifications li p,
   .my-account .notifications li span {
     margin-right: 14px;
+  }
+  .statistics .earnings .bg-main-blue div img:not(.total){
+    width: 70px;
+  }
+  .statistics .earnings .bg-main-blue div img.total{
+    width: 55px !important;
   }
 }
 
