@@ -75,8 +75,8 @@
   background: #9e9e9e;
   border-radius: 6px;
   transform: translateX(-50%);
-  height: 41px;
-  width: 143px;
+  height: 41px !important;
+  width: 143px !important;
   bottom: -20px;
   left: 50%;
   border: 0;
@@ -84,7 +84,6 @@
 
 .input-group .right {
   right: 18px;
-  left: 0;
   top: 18px;
   z-index: 1;
 }
@@ -128,6 +127,23 @@
   font-size: 16px;
   line-height: 0;
 }
+
+.input-group .left.address {
+  left: 18px;
+  top: 18px;
+  z-index: 1;
+  border-right: 2px solid #9e9e9e;
+  padding-right: 15px;
+  margin-right: 15px;
+}
+.input-group .left.address img{
+  width: 24px;
+  height: 18px;
+}
+.input-group .address-input{
+  padding-left: 70px;
+}
+
 @media (max-width: 1600px) {
   .fs-18 {
     font-size: 14px !important;

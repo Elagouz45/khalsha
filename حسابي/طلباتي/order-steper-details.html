@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حسابي</title>
     <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
@@ -12,6 +11,7 @@
     <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="./../../assets/css/shared-style.css">
     <link rel="stylesheet" href="./../../assets/css/order-details.css">
+    <meta http-equiv="content-type" content="text/html; charset=UTF8">
 
 </head>
 
@@ -26,7 +26,7 @@
         <section class="position-relative header" style="z-index: 3;">
             <div class="container d-flex justify-content-between  align-items-center  ">
                 <p class="font-bold text-black">
-                    <img src="./../../assets/images/Vector (11).png">
+                    <i class="fa-solid fa-right-long"></i>
                     طلب رقم #1465
                 </p>
                 <p class="font-bold text-black">/ شركة الرياض</p>
@@ -178,7 +178,10 @@
 
                         <div class="w-75 m-auto">
                             <button class="btn d-block back fs-18 me-auto font-bold text-bold-gray"
-                                onclick="navigation('offers')">الــعــروض</button>
+                                onclick="navigation('offers')">
+                                الــعــروض
+                                <i class="fa-solid fa-left-long"></i>
+                            </button>
                         </div>
 
                     </div>
@@ -282,10 +285,15 @@
 
                         <div class="w-75 m-auto buttons flex-wrap justify-content-evenly d-flex">
                             <button class="btn d-block back fs-18 text-bold-gray font-bold"
-                                onclick="navigation('order-describtion')">وصف الطلب
+                                onclick="navigation('order-describtion')">
+                                <i class="fa-solid fa-right-long"></i>
+                                وصف الطلب
                             </button>
                             <button class="btn d-block back fs-18 text-bold-gray font-bold"
-                                onclick="navigation('order-status');changeOrderStatus()">حالة الطلب</button>
+                                onclick="navigation('order-status');changeOrderStatus()">
+                                حالة الطلب
+                                <i class="fa-solid fa-left-long"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -338,9 +346,14 @@
                         </div>
                         <div class="w-75 m-auto buttons justify-content-between d-flex">
                             <button class="btn d-block back fs-18 text-bold-gray font-bold"
-                                onclick="navigation('offers')"> عروض الاسعار </button>
+                                onclick="navigation('offers')"> 
+                                <i class="fa-solid fa-right-long"></i>
+                                عروض الاسعار 
+                            </button>
                             <button class="btn d-block back fs-18 text-bold-gray font-bold"
-                                onclick="navigation('bill')"> الفاتورة</button>
+                                onclick="navigation('bill')"> الفاتورة
+                                <i class="fa-solid fa-left-long"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -349,36 +362,36 @@
                     <div>
                         <button class="btn first text-main-brown d-block mx-auto border-gray"> الفاتورة </button>
                         <div class="w-50 m-auto position-relative">
-                            <a class="font-bold text-bold-gray  bill-download" onclick="autoclick()">
+                            <p class="font-bold text-bold-gray bill-download" onclick="downloadPill()">
                                 <i class="fa-solid fa-circle-arrow-down"></i>
-                                تحميل الفاتورة</a>
+                                تحميل الفاتورة</p>
 
                             <div class="bill-paper position-relative bg-white">
                                 <h2 class="font-bold text-center position-relative text-main-brown">فاتورة طلب رقم #1465
                                 </h2>
                                 <div class="d-flex" style="margin-top: 48px;">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">المخلص الجمركي</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">شركة النبهان</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">المخلص الجمركي</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">شركة النبهان</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">التخليص الجمركي</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">التخليص الجمركي</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">العـــرض</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">العـــرض</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">الباخــرة</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">الباخــرة</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">رقم البوليصة</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">رقم البوليصة</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">الوزن</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray">-</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">الوزن</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">-</span>
                                 </div>
                                 <div class="d-flex">
                                     <span class="w-50 d-inline-block text-center text-bold-gray">عدد الحاويات</span>
@@ -406,7 +419,9 @@
                         </div>
                         <div class="w-75 mx-auto button-back" style="margin-top: 147px;">
                             <button class="btn d-block back fs-18 text-bold-gray font-bold"
-                                onclick="navigation('order-status');changeOrderStatus()">حالة الطلب</button>
+                                onclick="navigation('order-status');changeOrderStatus()">
+                                <i class="fa-solid fa-right-long"></i>
+                                حالة الطلب</button>
                         </div>
                     </div>
                 </div>
@@ -532,8 +547,8 @@
                 </div>
                 <div class="modal-footer border-0 p-0 position-relative">
                     <div class="buttons position-absolute  justify-content-evenly d-flex  w-100 ">
-                        <button class="btn text-white  ">موافقة</button>
-                        <button class="btn  text-white " data-bs-dismiss="modal" aria-label="Close">رفض</button>
+                        <button class="btn text-white " data-bs-dismiss="modal" aria-label="Close">موافقة</button>
+                        <button class="btn text-white " data-bs-dismiss="modal" aria-label="Close">رفض</button>
                     </div>
                 </div>
             </div>
@@ -542,7 +557,7 @@
     <script src="./../../assets/js/jquery-3.6.3.min.js"></script>
     <script src="./../../assets/js/bootstrap.min.js"></script>
     <script src="./../../assets/js/index.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="./../../assets/js/html2canvas.js"></script>
     <script>
         function changeOrderStatus() {
 
@@ -596,18 +611,20 @@
             });
         }
 
-
-        function autoclick() {
+        function downloadPill() {
+            $('.bill-paper h2').addClass('print')
             let ele = $(".bill-paper");
             html2canvas(ele, {
                 onrendered: function (canvas) {
-                    var imageData = canvas.toDataURL("image/jpg");
-                    var newData = imageData.replace(/^data:image\/jpg/, "data:application/octet-stream");
-                    $(".bill-download").attr("download", "image.jpg").attr("href", newData);
+                    var a = document.createElement('a');
+                    a.href = canvas.toDataURL()
+                    a.download = 'الفاتورة.jpg';
+                    a.click();
+                    $('.bill-paper h2').removeClass('print')
                 }
             })
-        }
 
+        }
 
 
     </script>

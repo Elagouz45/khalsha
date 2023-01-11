@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حسابي</title>
     <link rel="stylesheet" href="./../../assets/css/bootstrap.min.css">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
+    <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="./../../assets/css/shared-style.css">
     <link rel="stylesheet" href="./../../assets/css/order-details.css">
 </head>
@@ -22,7 +25,7 @@
         <section class="position-relative header" style="z-index: 3;">
             <div class="container d-flex justify-content-between  align-items-center  ">
                 <p class="font-bold text-black"> 
-                    <img src="./../../assets/images/Vector (11).png" >
+                    <i class="fa-solid fa-right-long"></i>
                     الشحن البري</p>
                 <p class="font-bold text-black">عرض #1456 / الشحن البري</p>
             </div>
@@ -176,30 +179,30 @@
 
                             <div class="d-flex">
                                 <div class="w-50 fs-18 font-bold text-center">اسم المخلص</div>
-                                <div class="w-50 fs-18 font-bold text-center border">شركة النبهان</div>
+                                <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="شركة النبهان">   
                             </div>
 
                             <div class="d-flex">
                                 <div class="w-50 fs-18 font-bold text-center">إجمالي أجور التخليص </div>
-                                <div class="w-50 fs-18 font-bold text-center border">-</div>
+                                <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
                             </div>
 
                             <div class="d-flex">
                                 <div class="w-50 fs-18 font-bold text-center"> إجمالي أجور النقل</div>
-                                <div class="w-50 fs-18 font-bold text-center border">-</div>
+                                <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
                             </div>
 
                             <div class="d-flex">
                                 <div class="w-50 fs-18 font-bold text-center">أجور ترجمة </div>
-                                <div class="w-50 fs-18 font-bold text-center border">-</div>
+                                <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
                             </div>
+
                             <div class="d-flex">
                                 <div class="w-50 fs-18 font-bold text-center">أجور عمال</div>
-                                <div class="w-50 fs-18 font-bold text-center border">-</div>
+                                <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
                             </div>
 
-
-                            <button class="bg-main-brown btn text-white  position-absolute add-term">أضف بند
+                            <button class="bg-main-brown btn text-white position-absolute add-term">أضف بند
                                 جديد</button>
 
                         </div>
@@ -243,7 +246,7 @@
                     <p class="text-center font-bold">الطلب معلق للموافقة عليه في قائمة العروض بحسابك</p>
                 </div>
                 <div class="modal-footer border-0 position-relative m-0">
-                    <button class="btn position-absolute start-50 aggree fs-18  text-white  ">موافقة</button>
+                    <button data-bs-dismiss="modal" aria-label="Close" class="btn position-absolute start-50 aggree fs-18  text-white  ">موافقة</button>
                 </div>
             </div>
         </div>
