@@ -142,6 +142,9 @@ border-radius: 32px;
     vertical-align: middle;
     margin:0 3px;
 }
+.modal-dialog-centered{
+    min-height: unset !important;
+}
 /*footer*/
 footer {
     background-color: #628CA5;
