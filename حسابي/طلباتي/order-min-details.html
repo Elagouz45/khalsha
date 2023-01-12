@@ -173,7 +173,6 @@
                         <button class="btn text-main-brown border-gray d-block mx-auto">ادخال بيانات الفاتورة </button>
                         <div class="text-center">
                             <div class="vr"></div>
-
                         </div>
                         <div class="w-50 mx-auto card-bill position-relative  ">
 
@@ -202,7 +201,7 @@
                                 <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
                             </div>
 
-                            <button class="bg-main-brown btn text-white position-absolute add-term">أضف بند
+                            <button onclick="test()" class="bg-main-brown btn text-white position-absolute add-term">أضف بند
                                 جديد</button>
 
                         </div>
@@ -255,6 +254,18 @@
     <script src="./../../assets/js/jquery-3.6.3.min.js"></script>
     <script src="./../../assets/js/bootstrap.min.js"></script>
     <script src="./../../assets/js/index.js"></script>
+
+    <script>
+        let num =0
+      function test(){
+        num++;
+        let u= document.querySelector('.creation-offer-price .card-bill') 
+        u.innerHTML +=`  <div class="d-flex">
+                                <div class="w-50 fs-18 font-bold text-center"> بند ${num}</div>
+                                <input class="w-50 fs-18 font-bold text-center bg-transparent" placeholder="-">
+                            </div>`
+      }
+    </script>
 
 </body>
 
