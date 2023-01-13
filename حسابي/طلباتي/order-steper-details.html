@@ -547,8 +547,8 @@
                 </div>
                 <div class="modal-footer border-0 p-0 position-relative">
                     <div class="buttons position-absolute  justify-content-evenly d-flex  w-100 ">
-                        <button class="btn text-white " data-bs-dismiss="modal" aria-label="Close">موافقة</button>
-                        <button class="btn text-white " data-bs-dismiss="modal" aria-label="Close">رفض</button>
+                        <button class="btn text-white agree" data-bs-dismiss="modal" aria-label="Close">موافقة</button>
+                        <button class="btn text-white disagree" data-bs-dismiss="modal" aria-label="Close">رفض</button>
                     </div>
                 </div>
             </div>
@@ -628,6 +628,26 @@
 
 
     </script>
+
+
+<script>
+    let listOfOffersTr = Array.from(document.querySelectorAll('.offers table tbody tr'))
+    let agreeButton = document.querySelector('.modal .modal-footer .agree')
+    let disAgreeButton = document.querySelector('.modal .modal-footer .disagree')
+
+    $('.offers table tbody tr td a').click(function(ele){
+        $('.modal .modal-footer .agree').click(function(){
+            $('.offers table tbody tr').addClass('addLine').removeClass('active')
+            $(ele.target).parents('tr').removeClass('addLine').addClass('active')
+        })
+
+        $('.modal .modal-footer .disagree').click(function(){
+            $('.offers table tbody tr').removeClass('addLine').removeClass('active')
+            $(ele.target).parents('tr').addClass('addLine').removeClass('active')
+        })
+    })
+
+</script>
 </body>
 
 </html>

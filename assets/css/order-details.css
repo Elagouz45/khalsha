@@ -114,10 +114,28 @@
 .account-details table th {
     height: 54px;
     line-height: 53px;
+    position: relative;
 }
 
 .account-details table tbody tr:nth-child(odd) {
     background: #F1F1F1;
+}
+.offers table tbody tr.active,
+.offers table tbody tr.active:hover td{
+    background-color: var(--main-blue-color) !important;
+    color: white !important;
+}
+.offers table tbody tr.active td:last-child a{
+    color: white !important;
+}
+
+.offers table tbody tr.addLine td::before{
+        content: " ";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%; 
+        border-bottom: 2px solid #5B5B5B
 }
 
 .account-details table tbody tr:nth-child(even) {
