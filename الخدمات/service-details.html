@@ -37,130 +37,259 @@
 
             <div class="container">
 
-              <div class="w-75 mx-auto">
-                <div class="d-flex justify-content-center mx-auto steps">
-                    <div class="active" data-target="fill-application ">
-                        <span></span>
+                <div class="w-75 mx-auto">
+                    <div class="d-flex justify-content-center mx-auto steps">
+                        <div class="active" style="--i:5">
+                            <span class="position-relative">
+                                <img src="./../assets/images/Group 2973.png" class="d-block">
+                            </span>
+                        </div>
+                        <div style="--i:4">
+                            <span class="position-relative" >
+                                <img src="./../assets/images/Group 2973.png" class="d-none">
+                            </span>
+                        </div>
+                        <div style="--i:3">
+                            <span class="position-relative" >
+                                <img src="./../assets/images/Group 2973.png" class="d-none">
+                            </span>
+                        </div>
+                        <div style="--i:2">
+                            <span class="position-relative" >
+                                <img src="./../assets/images/Group 2973.png" class="d-none">
+                            </span>
+                        </div>
+                        <div style="--i:1">
+                            <span class="position-relative" >
+                                <img src="./../assets/images/Group 2973.png" class="d-none">
+                            </span> 
+                        </div>
                     </div>
-                    <div>
-                        <span></span>
+
+                    <div class="step-content fill-application table-responsive  d-block">
+                        <table class="w-100">
+                            <tbody>
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">نوع الشحنة</td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <input type="radio" name="type" id="import">
+                                        <label for="import">استيراد</label>
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <input type="radio" name="type" id="export">
+                                        <label for="export">تصدير</label>
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">مجال الشحنة</td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <input name="field" type="radio" id="personality">
+                                        <label for="personality">شخصية</label>
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        <input name="field" type="radio" id="commercial">
+                                        <label for="commercial">تجارية</label>
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">نوع البضاعة</td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <select>
+                                            <option value="" selected>الاجهزة الكهربائية</option>
+                                        </select>
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">عدد الحاويات / الطرود </td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <input type="number">
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">
+                                        وصف الشحنة</td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <input type="text" value="ثلاجات وتلفزيونات">
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">منفذ الشحنة</td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <select>
+                                            <option value="" selected>ميناء الرياض الجاف</option>
+                                        </select>
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">التوصيل إلي</td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <select>
+                                            <option value="" selected>إسم المدينة - الرمز البريدي </option>
+                                        </select>
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
                     </div>
-                    <div>
-                        <span></span>
+
+                    <div class="additional-services step-content table-responsive d-none">
+                        <table class="w-100">
+                            <tbody>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">إضافة الفاتورة التجارية </td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                  
+                                        <label for="upload1">
+                                            تحميل
+                                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                                        </label>
+                                        <input type="file" hidden id="upload1">
+                                   
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">
+                                        إضافة البوليصة
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <label for="upload2">
+                                            تحميل
+                                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                                        </label>
+                                        <input type="file" hidden id="upload2">
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">
+                                        مرفقات آخــري</td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <label for="upload3">
+                                            تحميل
+                                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                                        </label>
+                                        <input type="file" hidden id="upload3">
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
                     </div>
-                    <div>
-                        <span></span>
+
+                    <div class="oreder-confirmation step-content table-responsive d-none">
+                        <table class="w-100">
+                            <tbody>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">اسم الشخص المسؤول</td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+ 
+                                        <input type="text" placeholder="عبد الكريم محمد">
+                                   
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">
+                                        رقم الجوال
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <input type="text" placeholder="800 XXX XXXX">
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class=" fs-22 text-center text-bold-gray font-bold">الإيميل</td>
+                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                        <input type="text" placeholder="Support@khlasha.com">
+                                    </td>
+                                    <td class=" fs-22 text-center text-bold-gray">
+                                        ؟
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
                     </div>
-                    <div>
-                        <span></span>
+
+                    <div class="send-order step-content d-none">
+                        <div class="card">
+                            <div class="clock rounded-pill">
+                                <img src="./../assets/images/Ellipse 108 (1).png" class="rounded-pill w-100">
+                            </div>
+                            <h3 class="font-bold text-main-blue text-center">تم إرسال الطلب</h3>
+                            <p class="text-center mb-0">تم إرسال طلبك لمقدم الخدمة</p>
+                            <p class="text-center mb-0"> 
+                                سوف يتم تزويدك بعرض السعر المناسب في أقرب وقت</p>
+                        </div>
+                    </div>
+                    
+                    <div class="choose-offer step-content d-none">
+                        <hr>
+                       <div class="d-flex justify-content-between w-100">
+                       
+                       </div>
+                       <hr>
+                    </div>
+
+                    <div class="d-flex justify-content-between buttons">
+                        <button class="next btn text-bold-gray font-bold">
+                            <i class="fa-solid fa-right-long"></i>
+                            التالي</button>
+                        <button class="back btn text-bold-gray font-bold">الرجوع
+                            <i class="fa-solid fa-left-long"></i>
+                        </button>
                     </div>
                 </div>
-
-                <div class="step-content fill-application table-responsive  d-block">
-                    <table class="w-100" >
-                        <tbody>
-                            <tr>
-                                <td class=" fs-22 text-center text-bold-gray font-bold">نوع الشحنة</td>
-                                <td class=" fs-22 text-center text-bold-gray">
-                                    <input type="radio" name="type" id="import">
-                                    <label for="import">استيراد</label>
-                                </td>
-                                <td class=" fs-22 text-center text-bold-gray">
-                                    <input type="radio" name="type" id="export">
-                                    <label for="export">تصدير</label>
-                                </td>
-                                <td class=" fs-22 text-center text-bold-gray">
-                                    ؟
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class=" fs-22 text-center text-bold-gray font-bold">مجال الشحنة</td>
-                                <td class=" fs-22 text-center text-bold-gray">
-                                    <input name="field" type="radio" id="personality">
-                                    <label for="personality">شخصية</label>
-                                </td>
-                                <td class=" fs-22 text-center text-bold-gray">
-                                    <input name="field" type="radio" id="commercial">
-                                    <label for="commercial">تجارية</label>
-                                </td>
-                                <td class=" fs-22 text-center text-bold-gray">
-                                    ؟
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td class=" fs-22 text-center text-bold-gray font-bold">نوع البضاعة</td>
-                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                    <select>
-                                        <option value="" selected>الاجهزة الكهربائية</option>
-                                    </select>
-                                </td>
-                                <td class=" fs-22 text-center text-bold-gray">
-                                    ؟
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class=" fs-22 text-center text-bold-gray font-bold">عدد الحاويات / الطرود </td>
-                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                    <input type="number" >
-                                </td>
-                                <td class=" fs-22 text-center text-bold-gray">
-                                    ؟
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class=" fs-22 text-center text-bold-gray font-bold">
-                                    وصف الشحنة</td>
-                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                    <input type="text" value="ثلاجات وتلفزيونات" >
-                                </td>
-                                <td class=" fs-22 text-center text-bold-gray">
-                                    ؟
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class=" fs-22 text-center text-bold-gray font-bold">منفذ الشحنة</td>
-                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                       <select>
-                                        <option value="" selected>ميناء الرياض الجاف</option>
-                                    </select>
-                                </td>
-                                <td class=" fs-22 text-center text-bold-gray">
-                                    ؟
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class=" fs-22 text-center text-bold-gray font-bold">التوصيل إلي</td>
-                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                       <select>
-                                        <option value="" selected>إسم المدينة - الرمز البريدي </option>
-                                    </select>
-                                </td>
-                                <td class=" fs-22 text-center text-bold-gray">
-                                    ؟
-                                </td>
-                            </tr>
-
-
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="d-flex justify-content-between buttons">
-                    <button class="next btn text-bold-gray font-bold">
-                        <i class="fa-solid fa-right-long"></i>
-                        التالي</button>
-                    <button class="back btn text-bold-gray font-bold">الرجوع
-                        <i class="fa-solid fa-left-long"></i>
-                    </button>
-                </div>
-              </div>
 
             </div>
 
@@ -181,22 +310,53 @@
         let next = document.querySelector('.buttons .next');
         let back = document.querySelector('.buttons .back');
         let stepsLength = document.querySelectorAll('.steps div').length;
+        let stepContent = document.querySelectorAll('.step-content').length;
 
 
 
         next.onclick = function () {
             let stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
+            let stepContent = document.querySelectorAll('.step-content.d-block')
+
             let lastActive = stepsActive[stepsActive.length - 1]
-            if( (stepsActive.length - 1) <( stepsLength-1)   ){
+            let lastStepContentActive = stepContent[stepContent.length - 1]
+
+            if ((stepsActive.length - 1) < (stepsLength - 1)) {
                 lastActive.nextElementSibling.classList.add('active')
+                lastActive.children[0].children[0].classList.add('d-none')
+                lastActive.children[0].children[0].classList.remove('d-block')
+                lastActive.nextElementSibling.children[0].children[0].classList.remove('d-none')
+                lastActive.nextElementSibling.children[0].children[0].classList.add('d-block')
+
+
+                lastStepContentActive.nextElementSibling.classList.remove('d-none')
+                lastStepContentActive.nextElementSibling.classList.add('d-block')
+                lastStepContentActive.classList.remove('d-block')
+                lastStepContentActive.classList.add('d-none')
             }
         }
 
         back.onclick = function () {
             let stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
+            let stepContent = document.querySelectorAll('.step-content.d-block')
+
             let lastActive = stepsActive[stepsActive.length - 1]
-            if( (stepsActive.length - 1) >0   ){
-                lastActive.classList.remove('active')
+            let lastStepContentActive = stepContent[stepContent.length - 1]
+
+            if ((stepsActive.length - 1) > 0) {
+                lastActive.classList.remove('active');
+
+                lastActive.children[0].children[0].classList.add('d-none')
+                lastActive.children[0].children[0].classList.remove('d-block')
+
+                lastActive.previousElementSibling.children[0].children[0].classList.remove('d-none')
+                lastActive.previousElementSibling.children[0].children[0].classList.add('d-block')
+
+
+                lastStepContentActive.previousElementSibling.classList.remove('d-none')
+                lastStepContentActive.previousElementSibling.classList.add('d-block')
+                lastStepContentActive.classList.remove('d-block')
+                lastStepContentActive.classList.add('d-none')
             }
         }
 

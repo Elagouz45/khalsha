@@ -17,8 +17,8 @@
 }
 
 .service-details .overlay1 {
-    height: 65%;
-    min-height: 730px !important;
+    height: 70%;
+    min-height: 600px !important;
 }
 
 .service-details .overlay2 {
@@ -30,7 +30,7 @@
 }
 
 .service-details .overlay2 {
-    clip-path: polygon(0 14%, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 16%, 100% 0, 100% 100%, 0% 100%);
 }
 
 .service-details .header p {
@@ -49,16 +49,26 @@
 
 .service-details .steps div {
     height: 25px;
-    width:164px ;
-    overflow: hidden;
+    width: 160px;
+    position: relative;
+    z-index: var(--i);
 }
-.service-details .steps div:first-child{
+
+.service-details .steps div img {
+    position: absolute;
+    bottom: 29px;
+    left: -26px;
+}
+
+.service-details .steps div:first-child {
     width: 75px;
 }
-.service-details .steps div:last-child{
+
+/* .service-details .steps div:last-child {
     overflow: unset;
-}
-.service-details .steps div span{
+} */
+
+.service-details .steps div span {
     height: 25px;
     width: 25px;
     border-radius: 50%;
@@ -67,8 +77,7 @@
     display: inline-block;
 }
 
-.service-details .steps span::before,
-.service-details .steps span::after{
+.service-details .steps span::before {
     position: absolute;
     background-color: #BCBCBC;
     content: '';
@@ -76,52 +85,61 @@
     height: 5px;
 }
 
-.service-details .steps span:not(.service-details .steps div:first-child span):before{
-    right: 50%;
-    width: 158px;
-    transform: translate(-7px,-50%);
-}
-.service-details .steps div:first-child span::before{
-    width: 50px;
-    transform: translate(-25px,-50%);
-}
-.service-details .steps div:last-child span::after{
-    width: 50px;
-    left: 50%;    
-    transform: translate(12px,-50%);
+.service-details .steps span:not(.service-details .steps div:first-child span):before {
+    right: 0;
+    width: 135px;
+    transform: translate(-25px, -50%);
 }
 
+.service-details .steps div:first-child span::before {
+    width: 50px;
+    transform: translate(-25px, -50%);
+}
+
+/* .service-details .steps div:last-child span::after {
+    width: 50px;
+    left: 50%;
+    transform: translate(12px, -50%);
+} */
+
 .service-details .steps div.active span,
-.service-details .steps div.active span::before,
-.service-details .steps div.active span::after{
+.service-details .steps div.active span::before {
     background-color: var(--main-blue-color);
 }
 
-.service-details .buttons button{
+.service-details .buttons button {
     background: #D9D9D9;
-border-radius: 6px;
-width: 144px;
-height: 62px;
-font-size: 22px;
+    border-radius: 6px;
+    width: 144px;
+    height: 62px;
+    font-size: 22px;
 }
 
-.service-details .step-content{
+.service-details .buttons button:hover {
+    background-color: var(--main-brown-color) !important;
+    color: white !important;
+}
+
+.service-details .step-content {
     margin: 162px 0 72px;
 }
 
-.fs-22{
+.fs-22 {
     font-size: 22px;
 }
+
 .service-details table tr td {
     padding: 41px 0;
-    border-bottom: 1px solid  #C5C5C5;
+    border-bottom: 1px solid #C5C5C5;
     white-space: nowrap;
 }
-.service-details table tr td:last-child{
+
+.service-details table tr td:last-child {
     width: 140px;
 }
+
 .service-details table input:not([type="radio"]),
-.service-details table select{
+.service-details table select {
     color: #AAAAAA;
     font-size: 18px;
     text-align: center;
@@ -132,32 +150,70 @@ font-size: 22px;
     width: 390px;
 }
 
+.service-details .additional-services label {
+    color: #8D8D8D;
+    background: #F0F0F0;
+    border-radius: 6px;
+    Width: 144px;
+    Height: 42px;
+    line-height: 40px;
+    cursor: pointer;
+}
 
+
+.service-details .send-order .card {
+    background: #F9F9F9;
+    max-width: 640px;
+    height: 280px;
+    margin: auto;
+}
+
+.service-details .send-order .card .clock {
+    padding: 8px;
+    width: 128px;
+    height: 128px;
+    margin: -64px auto 50px;
+    background: var(--main-blue-color);
+}
+
+.service-details .choose-offer {
+    border: 1px solid #0000004D;
+    margin-top: 243px;
+}
 
 @media (max-width:1600px) {
     .service-details .step-content {
         margin: 110px 0 72px;
     }
+
     .service-details .buttons button {
         height: 47px;
     }
-    .service-details table input:not([type="radio"]), 
-    .service-details table select{
+
+    .service-details .steps div img {
+        left: -20px;
+        width: 66px;
+        height: 62px;
+    }
+
+    .service-details table input:not([type="radio"]),
+    .service-details table select {
         font-size: 15px;
         width: 290px;
     }
+
     .service-details table tr td {
         padding: 28px 0;
     }
-    
-    .fs-22 ,
+
+    .fs-22,
     .service-details .buttons button {
         font-size: 17px;
     }
 }
 
 @media (max-width:991.95px) {
-    .service-details .container > .w-75{
+    .service-details .container>.w-75 {
         width: 90% !important;
     }
 }
@@ -166,32 +222,50 @@ font-size: 22px;
     .service-details .container {
         max-width: 100% !important;
     }
-    .fs-22, .service-details .buttons button {
+
+    .fs-22,
+    .service-details .buttons button {
         font-size: 13px;
     }
-    .service-details table input:not([type="radio"]), .service-details table select {
+
+    .service-details table input:not([type="radio"]),
+    .service-details table select {
         font-size: 12px;
         width: 250px;
     }
+
     .service-details .header p {
         font-size: 15px;
     }
+
     .service-details .steps div {
         width: 100px;
     }
+
     .service-details .steps div:first-child {
         width: 40px;
     }
+
     .service-details .steps div span {
         height: 15px;
         width: 15px;
     }
+
+    .service-details .steps span:not(.service-details .steps div:first-child span):before {
+        width: 85px;
+        transform: translate(-15px, -50%);
+    }
+
     .service-details .steps div:first-child span::before {
-        transform: translate(-14px,-50%);
+        transform: translate(-14px, -50%);
+        width: 25px;
     }
-    .service-details .steps div:last-child span::after {
-        transform: translate(7px,-50%);
+
+    .service-details .steps div img{
+        left: -25px;
+        bottom: 22px;
     }
+
     .service-details .step-content {
         margin: 70px 0 72px;
     }
@@ -199,19 +273,54 @@ font-size: 22px;
 
 
 @media (max-width:575.95px) {
-
-    .service-details .steps{
-        margin-top: 70px;
+    .service-details .overlay1 {
+        height: 90%;
     }
-    .service-details table input:not([type="radio"]), .service-details table select {
+
+    .service-details .overlay2 {
+        display: none;
+    }
+
+    .service-details .steps {
+        margin-top:95px;
+    }
+
+    .service-details table input:not([type="radio"]),
+    .service-details table select {
         width: 200px;
     }
+
     .service-details .buttons button {
         height: 39px;
         width: 110px;
     }
+
     .service-details table tr td {
         padding: 20px 10px;
     }
 
+    .service-details .send-order .card {
+        height: 230px !important;
+    }
+
+    .service-details .send-order .card .clock {
+        width: 100px;
+        height: 100px;
+        margin: -50px auto 50px;
+    }
+
+    .service-details .steps span:not(.service-details .steps div:first-child span):before {
+        width: 68px;
+        transform: translate(-15px, -50%);
+    }
 }
+
+@media (max-width:375px) {
+    .service-details .steps div img {
+        left: -18px;
+        bottom: 18px;
+        width: 50px;
+        height: 50px;
+    }
+}
+

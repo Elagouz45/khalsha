@@ -76,6 +76,9 @@ $(document).ready(function () {
       scrollLeft: "-=" + step + "px"
     });
   })
+
+
+
   //my-account page
   toggleActiveClass(".sidebar ul li")
   changeContent('.sidebar ul li', '.my-account  .content')
@@ -97,6 +100,8 @@ $(document).ready(function () {
     autoPlayTimeout: 5000,
     autoplayHoverPause: true
   })
+
+
 });
 
 
