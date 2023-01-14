@@ -177,10 +177,69 @@
 }
 
 .service-details .choose-offer {
-    border: 1px solid #0000004D;
-    margin-top: 243px;
+        margin-top: 243px;
+        border-right:  1px solid #C5C5C5;
+        border-left:  1px solid #C5C5C5;
+}
+.service-details .choose-offer hr{
+    border-top:  1px solid #C5C5C5 !important;
+    /* width: 100vw !important; */
+    /* margin-right: -29% !important; */
 }
 
+.service-details .choose-offer .row .col-12{
+    margin: -22px 0 125px;
+}
+.service-details .choose-offer .row .col-12 p{
+    font-size: 28px;
+    width: 387px;
+    height: 45px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 38px;
+    position: relative;
+    z-index: 1;
+}
+.service-details .choose-offer .col-sm-6 {
+    margin-bottom: 120px;
+}
+.service-details .choose-offer .col-sm-6 > div{
+    border-radius: 26px;
+    width: 75%;
+    border:5px solid #628CA5;
+    margin:0 auto 15px;
+}
+.service-details .choose-offer .col-sm-6 div button:first-of-type{
+    left: 50%;
+    width: 161px;
+    height: 32px;
+    font-size: 18px;
+    line-height: 13px;
+    transform: translateX(-50%);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.service-details .choose-offer .col-sm-6 div button:last-of-type{
+    bottom: 0%;
+    left: 50%;
+    width: 143px;
+    height: 41px;
+    font-size: 18px;
+    line-height: 13px;
+    background: #9E9E9E;
+border-radius: 6px;
+transform: translate(-50%,50%);
+}
+.service-details .choose-offer .col-sm-6 p{
+    margin: 24px 0;
+}
+.service-details .choose-offer .col-sm-6 p span:first-child{
+font-size: 14px;
+}
+
+.service-details .choose-offer .col-sm-6 p span:last-child{
+    font-size: 18px;
+    }
 @media (max-width:1600px) {
     .service-details .step-content {
         margin: 110px 0 72px;
@@ -210,10 +269,16 @@
     .service-details .buttons button {
         font-size: 17px;
     }
+
+    .service-details .choose-offer .row .col-12 p {
+        font-size: 20px;
+        width: 320px;
+    }
 }
 
 @media (max-width:991.95px) {
-    .service-details .container>.w-75 {
+    .service-details .container>.w-75,
+    .service-details .choose-offer .col-sm-6 > div{
         width: 90% !important;
     }
 }
@@ -269,6 +334,20 @@
     .service-details .step-content {
         margin: 70px 0 72px;
     }
+ 
+    .service-details .choose-offer .col-sm-6 div button:last-of-type,
+    .service-details .choose-offer .col-sm-6 div button:first-of-type,
+    .service-details .choose-offer .col-sm-6 p span:last-child {
+        font-size: 15px;
+    }
+    .service-details .choose-offer .col-sm-6 div button:last-of-type{
+        width: 114px;
+        height: 35px;
+    }
+    .service-details .choose-offer .col-sm-6 div button:first-of-type {
+        width: 155px;
+        height: 29px;
+    }
 }
 
 
@@ -276,20 +355,16 @@
     .service-details .overlay1 {
         height: 90%;
     }
-
     .service-details .overlay2 {
         display: none;
     }
-
     .service-details .steps {
         margin-top:95px;
     }
-
     .service-details table input:not([type="radio"]),
     .service-details table select {
         width: 200px;
     }
-
     .service-details .buttons button {
         height: 39px;
         width: 110px;
@@ -312,6 +387,10 @@
     .service-details .steps span:not(.service-details .steps div:first-child span):before {
         width: 68px;
         transform: translate(-15px, -50%);
+    }
+    .service-details .choose-offer .row .col-12 p {
+        font-size: 15px;
+        width: 235px;
     }
 }
 
