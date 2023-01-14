@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الخدمات</title>
+    <link rel="stylesheet" href="./../assets/css/bootstrap.min.css">
+    <link href="./../assets/css/fontawesome-free-6.2.1-web/css/fontawesome.min.css" rel="stylesheet">
+    <link href="./../assets/css/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
+    <link href="./../assets/css/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
+    <link rel="stylesheet" href="./../assets/css/shared-style.css">
+    <link rel="stylesheet" href="./../assets/css/service-details.css">
+</head>
+
+<body>
+
+
+    <div class="service-details position-relative">
+
+        <div class="overlay1 bg-overlay w-100 top-0 position-absolute"></div>
+        <div class="overlay2 bg-overlay w-100 bottom-0 position-absolute"></div>
+
+        <section class="position-relative header" style="z-index: 3;">
+            <div class="container d-flex justify-content-between  align-items-center  ">
+                <p class="font-bold text-black">
+                    <i class="fa-solid fa-right-long"></i>
+                    الخدمات
+                </p>
+                <p class="font-bold text-black"> تعبئة الطلب / التخليص الجمركي </p>
+            </div>
+            <hr class="m-0">
+        </section>
+
+        <section class="position-relative " style="z-index: 3;">
+
+            <div class="container">
+
+              <div class="w-75 mx-auto">
+                <div class="d-flex justify-content-center mx-auto steps">
+                    <div class="active" data-target="fill-application ">
+                        <span></span>
+                    </div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <div>
+                        <span></span>
+                    </div>
+                </div>
+
+                <div class="step-content fill-application table-responsive  d-block">
+                    <table class="w-100" >
+                        <tbody>
+                            <tr>
+                                <td class=" fs-22 text-center text-bold-gray font-bold">نوع الشحنة</td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    <input type="radio" name="type" id="import">
+                                    <label for="import">استيراد</label>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    <input type="radio" name="type" id="export">
+                                    <label for="export">تصدير</label>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    ؟
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class=" fs-22 text-center text-bold-gray font-bold">مجال الشحنة</td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    <input name="field" type="radio" id="personality">
+                                    <label for="personality">شخصية</label>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    <input name="field" type="radio" id="commercial">
+                                    <label for="commercial">تجارية</label>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    ؟
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td class=" fs-22 text-center text-bold-gray font-bold">نوع البضاعة</td>
+                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                    <select>
+                                        <option value="" selected>الاجهزة الكهربائية</option>
+                                    </select>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    ؟
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class=" fs-22 text-center text-bold-gray font-bold">عدد الحاويات / الطرود </td>
+                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                    <input type="number" >
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    ؟
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class=" fs-22 text-center text-bold-gray font-bold">
+                                    وصف الشحنة</td>
+                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                    <input type="text" value="ثلاجات وتلفزيونات" >
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    ؟
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class=" fs-22 text-center text-bold-gray font-bold">منفذ الشحنة</td>
+                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                       <select>
+                                        <option value="" selected>ميناء الرياض الجاف</option>
+                                    </select>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    ؟
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class=" fs-22 text-center text-bold-gray font-bold">التوصيل إلي</td>
+                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                       <select>
+                                        <option value="" selected>إسم المدينة - الرمز البريدي </option>
+                                    </select>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    ؟
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="d-flex justify-content-between buttons">
+                    <button class="next btn text-bold-gray font-bold">
+                        <i class="fa-solid fa-right-long"></i>
+                        التالي</button>
+                    <button class="back btn text-bold-gray font-bold">الرجوع
+                        <i class="fa-solid fa-left-long"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+
+
+
+    <script src="./../assets/js/jquery-3.6.3.min.js"></script>
+    <script src="./../assets/js/bootstrap.min.js"></script>
+    <script src="./../assets/js/index.js"></script>
+
+    <script>
+        let next = document.querySelector('.buttons .next');
+        let back = document.querySelector('.buttons .back');
+        let stepsLength = document.querySelectorAll('.steps div').length;
+
+
+
+        next.onclick = function () {
+            let stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
+            let lastActive = stepsActive[stepsActive.length - 1]
+            if( (stepsActive.length - 1) <( stepsLength-1)   ){
+                lastActive.nextElementSibling.classList.add('active')
+            }
+        }
+
+        back.onclick = function () {
+            let stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
+            let lastActive = stepsActive[stepsActive.length - 1]
+            if( (stepsActive.length - 1) >0   ){
+                lastActive.classList.remove('active')
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

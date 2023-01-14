@@ -346,9 +346,9 @@
                         </div>
                         <div class="w-75 m-auto buttons justify-content-between d-flex">
                             <button class="btn d-block back fs-18 text-bold-gray font-bold"
-                                onclick="navigation('offers')"> 
+                                onclick="navigation('offers')">
                                 <i class="fa-solid fa-right-long"></i>
-                                عروض الاسعار 
+                                عروض الاسعار
                             </button>
                             <button class="btn d-block back fs-18 text-bold-gray font-bold"
                                 onclick="navigation('bill')"> الفاتورة
@@ -364,34 +364,47 @@
                         <div class="w-50 m-auto position-relative">
                             <p class="font-bold text-bold-gray bill-download" onclick="downloadPill()">
                                 <i class="fa-solid fa-circle-arrow-down"></i>
-                                تحميل الفاتورة</p>
+                                تحميل الفاتورة
+                            </p>
 
                             <div class="bill-paper position-relative bg-white">
                                 <h2 class="font-bold text-center position-relative text-main-brown">فاتورة طلب رقم #1465
                                 </h2>
                                 <div class="d-flex" style="margin-top: 48px;">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">المخلص الجمركي</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">شركة النبهان</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">المخلص الجمركي</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">شركة النبهان</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">التخليص الجمركي</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">-</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">التخليص الجمركي</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">العـــرض</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">-</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">العـــرض</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">الباخــرة</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">-</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">الباخــرة</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">رقم البوليصة</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">-</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">رقم البوليصة</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">-</span>
                                 </div>
                                 <div class="d-flex">
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">الوزن</span>
-                                    <span class="w-50 d-inline-block text-center text-bold-gray" style="word-wrap: normal;">-</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">الوزن</span>
+                                    <span class="w-50 d-inline-block text-center text-bold-gray"
+                                        style="word-wrap: normal;">-</span>
                                 </div>
                                 <div class="d-flex">
                                     <span class="w-50 d-inline-block text-center text-bold-gray">عدد الحاويات</span>
@@ -440,7 +453,8 @@
 
             <div class="modal-content rounded-0">
                 <div class="modal-header border-0">
-                    <button type="button" class="btn-close bg-main-brown opacity-100 top-0 m-0 position-absolute text-white "
+                    <button type="button"
+                        class="btn-close bg-main-brown opacity-100 top-0 m-0 position-absolute text-white "
                         data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body ">
@@ -630,24 +644,24 @@
     </script>
 
 
-<script>
-    let listOfOffersTr = Array.from(document.querySelectorAll('.offers table tbody tr'))
-    let agreeButton = document.querySelector('.modal .modal-footer .agree')
-    let disAgreeButton = document.querySelector('.modal .modal-footer .disagree')
+    <script>
+        let listOfOffersTr = Array.from(document.querySelectorAll('.offers table tbody tr'))
+        let agreeButton = document.querySelector('.modal .modal-footer .agree')
+        let disAgreeButton = document.querySelector('.modal .modal-footer .disagree')
 
-    $('.offers table tbody tr td a').click(function(ele){
-        $('.modal .modal-footer .agree').click(function(){
-            $('.offers table tbody tr').addClass('addLine').removeClass('active')
-            $(ele.target).parents('tr').removeClass('addLine').addClass('active')
+        $('.offers table tbody tr td a').click(function (ele) {
+            $('.modal .modal-footer .agree').click(function () {
+                $('.offers table tbody tr').addClass('addLine').removeClass('active')
+                $(ele.target).parents('tr').removeClass('addLine').addClass('active')
+            })
+
+            $('.modal .modal-footer .disagree').click(function () {
+                $('.offers table tbody tr').removeClass('addLine').removeClass('active')
+                $(ele.target).parents('tr').addClass('addLine').removeClass('active')
+            })
         })
 
-        $('.modal .modal-footer .disagree').click(function(){
-            $('.offers table tbody tr').removeClass('addLine').removeClass('active')
-            $(ele.target).parents('tr').addClass('addLine').removeClass('active')
-        })
-    })
-
-</script>
+    </script>
 </body>
 
 </html>

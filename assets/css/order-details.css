@@ -656,6 +656,9 @@
     .creation-offer-price .card-bill.w-50 {
         width: 90% !important;
     }
+    .account-details .header p {
+        font-size: 15px;
+    }
 }
 
 @media (max-width:575px) {
