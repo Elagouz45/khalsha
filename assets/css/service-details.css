@@ -120,10 +120,12 @@
     color: white !important;
 }
 
-.service-details .step-content {
+.service-details .step-content:not(.choose-offer) {
     margin: 162px 0 72px;
 }
-
+.service-details .step-content.choose-offer{
+    margin-top: 243px;
+}
 .fs-22 {
     font-size: 22px;
 }
@@ -176,15 +178,15 @@
     background: var(--main-blue-color);
 }
 
-.service-details .choose-offer {
-        margin-top: 243px;
+.service-details .choose-offer .row{
         border-right:  1px solid #C5C5C5;
         border-left:  1px solid #C5C5C5;
 }
 .service-details .choose-offer hr{
-    border-top:  1px solid #C5C5C5 !important;
-    /* width: 100vw !important; */
-    /* margin-right: -29% !important; */
+    border-top:  2px solid #C5C5C5 !important;  
+    position: relative;
+    top: 0;
+    margin: 0;
 }
 
 .service-details .choose-offer .row .col-12{
@@ -242,7 +244,7 @@ font-size: 14px;
     }
 @media (max-width:1600px) {
     .service-details .step-content {
-        margin: 110px 0 72px;
+        margin: 110px 0 72px !important;
     }
 
     .service-details .buttons button {
@@ -331,7 +333,7 @@ font-size: 14px;
         bottom: 22px;
     }
 
-    .service-details .step-content {
+    .service-details .step-content:not(.choose-offer) {
         margin: 70px 0 72px;
     }
  
@@ -347,6 +349,9 @@ font-size: 14px;
     .service-details .choose-offer .col-sm-6 div button:first-of-type {
         width: 155px;
         height: 29px;
+    }
+    .service-details .choose-offer .col-sm-6 {
+        margin-bottom: 75px;
     }
 }
 
