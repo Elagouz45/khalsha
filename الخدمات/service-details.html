@@ -28,7 +28,11 @@
                     <i class="fa-solid fa-right-long"></i>
                     الخدمات
                 </p>
-                <p class="font-bold text-black"> تعبئة الطلب / التخليص الجمركي </p>
+                <p class="font-bold text-black text  d-block"> تعبئة الطلب / التخليص الجمركي </p>
+                <p class="font-bold text-black text d-none">خدمات إضافية / التخليص الجمركي</p>
+                <p class="font-bold text-black text d-none">  تأكيد الطلب / التخليص الجمركي</p>
+                <p class="font-bold text-black text d-none">إرسال الطلب / التخليص الجمركي</p>
+                <p class="font-bold text-black text d-none">اختيار العرض / التخليص الجمركي</p>
             </div>
             <hr class="m-0">
         </section>
@@ -415,8 +419,8 @@
                                     <button class="position-absolute text-white btn">تصفح الآراء</button>
                                 </div>
                             </div>
-                         
-                          
+
+
                             <div class="col-sm-6">
                                 <div class="position-relative">
                                     <button class="position-absolute btn text-white bg-main-blue ">شركة النقل
@@ -475,6 +479,8 @@
     <script>
         let next = document.querySelector('.buttons .next');
         let back = document.querySelector('.buttons .back');
+
+        let headerTextLength = document.querySelectorAll('.header .text').length;
         let stepsLength = document.querySelectorAll('.steps div').length;
         let stepContent = document.querySelectorAll('.step-content').length;
 
@@ -483,9 +489,11 @@
         next.onclick = function () {
             let stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
             let stepContent = document.querySelectorAll('.step-content.d-block')
+            let headerTextActive = document.querySelectorAll('.header .text.d-block')
 
             let lastActive = stepsActive[stepsActive.length - 1]
             let lastStepContentActive = stepContent[stepContent.length - 1]
+            let lastHeaderTextActive = headerTextActive[headerTextActive.length - 1]
 
             if ((stepsActive.length - 1) < (stepsLength - 1)) {
                 lastActive.nextElementSibling.classList.add('active')
@@ -494,27 +502,32 @@
                 lastActive.nextElementSibling.children[0].children[0].classList.remove('d-none')
                 lastActive.nextElementSibling.children[0].children[0].classList.add('d-block')
 
-
                 lastStepContentActive.nextElementSibling.classList.remove('d-none')
                 lastStepContentActive.nextElementSibling.classList.add('d-block')
                 lastStepContentActive.classList.remove('d-block')
                 lastStepContentActive.classList.add('d-none')
+
+                lastHeaderTextActive.nextElementSibling.classList.remove('d-none')
+                lastHeaderTextActive.nextElementSibling.classList.add('d-block')
+                lastHeaderTextActive.classList.remove('d-block')
+                lastHeaderTextActive.classList.add('d-none')
             }
         }
 
         back.onclick = function () {
             let stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
             let stepContent = document.querySelectorAll('.step-content.d-block')
+            let headerTextActive = document.querySelectorAll('.header .text.d-block')
 
             let lastActive = stepsActive[stepsActive.length - 1]
             let lastStepContentActive = stepContent[stepContent.length - 1]
+            let lastHeaderTextActive = headerTextActive[headerTextActive.length - 1]
 
             if ((stepsActive.length - 1) > 0) {
                 lastActive.classList.remove('active');
 
                 lastActive.children[0].children[0].classList.add('d-none')
                 lastActive.children[0].children[0].classList.remove('d-block')
-
                 lastActive.previousElementSibling.children[0].children[0].classList.remove('d-none')
                 lastActive.previousElementSibling.children[0].children[0].classList.add('d-block')
 
@@ -522,6 +535,12 @@
                 lastStepContentActive.previousElementSibling.classList.add('d-block')
                 lastStepContentActive.classList.remove('d-block')
                 lastStepContentActive.classList.add('d-none')
+
+
+                lastHeaderTextActive.previousElementSibling.classList.remove('d-none')
+                lastHeaderTextActive.previousElementSibling.classList.add('d-block')
+                lastHeaderTextActive.classList.remove('d-block')
+                lastHeaderTextActive.classList.add('d-none')
             }
         }
 
