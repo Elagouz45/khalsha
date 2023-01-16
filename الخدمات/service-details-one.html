@@ -512,11 +512,6 @@
                 lastActive.children[0].children[0].classList.remove('d-block')
                 lastActive.nextElementSibling.children[0].children[0].classList.remove('d-none')
                 lastActive.nextElementSibling.children[0].children[0].classList.add('d-block')
-
-                // lastStepContentActive.nextElementSibling.classList.remove('d-none')
-                // lastStepContentActive.nextElementSibling.classList.add('d-block')
-                // lastStepContentActive.classList.remove('d-block')
-                // lastStepContentActive.classList.add('d-none')
                 stepsActive = Array.from(document.querySelectorAll('.steps div.active'));
                 stepContents.forEach(ele => {
                     ele.classList.add('d-none')
@@ -559,12 +554,6 @@
 
                 stepContents[stepsActive.length - 1].classList.add('d-block')
                 stepContents[stepsActive.length - 1].classList.remove('d-none')
-
-                // lastStepContentActive.previousElementSibling.classList.remove('d-none')
-                // lastStepContentActive.previousElementSibling.classList.add('d-block')
-                // lastStepContentActive.classList.remove('d-block')
-                // lastStepContentActive.classList.add('d-none')
-
 
                 lastHeaderTextActive.previousElementSibling.classList.remove('d-none')
                 lastHeaderTextActive.previousElementSibling.classList.add('d-block')
