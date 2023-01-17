@@ -123,9 +123,11 @@
 .service-details .step-content:not(.choose-offer) {
     margin: 162px 0 72px;
 }
-.service-details .step-content.choose-offer{
+
+.service-details .step-content.choose-offer {
     margin-top: 243px;
 }
+
 .fs-22 {
     font-size: 22px;
 }
@@ -152,7 +154,7 @@
     width: 390px;
 }
 
-.service-details .additional-services label {
+.service-details .additional-services:not(.service-five) label {
     color: #8D8D8D;
     background: #F0F0F0;
     border-radius: 6px;
@@ -161,7 +163,6 @@
     line-height: 40px;
     cursor: pointer;
 }
-
 
 .service-details .send-order .card {
     background: #F9F9F9;
@@ -178,21 +179,23 @@
     background: var(--main-blue-color);
 }
 
-.service-details .choose-offer .row{
-        border-right:  1px solid #C5C5C5;
-        border-left:  1px solid #C5C5C5;
+.service-details .choose-offer .row {
+    border-right: 1px solid #C5C5C5;
+    border-left: 1px solid #C5C5C5;
 }
-.service-details .choose-offer hr{
-    border-top:  2px solid #C5C5C5 !important;  
+
+.service-details .choose-offer hr {
+    border-top: 2px solid #C5C5C5 !important;
     position: relative;
     top: 0;
     margin: 0;
 }
 
-.service-details .choose-offer .row .col-12{
+.service-details .choose-offer .row .col-12 {
     margin: -22px 0 125px;
 }
-.service-details .choose-offer .row .col-12 p{
+
+.service-details .choose-offer .row .col-12 p {
     font-size: 28px;
     width: 387px;
     height: 45px;
@@ -202,16 +205,19 @@
     position: relative;
     z-index: 1;
 }
+
 .service-details .choose-offer .col-sm-6 {
     margin-bottom: 120px;
 }
-.service-details .choose-offer .col-sm-6 > div{
+
+.service-details .choose-offer .col-sm-6>div {
     border-radius: 26px;
     width: 75%;
-    border:5px solid #628CA5;
-    margin:0 auto 15px;
+    border: 5px solid #628CA5;
+    margin: 0 auto 15px;
 }
-.service-details .choose-offer .col-sm-6 div button:first-of-type{
+
+.service-details .choose-offer .col-sm-6 div button:first-of-type {
     left: 50%;
     width: 161px;
     height: 32px;
@@ -221,7 +227,8 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
-.service-details .choose-offer .col-sm-6 div button:last-of-type{
+
+.service-details .choose-offer .col-sm-6 div button:last-of-type {
     bottom: 0%;
     left: 50%;
     width: 143px;
@@ -229,19 +236,63 @@
     font-size: 18px;
     line-height: 13px;
     background: #9E9E9E;
-border-radius: 6px;
-transform: translate(-50%,50%);
-}
-.service-details .choose-offer .col-sm-6 p{
-    margin: 24px 0;
-}
-.service-details .choose-offer .col-sm-6 p span:first-child{
-font-size: 14px;
+    border-radius: 6px;
+    transform: translate(-50%, 50%);
 }
 
-.service-details .choose-offer .col-sm-6 p span:last-child{
+.service-details .choose-offer .col-sm-6 p {
+    margin: 24px 0;
+}
+
+.service-details .choose-offer .col-sm-6 p span:first-child {
+    font-size: 14px;
+}
+
+.service-details .choose-offer .col-sm-6 p span:last-child {
     font-size: 18px;
-    }
+}
+
+.certifications .col-sm-6 {
+    margin-bottom: 33px;
+}
+ .modal-body .row{
+    margin: 15px 15px 0;
+    border: 2px solid #5B5B5B;
+    padding: 15px;
+    font-size: 14px;
+    color: black
+}
+.modal-footer .confirm{
+    background: #A0A0A0;
+    border-radius: 6px;
+    width: 145px;
+    Height: 43px;
+    left: 50%;
+    bottom: -23px;
+    transform: translateX(-50%);
+}
+.certifications .col-sm-6:nth-child(even) {
+    text-align: left;
+}
+
+
+.info .modal-body input,
+.info .modal-body select{
+    border: 0.491868px solid #4A4A4A;
+    border-radius: 6px !important;
+    width: 115px;
+    height: 33px;
+    padding: 5px;
+    display: block;
+    color: rgba(91, 91, 91, 0.6);
+    margin: 5px 0 23px;
+}
+.info .modal-body .col-12 input{
+    width: 100%;
+}
+.update-button{
+    margin-right: 250px;
+}
 @media (max-width:1600px) {
     .service-details .step-content {
         margin: 110px 0 72px !important;
@@ -276,12 +327,21 @@ font-size: 14px;
         font-size: 20px;
         width: 320px;
     }
-}
 
+}
+@media (max-width:1024px) {
+    .update-button{
+        margin-right: 150px;
+    } 
+}
 @media (max-width:991.95px) {
+
     .service-details .container>.w-75,
-    .service-details .choose-offer .col-sm-6 > div{
+    .service-details .choose-offer .col-sm-6>div {
         width: 90% !important;
+    }
+    .update-button{
+        margin-right: 110px;
     }
 }
 
@@ -328,7 +388,7 @@ font-size: 14px;
         width: 25px;
     }
 
-    .service-details .steps div img{
+    .service-details .steps div img {
         left: -25px;
         bottom: 22px;
     }
@@ -336,40 +396,48 @@ font-size: 14px;
     .service-details .step-content:not(.choose-offer) {
         margin: 70px 0 72px;
     }
- 
+
     .service-details .choose-offer .col-sm-6 div button:last-of-type,
     .service-details .choose-offer .col-sm-6 div button:first-of-type,
     .service-details .choose-offer .col-sm-6 p span:last-child {
         font-size: 15px;
     }
-    .service-details .choose-offer .col-sm-6 div button:last-of-type{
+
+    .service-details .choose-offer .col-sm-6 div button:last-of-type {
         width: 114px;
         height: 35px;
     }
+
     .service-details .choose-offer .col-sm-6 div button:first-of-type {
         width: 155px;
         height: 29px;
     }
+
     .service-details .choose-offer .col-sm-6 {
         margin-bottom: 75px;
     }
-}
 
+  
+}
 
 @media (max-width:575.95px) {
     .service-details .overlay1 {
         height: 90%;
     }
+
     .service-details .overlay2 {
         display: none;
     }
+
     .service-details .steps {
-        margin-top:95px;
+        margin-top: 95px;
     }
+
     .service-details table input:not([type="radio"]),
     .service-details table select {
         width: 200px;
     }
+
     .service-details .buttons button {
         height: 39px;
         width: 110px;
@@ -393,10 +461,25 @@ font-size: 14px;
         width: 68px;
         transform: translate(-15px, -50%);
     }
+
     .service-details .choose-offer .row .col-12 p {
         font-size: 15px;
         width: 235px;
     }
+    .certifications .col-sm-6{
+        width: 50% !important;
+        margin-bottom: 15px;
+    }
+    .certifications .modal-body .row {
+        margin: 6px 0px 0;
+        padding: 6px 0;
+        font-size: 10px;
+    }
+
+    .update-button{
+        margin-right: 50px;
+    }
+  
 }
 
 @media (max-width:375px) {
@@ -407,4 +490,3 @@ font-size: 14px;
         height: 50px;
     }
 }
-
