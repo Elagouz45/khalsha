@@ -142,7 +142,7 @@
     width: 140px;
 }
 
-.service-details table input:not([type="radio"]),
+.service-details table  input:not([type="radio"]),
 .service-details table select {
     color: #AAAAAA;
     font-size: 18px;
@@ -153,8 +153,13 @@
     height: 46px;
     width: 390px;
 }
+.service-details table .two-input input:not([type="radio"]){
+    color: #AAAAAA;
+    width: 190px;
+}
 
-.service-details .additional-services:not(.service-five) label {
+.service-details .additional-services:not(.no-bg) label,
+.service-details label.upload {
     color: #8D8D8D;
     background: #F0F0F0;
     border-radius: 6px;
@@ -293,6 +298,10 @@
 .update-button{
     margin-right: 250px;
 }
+
+.fill-application div p{
+    margin: 76px 0 35px;
+}
 @media (max-width:1600px) {
     .service-details .step-content {
         margin: 110px 0 72px !important;
@@ -326,6 +335,10 @@
     .service-details .choose-offer .row .col-12 p {
         font-size: 20px;
         width: 320px;
+    }
+    .service-details table .two-input input:not([type="radio"]){
+        color: #AAAAAA;
+        width: 146px;
     }
 
 }
@@ -417,7 +430,9 @@
         margin-bottom: 75px;
     }
 
-  
+    .service-details table .two-input input:not([type="radio"]) {
+        width: 125px;
+    }
 }
 
 @media (max-width:575.95px) {
@@ -479,7 +494,9 @@
     .update-button{
         margin-right: 50px;
     }
-  
+    .service-details table .two-input input:not([type="radio"]) {
+        width: 100px;
+    }
 }
 
 @media (max-width:375px) {
