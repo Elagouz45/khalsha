@@ -9,14 +9,48 @@
     <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/fontawesome.min.css" rel="stylesheet">
     <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/brands.css" rel="stylesheet">
     <link href="./../../assets/css/fontawesome-free-6.2.1-web/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="./../../assets/css/shared-style.css">
-    <link rel="stylesheet" href="./../../assets/css/order-details.css">
+    <link rel="stylesheet" href="./../../assets/css/index.css">
     <meta http-equiv="content-type" content="text/html; charset=UTF8">
 
 </head>
 
 <body>
-
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./../../assets/images/Frame.svg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">من نحن</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">طريقة الإستخدام</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الخدمات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">التسجيل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">الأسئلة الشائعة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="account-details position-relative">
 
@@ -443,131 +477,248 @@
 
         </section>
 
-    </div>
 
+        <!-- Modal -->
+        <div class="modal order fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog mx-auto modal-dialog-centered">
 
-    <!-- Modal -->
-    <div class="modal order fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog mx-auto modal-dialog-centered">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header border-0">
+                        <button type="button"
+                            class="btn-close bg-main-brown opacity-100 top-0 m-0 position-absolute text-white "
+                            data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="row">
 
-            <div class="modal-content rounded-0">
-                <div class="modal-header border-0">
-                    <button type="button"
-                        class="btn-close bg-main-brown opacity-100 top-0 m-0 position-absolute text-white "
-                        data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body ">
-                    <div class="row">
-
-                        <div class="col-lg-6 col-sm-5 mb-3 ">
-                            <img src="./../../assets/images/Trella 1.png" class="trella">
-                        </div>
-
-                        <div class="col-lg-6 col-sm-7 mb-3 ">
-                            <div>
-                                <h2 class="font-bold text-black">سيارة تريلا نقل</h2>
-                                <p class="text-bold-gray">شركة متخصصة في النقل البري</p>
-                                <hr class="min">
-                                <h2 class="font-bold text-white bg-main-brown p-1 m-0">إجمالي السعر 2000 ريال</h2>
-                                <p class="text-main-brown m-0">تنوية هناك رسوم آخرى خلال العملية اللوجستية</p>
+                            <div class="col-lg-6 col-sm-5 mb-3 ">
+                                <img src="./../../assets/images/Trella 1.png" class="trella">
                             </div>
-                        </div>
 
-                        <div class="col-lg-6 col-sm-5 mb-3">
-                            <h4>التقييم</h4>
-                            <p>
-                                <img src="./../../assets/images/Star 5.png">
-                                <img src="./../../assets/images/Star 5.png">
-                                <img src="./../../assets/images/Star 5.png">
-                                <img src="./../../assets/images/Star 5.png">
-                                <img src="./../../assets/images/Star 5.png">
-                            </p>
-                            <p class="d-flex text-bold-gray font-bold border-bottom">
-                                <span class="w-60">الطول</span>
-                                <span class="w-40">20 متر</span>
-                            </p>
-                            <p class="d-flex text-bold-gray font-bold border-bottom">
-                                <span class="w-60">العرض</span>
-                                <span class="w-40">5 متر</span>
-                            </p>
-                            <p class="d-flex text-bold-gray font-bold border-bottom">
-                                <span class="w-60">الإرتفاع</span>
-                                <span class="w-40">6 متر</span>
-                            </p>
-                            <p class="d-flex text-bold-gray font-bold ">
-                                <span class="w-60">أقصي حمولة</span>
-                                <span class="w-40">15 طن</span>
-                            </p>
-                        </div>
-
-                        <div class="col-lg-6 col-sm-7 mb-3 ">
-                            <div class="rates position-relative">
-                                <p class="position-absolute font-bold mb-0 opinions bg-main-blue text-white">اراء
-                                    العملاء</p>
-                                <div class="rate py-4">
-
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="text-black font-bold">ابو حمزة</span>
-                                        <p>
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                        </p>
-                                    </div>
-
-                                    <span class="desc-rate text-black ">شركة مرة كويسة لكن تم التأخر في الرد.</span>
-                                    <hr>
-
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="text-black name font-bold">ابو حمزة</span>
-                                        <p>
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                        </p>
-                                    </div>
-                                    <span class="desc-rate text-black">شركة مرة كويسة لكن تم التأخر في الرد.</span>
-                                    <hr>
-
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <span class="text-black name font-bold">عبد الكريم محمد</span>
-                                        <p>
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                            <img src="./../../assets/images/Star 10.png">
-                                        </p>
-                                    </div>
-                                    <span class="desc-rate text-black">شركة حلوة كتير وسرعة في التواصل والأداء.</span>
-
+                            <div class="col-lg-6 col-sm-7 mb-3 ">
+                                <div>
+                                    <h2 class="font-bold text-black">سيارة تريلا نقل</h2>
+                                    <p class="text-bold-gray">شركة متخصصة في النقل البري</p>
+                                    <hr class="min">
+                                    <h2 class="font-bold text-white bg-main-brown p-1 m-0">إجمالي السعر 2000 ريال</h2>
+                                    <p class="text-main-brown m-0">تنوية هناك رسوم آخرى خلال العملية اللوجستية</p>
                                 </div>
                             </div>
 
-                        </div>
+                            <div class="col-lg-6 col-sm-5 mb-3">
+                                <h4>التقييم</h4>
+                                <p>
+                                    <img src="./../../assets/images/Star 5.png">
+                                    <img src="./../../assets/images/Star 5.png">
+                                    <img src="./../../assets/images/Star 5.png">
+                                    <img src="./../../assets/images/Star 5.png">
+                                    <img src="./../../assets/images/Star 5.png">
+                                </p>
+                                <p class="d-flex text-bold-gray font-bold border-bottom">
+                                    <span class="w-60">الطول</span>
+                                    <span class="w-40">20 متر</span>
+                                </p>
+                                <p class="d-flex text-bold-gray font-bold border-bottom">
+                                    <span class="w-60">العرض</span>
+                                    <span class="w-40">5 متر</span>
+                                </p>
+                                <p class="d-flex text-bold-gray font-bold border-bottom">
+                                    <span class="w-60">الإرتفاع</span>
+                                    <span class="w-40">6 متر</span>
+                                </p>
+                                <p class="d-flex text-bold-gray font-bold ">
+                                    <span class="w-60">أقصي حمولة</span>
+                                    <span class="w-40">15 طن</span>
+                                </p>
+                            </div>
 
-                        <div class="col-12">
-                            <input type="checkbox">
-                            <p class="text-black ">أقر انا علي قراءتي <span class="font-bold">للشروط والأحكام </span>
-                                والموافقة عليها.</p>
-                        </div>
+                            <div class="col-lg-6 col-sm-7 mb-3 ">
+                                <div class="rates position-relative">
+                                    <p class="position-absolute font-bold mb-0 opinions bg-main-blue text-white">اراء
+                                        العملاء</p>
+                                    <div class="rate py-4">
 
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text-black font-bold">ابو حمزة</span>
+                                            <p>
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                            </p>
+                                        </div>
+
+                                        <span class="desc-rate text-black ">شركة مرة كويسة لكن تم التأخر في الرد.</span>
+                                        <hr>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text-black name font-bold">ابو حمزة</span>
+                                            <p>
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                            </p>
+                                        </div>
+                                        <span class="desc-rate text-black">شركة مرة كويسة لكن تم التأخر في الرد.</span>
+                                        <hr>
+
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="text-black name font-bold">عبد الكريم محمد</span>
+                                            <p>
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                                <img src="./../../assets/images/Star 10.png">
+                                            </p>
+                                        </div>
+                                        <span class="desc-rate text-black">شركة حلوة كتير وسرعة في التواصل
+                                            والأداء.</span>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-12">
+                                <input type="checkbox">
+                                <p class="text-black ">أقر انا علي قراءتي <span class="font-bold">للشروط والأحكام
+                                    </span>
+                                    والموافقة عليها.</p>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
-                <div class="modal-footer border-0 p-0 position-relative">
-                    <div class="buttons position-absolute  justify-content-evenly d-flex  w-100 ">
-                        <button class="btn text-white agree" data-bs-dismiss="modal" aria-label="Close">موافقة</button>
-                        <button class="btn text-white disagree" data-bs-dismiss="modal" aria-label="Close">رفض</button>
+                    <div class="modal-footer border-0 p-0 position-relative">
+                        <div class="buttons position-absolute  justify-content-evenly d-flex  w-100 ">
+                            <button class="btn text-white agree" data-bs-dismiss="modal"
+                                aria-label="Close">موافقة</button>
+                            <button class="btn text-white disagree" data-bs-dismiss="modal"
+                                aria-label="Close">رفض</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2"></div>
+                <div class="col-xl-9">
+                    <div class="row">
+                        <div class="col-xl-5">
+                            <div class="right-side">
+                                <div class="item mb-5">
+                                    <img src="./../../assets/images/home/footer-logo.svg">
+                                </div>
+                                <p>
+                                    في خلصها, لا نملك شركات مباشرة ولكن نساعدك في البحث و الحصول على الخدمة المناسبة او
+                                    التسويق
+                                    لشركتك بالشكل المناسب . إذا كنت تبحث عن خدمة النقل البري او البحري او الجوي أو خدمة
+                                    المستودعات و
+                                    المختبرات أو التخليص الجمركي, منصة خلصها توفر لك خيارات متعددة ومناسبة لك ونضمن
+                                    لك تجربة ممتعة.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-xl-2">
+                            <ul class="list-none">
+                                <li class="header">
+                                    عن خلصها
+                                </li>
+                                <li>
+                                    من نحن
+                                </li>
+                                <li>
+                                    طريقة الاستخدام
+                                </li>
+                                <li>
+                                    التسجيل
+                                </li>
+                                <li>
+                                    الأسئلة الشائعة
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-2">
+                            <ul class="list-none">
+                                <li class="header">
+                                    خدماتنا
+                                </li>
+                                <li>
+                                    التخليص الجمركي
+                                </li>
+                                <li>
+                                    خدمات الشحن
+                                </li>
+                                <li>
+                                    المخازن والمستودعات
+                                </li>
+                                <li>
+                                    المختبرات والمقاييس
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xl-3">
+                            <ul class="list-none ps-0">
+                                <li class="header">
+                                    تواصل معنا
+                                </li>
+                                <li class="d-flex justify-content-between">
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-facebook-f"></i>
+                                    </div>
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-linkedin-in"></i>
+                                    </div>
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-twitter"></i>
+                                    </div>
+                                    <div class="brand-icon">
+                                        <i class="fa-brands fa-instagram"></i>
+                                    </div>
+                                </li>
+                                <li class="mb-2">
+                                    <div class="item-brand d-flex justify-content-between">
+                                        <div class="content d-flex flex-column">
+                                            <span class="text-start">GET IN ON</span>
+                                            <img src="./../../assets/images/home/google%20play.svg">
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-google-play"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="item-brand d-flex justify-content-between">
+                                        <div class="content d-flex flex-column">
+                                            <span class="text-start">Download on the</span>
+                                            <img src="./../../assets/images/home/apple.svg">
+                                        </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <i class="fa-brands fa-apple"></i>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-1"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>جميع الحقوق محفوظة لــ خلصها 2021 تم تطويره بواسطة النظم المعتمدة.</span>
+        </div>
+    </footer>
     <script src="./../../assets/js/jquery-3.6.3.min.js"></script>
     <script src="./../../assets/js/bootstrap.min.js"></script>
     <script src="./../../assets/js/index.js"></script>
