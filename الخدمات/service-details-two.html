@@ -453,10 +453,10 @@
 
 
     </section>
-    <div class="modal fade info modal-lg" id="landShippingInfo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div class="modal fade info modal-lg landShippingInfo" id="landShippingInfo" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
          aria-labelledby="infoLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content border-0 rounded-0 text-bold-gray">
+            <div class="modal-content border-0 rounded-0 text-bold-gray ">
                 <div class="modal-header position-relative border-0 ">
                     <button type="button"
                             class="btn-close opacity-100 position-absolute top-0 rounded-0 start-0 bg-main-brown m-0 text-white "
@@ -473,18 +473,16 @@
                             <label for="tab2">نقل خاص </label>
                         </div>
                     </div>
-
-
-                    <article>
+                    <article class="position-relative">
                         <form>
                             <div class="row">
-                                <div class="col-sm-6 ml-3">
+                                <div class="col-sm-6 ml-3 mb-4">
                                     <label>نوع الشحنة </label>
                                     <select class="w-100 d-block">
                                         <option value="">غرفة نوم</option>
                                     </select>
                                 </div>
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 mb-4">
                                     <label>
                                         أضف صورة
                                     </label>
@@ -507,14 +505,17 @@
                                 </div>
                             </div>
                         </form>
+                        <div class="position-absolute add-button pointer-event">
+                            اضافة صنف اخر
+                        </div>
                     </article>
                     <article>
                         <h2>article2</h2>
                     </article>
                 </div>
-                <div class="modal-footer border-0 position-relative m-0">
+                <div class="modal-footer border-0 position-relative  ">
                     <button data-bs-dismiss="modal" aria-label="Close"
-                            class="btn fs-22 text-white position-absolute confirm">تاكيد</button>
+                            class="btn fs-22 text-white mt-10rem position-absolute confirm">تاكيد</button>
                 </div>
             </div>
         </div>

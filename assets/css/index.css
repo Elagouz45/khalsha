@@ -1779,7 +1779,18 @@ article.on{
 	width: initial;
 	height: initial;
 }
-
+.add-button{
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+    background: #C76E61;
+    padding: 4px 16px;
+    color: #fff;
+    font-size: 14px;
+}
+.landShippingInfo .modal-body{
+    margin-bottom: 50px;
+}
 /*footer*/
 
 
