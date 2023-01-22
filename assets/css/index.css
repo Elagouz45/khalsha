@@ -3192,8 +3192,8 @@ footer .item-brand {
     border-radius: 21.8706px;
     margin-bottom: 103px;
     padding: 30px;
-    width: 289px;
-    height: 289px;
+    max-width: 289px;
+    max-height: 289px;
 }
 
 .resources-products .product-item:hover {
@@ -3212,6 +3212,7 @@ footer .item-brand {
     text-transform: capitalize;
     color: #FFFFFF;
     text-align: center;
+    white-space: nowrap;
 }
 
 .resources-products .sidebar ul {
@@ -3296,6 +3297,7 @@ footer .item-brand {
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
     padding: 0px 25px 28px 25px;
+    height: calc(100% - 1.5rem);
 }
 
 .resources-cards {
@@ -3341,6 +3343,7 @@ footer .item-brand {
     line-height: 45px;
     text-transform: capitalize;
     color: #C76E61;
+    white-space: nowrap;
 }
 
 .resources-cards .show-button {
@@ -3403,6 +3406,9 @@ footer .item-brand {
     top: -191px;
     width: 100%;
     z-index: -4;
+}
+.resources-products {
+    padding-top: 90px;
 }
 
 @media (max-width:1600px) {
@@ -3650,6 +3656,9 @@ footer .item-brand {
     .my-account .statistics .earnings .bg-main-blue div img.total {
         width: 70px;
     }
+    .resources-products .sidebar .header h5{
+        font-size: 33px;
+    }
 }
 
 @media (max-width:1024.95px) {
@@ -3711,6 +3720,31 @@ footer .item-brand {
         margin-right: 150px;
     }
 
+    .resources .resources-khalasha p{
+        width: 73% !important;
+        font-size: 16px;
+    }
+    .resources-cards h4{
+        font-size: 22px;
+    }
+    .resources-cards .item p{
+        font-size: 15px !important;
+    }
+    .resources-cards .icon-header img {
+        width: 85px;
+        height: 85px;
+    }   
+    .resources-cards .show-button{
+        font-size: 18px;
+        padding: 0 50px;
+    } 
+    .resources-cards{
+        padding: 40px ;
+        margin-top: -110px;
+    }
+    .resources-products .product-item{
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width:991.95px) {
@@ -3909,6 +3943,27 @@ footer .item-brand {
     .blogs-title .resources-khalasha p{
         width: 73% !important;
         font-size: 16px;
+    }
+    .resources-cards{
+        padding: 0 ;
+        margin-top: -30px;
+    }
+    .resources-products .sidebar .header h5{
+        font-size: 25px;
+    }
+    .resources-products .sidebar ul{
+        padding: 15px;
+    }
+    .resources-products .sidebar li{
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .resources-products .product-item .product-item-image img {
+        width: 174px;
+        height: 90px;
+    }
+    .resources-products .sidebar .header{
+        padding: 25px;
     }
 }
 
@@ -4155,7 +4210,8 @@ footer .item-brand {
         margin-bottom: 40px;
         padding: 12px;
     }
-    .blogs-title .resources-khalasha h1{
+    .blogs-title .resources-khalasha h1,
+    .resources .resources-khalasha h1{
         font-size: 22px !important;
     }
     .questions .rounded-button {
@@ -4628,7 +4684,8 @@ footer .item-brand {
     .blogs-title .resources-khalasha h1{
         font-size: 17px !important;
     }
-    .blogs-title .resources-khalasha p{
+    .blogs-title .resources-khalasha p,
+    .resources .resources-khalasha p{
         width: 85% !important;
         line-height: 26px;
     }
@@ -4648,6 +4705,9 @@ footer .item-brand {
     }
     .blogs-title .resources-khalasha{
         padding-bottom: 30px !important;
+    }
+    .resources-khalasha{
+        padding: 60px 0 !important;
     }
 }
 
