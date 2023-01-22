@@ -81,11 +81,11 @@
                         <tr>
                             <td class=" fs-22 text-center text-bold-gray font-bold">خدمة الشحن</td>
                             <td class=" fs-22 text-center text-bold-gray">
-                                <input type="radio" name="type" id="import" class="international-content" value="show">
-                                <label for="import">محلي </label>
+                                <input type="radio" name="service" id="locally" class="international-content" value="show">
+                                <label for="locally">محلي </label>
                             </td>
                             <td class=" fs-22 text-center text-bold-gray">
-                                <input type="radio" name="type" id="international_content" class="international-content" value="hide">
+                                <input type="radio" name="service" id="international_content" class="international-content" value="hide">
                                 <label for="international_content">دولي</label>
                             </td>
                             <td class=" fs-22 text-center text-bold-gray">
@@ -97,7 +97,7 @@
                                 <td class=" fs-22 text-center text-bold-gray font-bold">نوع الشاحنة</td>
                                 <td class=" fs-22 text-center text-bold-gray" colspan="2">
                                     <select>
-                                        <option value="" selected>الاجهزة الكهربائية</option>
+                                        <option value="" selected>بيك أب </option>
                                     </select>
                                 </td>
                                 <td class=" fs-22 text-center text-bold-gray">
@@ -115,16 +115,26 @@
                                     ؟
                                 </td>
                             </tr>
+                            <tr>
+                                <td class="fs-22 text-center text-bold-gray font-bold">
+                                    وصف الشحنة</td>
+                                <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                    <input type="text" value="ثلاجات وتلفزيونات" class="fs-18">
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    ؟
+                                </td>
+                            </tr>
                             <tr class="toggle-content">
                                 <td class=" fs-22 text-center text-bold-gray font-bold">
                                     صور الشحنة
                                 </td>
                                 <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                    <label for="upload3">
+                                    <label for="upload1" class="upload">
                                         تحميل
                                         <i class="fa-solid fa-cloud-arrow-up"></i>
                                     </label>
-                                    <input type="file" hidden id="upload4">
+                                    <input type="file" hidden id="upload1">
                                 </td>
                                 <td class=" fs-22 text-center text-bold-gray">
                                     ؟
@@ -135,58 +145,38 @@
                     </table>
                 </div>
 
-                <div class="additional-services step-content table-responsive d-none">
+                <div class="additional-services   no-bg step-content table-responsive d-none">
                     <table class="w-100">
                         <tbody>
 
-                        <tr>
-                            <td class=" fs-22 text-center text-bold-gray font-bold">إضافة الفاتورة التجارية
-                            </td>
-                            <td class=" fs-22 text-center text-bold-gray" colspan="2">
-
-                                <label for="upload1">
-                                    تحميل
-                                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                                </label>
-                                <input type="file" hidden id="upload1">
-
-                            </td>
-                            <td class=" fs-22 text-center text-bold-gray">
-                                ؟
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class=" fs-22 text-center text-bold-gray font-bold">
-                                إضافة البوليصة
-                            </td>
-                            <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                <label for="upload2">
-                                    تحميل
-                                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                                </label>
-                                <input type="file" hidden id="upload2">
-                            </td>
-                            <td class=" fs-22 text-center text-bold-gray">
-                                ؟
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class=" fs-22 text-center text-bold-gray font-bold">
-                                مرفقات آخــري
-                            </td>
-                            <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                <label for="upload3">
-                                    تحميل
-                                    <i class="fa-solid fa-cloud-arrow-up"></i>
-                                </label>
-                                <input type="file" hidden id="upload3">
-                            </td>
-                            <td class=" fs-22 text-center text-bold-gray">
-                                ؟
-                            </td>
-                        </tr>
+                            <tr>
+                                <td class=" fs-22 text-center text-bold-gray font-bold">هل تريد خدمة التخزين </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    <input type="radio" name="sorting" id="yes">
+                                    <label for="yes">نعم</label>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    <input type="radio" name="sorting" id="no">
+                                    <label for="no">لا</label>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    ؟
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class=" fs-22 text-center text-bold-gray font-bold">هل تريد خدمة فك وتركيب </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    <input type="radio" name="reassemble" id="yes2">
+                                    <label for="yes2">نعم</label>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    <input type="radio" name="reassemble" id="no2">
+                                    <label for="no2">لا</label>
+                                </td>
+                                <td class=" fs-22 text-center text-bold-gray">
+                                    ؟
+                                </td>
+                            </tr>
 
 
                         </tbody>
