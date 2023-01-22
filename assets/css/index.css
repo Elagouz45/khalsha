@@ -1782,6 +1782,11 @@ article.on{
 .landShippingInfo .modal-body{
     margin-bottom: 50px;
 }
+.delete-icon{
+    padding: 5px 12px;
+    background-color: #C76E61;
+    color: #FFFFFF;
+}
 /*footer*/
 
 
