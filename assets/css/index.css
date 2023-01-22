@@ -1693,7 +1693,6 @@ footer .fa-apple {
 
 .modal-content {
     border: 1px solid #5B5B5B;
-    background-color: transparent;
 }
 
 .orders-table .modal .modal-body .col-sm-6>div {
@@ -1770,7 +1769,16 @@ footer .fa-apple {
 .orders-table table tr td:last-child {
     cursor: pointer;
 }
-
+article{
+	display: none;
+}
+article.on{
+	display: block;
+}
+.service-details .info .modal-body input[type='radio']{
+	width: initial;
+	height: initial;
+}
 
 /*footer*/
 
