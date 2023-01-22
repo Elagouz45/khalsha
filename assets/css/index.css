@@ -224,8 +224,8 @@ footer .footer-bottom span {
     text-align: center;
 }
 
-footer .col-lg-3:last-child li.d-flex,
-footer .col-lg-3:last-child ul li:last-child {
+
+footer .col-lg-3:last-child ul li:not(footer .col-lg-3:last-child ul li:first-child) {
     max-width: 250px;
 }
 
@@ -242,12 +242,13 @@ footer .item-brand {
 footer .fa-apple {
     font-size: 40px;
 }
-
+footer ul.list-none{
+    padding: 0;
+    margin: 0;
+}
 
 /*navbar styles*/
 .navbar .nav-link {
-    font-style: normal;
-    font-weight: 500;
     font-size: 21.88px;
     line-height: 36px;
     color: #456071;
@@ -296,8 +297,6 @@ footer .fa-apple {
 }
 
 .home-page .home-header-banner .banner-content p {
-    font-style: normal;
-    font-weight: 500;
     font-size: 34.19px;
     line-height: 109px;
     color: #628ca5;
@@ -345,8 +344,6 @@ footer .fa-apple {
 }
 
 .home-page .home-about-us-slider .banner-content h2 {
-    font-style: normal;
-    font-weight: 500;
     font-size: 34.19px;
     color: #6394b8;
     margin-top: 34px;
@@ -580,8 +577,6 @@ footer .fa-apple {
 }
 
 .home-page .our-services-goals p {
-    font-style: normal;
-    font-weight: 500;
     font-size: 17.5px;
     line-height: 28px;
     text-align: right;
@@ -924,7 +919,7 @@ footer .fa-apple {
 
 .register .buttons button {
     color: white;
-    padding: 19px 17px 17px 20px;
+    padding: 19px 17px 16px 20px;
     border-radius: 48px;
     border: 0;
     transition: .6s all;
@@ -1208,8 +1203,6 @@ footer .fa-apple {
 }
 
 .contact-us .contact-us-card p {
-    font-style: normal;
-    font-weight: 500;
     font-size: 11.3886px;
     line-height: 18px;
     text-align: right;
@@ -1614,8 +1607,6 @@ footer .fa-apple {
 }
 
 .services-title .item h3 {
-    font-style: normal;
-    font-weight: 500;
     font-size: 27.35px;
     line-height: 45px;
     text-align: right;
@@ -3013,13 +3004,10 @@ footer .item-brand {
     color: #C76E61;
 }
 
-.blogs-title .resources-khalasha h1::after,
-.blogs-title .resources-khalasha h1::before {
-    background-color: white;
-}
+
 
 .blogs-title .resources-khalasha h1::after {
-    right: 34%;
+    right: 16%;
     background-color: #C76E61;
 }
 
@@ -3056,8 +3044,6 @@ footer .item-brand {
 
 .questions .question-body .item-inner {
     margin-top: 15px;
-    font-style: normal;
-    font-weight: 500;
     font-size: 17.5px;
     line-height: 28px;
     text-align: right;
@@ -3072,7 +3058,7 @@ footer .item-brand {
     background-color: #F5F5F5;
     z-index: -1;
     top: 0px;
-    clip-path: polygon(1% 0, 100% 0, 100% 35%, 100% 67%, 100% 70%, 100% 92%, 0 48%, 0 55%, 0% 35%, 0 12%);
+    clip-path: polygon(0 0%, 100% 0, 100% 87%, 0% 54%)
 }
 
 
@@ -3094,9 +3080,12 @@ footer .item-brand {
     border-radius: 21.8706px;
     margin-bottom: 63px;
     padding: 25px;
-    width: 362px;
+    /* width: 362px; */
+    width: 100%;
 }
-
+.blog-item-image{
+    width: 100%;
+}
 .blog-cards .blog-item:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -3108,8 +3097,6 @@ footer .item-brand {
 }
 
 .blog-cards .sidebar .header h5 {
-    font-style: normal;
-    font-weight: 500;
     font-size: 39.35px;
     line-height: 45px;
     text-transform: capitalize;
@@ -3140,7 +3127,8 @@ footer .item-brand {
 }
 
 .blog-cards .blog-item .blog-item-image img {
-    width: 313px;
+    /* width: 313px; */
+    width: 100%;
     height: 223px;
     border-radius: 17px;
 }
@@ -3158,7 +3146,7 @@ footer .item-brand {
     background-color: #F5F5F5;
     z-index: -1;
     top: 0px;
-    clip-path: polygon(1% 0, 100% 0, 100% 35%, 100% 67%, 100% 70%, 100% 92%, 0 48%, 0 55%, 0% 35%, 0 12%);
+    clip-path: polygon(0 0%, 100% 0, 100% 87%, 0% 54%)
 }
 
 .blog-cards .author-name {
@@ -3166,8 +3154,6 @@ footer .item-brand {
 }
 
 .blog-cards .author-name h6 {
-    font-style: normal;
-    font-weight: 500;
     font-size: 15px;
     line-height: 24px;
     text-align: right;
@@ -3177,8 +3163,6 @@ footer .item-brand {
 }
 
 .blog-cards .author-name span {
-    font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 19px;
     text-transform: capitalize;
@@ -3223,8 +3207,6 @@ footer .item-brand {
 }
 
 .resources-products .sidebar .header h5 {
-    font-style: normal;
-    font-weight: 500;
     font-size: 39.35px;
     line-height: 45px;
     text-transform: capitalize;
@@ -3355,8 +3337,6 @@ footer .item-brand {
 }
 
 .resources-cards h4 {
-    font-style: normal;
-    font-weight: 500;
     font-size: 27.35px;
     line-height: 45px;
     text-transform: capitalize;
@@ -3449,6 +3429,9 @@ footer .item-brand {
         right: 70px;
     }
 
+    .navbar .nav-link{
+        font-size: 17px
+    }
     .home-page .home-header-banner .owl-carousel img {
         width: 400px;
     }
@@ -3464,8 +3447,17 @@ footer .item-brand {
     .my-account .leftSide>div h2  {
         font-size: 30px;
     }
+    .home-page .service-item .service-button {
+        background: #628ca5;
+        border-radius: 37px;
+        font-size: 18px;
+        line-height: 36px;
+        width: 222px;
+        height: 50px;
+    }
 
-    .using-way .owl-carousel h4 ,.register .text p, .register form button.btn{
+    .using-way .owl-carousel h4 ,.register .text p,
+     .register form button.btn{
         font-size: 22px;
     }
 
@@ -3683,18 +3675,19 @@ footer .item-brand {
         height: 380px;
     }
 
+
     .using-way .source,
     .using-way .services {
         margin-bottom: 100px;
     }
 
     .using-way .owl-carousel h4 {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .using-way .owl-carousel h4 span {
         line-height: 27px;
-        margin-left: 10px;
+        margin-left: 7px;
     }
 
     .using-way .slider .item {
@@ -3743,7 +3736,23 @@ footer .item-brand {
     h1::before {
         right: 60px;
     }
-
+    .navbar {
+        padding: 8px;
+    }
+    .navbar-toggler:focus{
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    .navbar-nav{
+        --bs-scroll-height:unset !important;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-collapse {
+        border-top: 1px solid #eee;
+        margin-top: 21px;
+        padding-bottom: 15px;
+    }
     .home-page .statics h5 {
         font-size: 20px;
         line-height: 30px;
@@ -3755,7 +3764,11 @@ footer .item-brand {
         bottom: -80px;
         height: 110px;
     }
-
+    .home-page .service-item .service-button {
+            font-size: 14px;
+            width: 200px;
+            height: 44px;
+    }
     footer .list-none li {
         margin-bottom: 14px;
     }
@@ -3867,6 +3880,36 @@ footer .item-brand {
     .my-account .statistics .earnings .bg-main-blue div img:not(.total) {
         width: 80px;
     }
+    .register .buttons button.fs-18,
+    .register .text .login{
+        font-size: 14px;
+    }
+    .register .text p{
+        font-size: 17px;
+    }
+    .register .text .login{
+        width: 207px;
+    }
+    .register form {
+        padding: 19px;
+    }
+    .register label div {
+        font-size: 13px;
+        text-align: right;
+        padding: 0 5px;
+    }
+    .contact-us .contact-form {
+        margin: 87px 0px 87px 54px;
+    }
+    
+    .contact-us .contact-us-card h4 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .blogs-title .resources-khalasha p{
+        width: 73% !important;
+        font-size: 16px;
+    }
 }
 
 @media (max-width:767.95px) {
@@ -3904,10 +3947,6 @@ footer .item-brand {
     .home-page .our-clients .d-flex .item {
         width: calc(100% / 2) !important;
         text-align: center;
-    }
-
-    .using-way .owl-carousel h4 {
-        font-size: 16px;
     }
 
     .using-way .card .slider .item:first-of-type {
@@ -4087,6 +4126,48 @@ footer .item-brand {
     .my-account .statistics .earnings .bg-main-blue div img.total {
         width: 55px !important;
     }
+    .contact-us{
+        padding: 0;
+    }
+    .contact-us .contact-us-card h4 {
+        text-align: center;
+        padding:15px 0 10px;
+    }
+    .contact-us .contact-us-card p {
+        font-size: 12px;
+        margin-top: 15px;
+        text-align: center;
+    }
+    .contact-us .contact-us-card .icons{
+        justify-content: center;
+    } 
+    .contact-us .contact-form{
+        width: 85%;
+       margin: 55px auto 55px 
+    }
+
+    .blog-cards .blog-item h4 {
+        font-size: 16px;
+        line-height: 7px;
+    }    
+    .blog-cards .blog-item {
+        border-radius: 13px;
+        margin-bottom: 40px;
+        padding: 12px;
+    }
+    .blogs-title .resources-khalasha h1{
+        font-size: 22px !important;
+    }
+    .questions .rounded-button {
+        padding: 7px 68px;
+        font-size: 20px;
+    }
+    .questions .items {
+        padding-top: 20px;
+    }
+    .questions .item {
+        padding: 40px 40px 40px 114px;
+    }    
 }
 
 @media (max-width:575px) {
@@ -4544,6 +4625,30 @@ footer .item-brand {
     .my-account .statistics .chart {
         margin-top: 20px;
     }
+    .blogs-title .resources-khalasha h1{
+        font-size: 17px !important;
+    }
+    .blogs-title .resources-khalasha p{
+        width: 85% !important;
+        line-height: 26px;
+    }
+    .questions .item {
+        padding: 30px;
+    } 
+    .questions .question-header{
+        font-size: 17px;
+        white-space: nowrap;
+    }
+    .questions .question-body .item-inner{
+        font-size: 14px;
+    }
+    .blogs-title .resources-khalasha h1::after,
+    .blogs-title .resources-khalasha h1::before{
+        width: 50px !important;
+    }
+    .blogs-title .resources-khalasha{
+        padding-bottom: 30px !important;
+    }
 }
 
 @media (max-width:375px) {
@@ -4552,5 +4657,14 @@ footer .item-brand {
         bottom: 18px;
         width: 50px;
         height: 50px;
+    }
+    .using-way .owl-carousel .header {
+        padding: 14px 25px 11px;
+    }
+        .using-way .owl-carousel h4 {
+        font-size: 12px;
+    }
+    .blogs-title .resources-khalasha h1{
+        font-size: 15px !important;
     }
 }
