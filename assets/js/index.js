@@ -64,6 +64,7 @@ $(document).ready(function () {
   var step = 300;
 
   $(".preSlide").bind("click", function (event) {
+    console.log("hhhhhhhhhhhhhh")
     event.preventDefault();
     $(".slideouter").animate({
       scrollLeft: "+=" + step + "px"
@@ -71,6 +72,7 @@ $(document).ready(function () {
   });
 
   $(".nextSlide").bind("click", function (event) {
+    console.log("yyyyyyyyu")
     event.preventDefault();
     $(".slideouter").animate({
       scrollLeft: "-=" + step + "px"
