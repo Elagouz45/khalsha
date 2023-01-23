@@ -1770,6 +1770,12 @@ article.on{
 	width: initial;
 	height: initial;
 }
+.service-details .info .modal-body input[type='checkbox']{
+    width: initial;
+    height: initial;
+    display: inline-block;
+    vertical-align: top;
+}
 .add-button{
     bottom: -10px;
     right: 50%;
