@@ -62,15 +62,19 @@
     padding-top: 150px;
     padding-bottom: 150px;
 }
-.fs-14{
+
+.fs-14 {
     font-size: 14px;
 }
-.fs-16{
+
+.fs-16 {
     font-size: 16px;
 }
-.fs-18{
+
+.fs-18 {
     font-size: 18px;
 }
+
 * {
     box-sizing: border-box;
     direction: rtl;
@@ -111,6 +115,7 @@ a {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #628ca591 !important;
 }
+
 
 /******** global *****/
 h1 {
@@ -170,8 +175,103 @@ h3 {
 .modal-dialog-centered {
     min-height: unset !important;
 }
-.modal-dialog{
+
+.modal-dialog {
     background-color: white;
+}
+
+.msg-icn {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    box-sizing: border-box;
+    width: 30px;
+    height: 32px;
+    background: #9E9E9E;
+    border-radius: 7px;
+    line-height: 38px;
+    cursor: pointer;
+}
+
+.msg-icn:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 8px;
+    background: #9E9E9E;
+    top: calc(100% - 1px);
+    left: 10px;
+    box-sizing: border-box;
+    clip-path: polygon(0 0, 100% 0, 7% 100%, 0 100%);
+}
+
+.msg-icn:hover,
+.msg-icn:hover:after {
+    background-color: var(--main-blue-color);
+    ;
+}
+
+select , input[type='number'] ,input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+select+span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-14%);
+    content: ' ';
+    clip-path: polygon(0 0%, 100% 0, 100% 0%, 50% 82%);
+    height: 12px;
+    width: 14px;
+    background: #9E9E9E;
+    margin-right: -31px;
+}
+
+input[type='number'] {
+    text-align: center;
+}
+
+input+span,
+input+span+span {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(91, 91, 91, 0.6);
+    width: 19px;
+    height: 19px;
+    line-height: 25px;
+}
+
+input+span {
+    font-size: 20px;
+}
+
+input+span+span {
+    font-size: 28px;
+
+}
+.service-details .modal.fade.info input+span{
+    right: 19px;
+}
+.service-details .modal.fade.info input+span+span{
+    right: 112px;
+}
+.service-details.service-one input+span{
+    right: 16%;
+}
+.service-details.service-one input+span+span{
+    left: 16%;
+}
+
+
+.service-details.service2 input+span+span{
+    left: -3%;
+}
+.service-details.service2 input+span{
+    right: 5%;
 }
 /*footer*/
 footer {
@@ -242,7 +342,8 @@ footer .item-brand {
 footer .fa-apple {
     font-size: 40px;
 }
-footer ul.list-none{
+
+footer ul.list-none {
     padding: 0;
     margin: 0;
 }
@@ -1399,8 +1500,13 @@ footer ul.list-none{
 }
 
 .service-details table input:not([type="radio"]),
+.service-details table input::placeholder,
 .service-details table select {
     color: #AAAAAA;
+}
+
+.service-details table input:not([type="radio"]),
+.service-details table select {
     text-align: center;
     border: 1px solid #5B5B5B;
     border-radius: 6px;
@@ -1409,13 +1515,43 @@ footer ul.list-none{
     width: 390px;
 }
 
+
+
+.modal select+span {
+    margin-right: 0;
+    transform: translateY(-30%);
+    left: 17px;
+}
+
+.orders-table .modal select+span {
+    margin-right: 0;
+    transform: translateY(90%);
+    left: 6px;
+}
+
+.my-account select {
+    padding-left: 15px;
+}
+
+.my-account select+span {
+    margin-right: 0;
+    height: 8px;
+    width: 12px;
+    transform: translateY(-25%);
+    left: 3px;
+}
+
 .service-details table .two-input input:not([type="radio"]) {
-    color: #AAAAAA;
     width: 190px;
 }
 
+.service-details .additional-services.service-two tr td:first-child {
+    width: 300px;
+}
+
 .service-details .additional-services:not(.no-bg) label,
-.service-details label.upload {
+.service-details label.upload,
+.formContainer2 label.upload {
     color: #8D8D8D;
     background: #F0F0F0;
     border-radius: 6px;
@@ -1760,23 +1896,31 @@ footer ul.list-none{
 .orders-table table tr td:last-child {
     cursor: pointer;
 }
-article{
-	display: none;
+
+/****************************************/
+/***************************************/
+
+article {
+    display: none;
 }
-article.on{
-	display: block;
+
+article.on {
+    display: block;
 }
-.service-details .info .modal-body input[type='radio']{
-	width: initial;
-	height: initial;
+
+.service-details .info .modal-body input[type='radio'] {
+    width: initial;
+    height: initial;
 }
-.service-details .info .modal-body input[type='checkbox']{
+
+.service-details .info .modal-body input[type='checkbox'] {
     width: initial;
     height: initial;
     display: inline-block;
     vertical-align: top;
 }
-.add-button{
+
+.add-button {
     bottom: -10px;
     right: 50%;
     transform: translateX(50%);
@@ -1785,14 +1929,19 @@ article.on{
     color: #fff;
     font-size: 14px;
 }
-.landShippingInfo .modal-body{
+
+.landShippingInfo .modal-body {
     margin-bottom: 50px;
 }
-.delete-icon{
+
+.delete-icon {
     padding: 5px 12px;
     background-color: #C76E61;
     color: #FFFFFF;
 }
+
+.landShippingInfo .radio-item input {}
+
 /*footer*/
 
 
@@ -3105,9 +3254,11 @@ footer .item-brand {
     /* width: 362px; */
     width: 100%;
 }
-.blog-item-image{
+
+.blog-item-image {
     width: 100%;
 }
+
 .blog-cards .blog-item:hover {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -3429,8 +3580,26 @@ footer .item-brand {
     width: 100%;
     z-index: -4;
 }
+
 .resources-products {
     padding-top: 90px;
+}
+
+.formContainer2 input,
+.formContainer3 input,
+.formContainer3 select {
+    color: #5B5B5B99;
+    border: 0.49px solid #4A4A4A;
+    margin-bottom: 21px;
+}
+
+.formContainer2 label.upload,
+.formContainer3 label.upload {
+    width: 85px;
+    height: 25px;
+    text-align: center;
+    font-size: 11px;
+    line-height: 25px;
 }
 
 @media (max-width:1600px) {
@@ -3457,9 +3626,10 @@ footer .item-brand {
         right: 70px;
     }
 
-    .navbar .nav-link{
+    .navbar .nav-link {
         font-size: 17px
     }
+
     .home-page .home-header-banner .owl-carousel img {
         width: 400px;
     }
@@ -3468,13 +3638,17 @@ footer .item-brand {
         font-size: 53.78px;
         line-height: 50px;
     }
-    .home-page .home-header-banner .banner-content p{
+
+    .home-page .home-header-banner .banner-content p {
         line-height: 60px;
     }
-    .home-page .home-header-banner .banner-content p,h1,
-    .my-account .leftSide>div h2  {
+
+    .home-page .home-header-banner .banner-content p,
+    h1,
+    .my-account .leftSide>div h2 {
         font-size: 30px;
     }
+
     .home-page .service-item .service-button {
         background: #628ca5;
         border-radius: 37px;
@@ -3484,8 +3658,9 @@ footer .item-brand {
         height: 50px;
     }
 
-    .using-way .owl-carousel h4 ,.register .text p,
-     .register form button.btn{
+    .using-way .owl-carousel h4,
+    .register .text p,
+    .register form button.btn {
         font-size: 22px;
     }
 
@@ -3620,9 +3795,11 @@ footer .item-brand {
         width: 320px;
     }
 
-    .service-details table .two-input input:not([type="radio"]) {
+    .service-details table .two-input input::placeholder,
+    .service-details table .two-input input:not([type="radio"]),
+    .service-details table .two-input select {
         color: #AAAAAA;
-        width: 146px;
+        width: 170px;
     }
 
 
@@ -3639,12 +3816,15 @@ footer .item-brand {
         width: 160px;
     }
 
-    .account-details .create-offer,.service-details .choose-offer .row .col-12 p {
+    .account-details .create-offer,
+    .service-details .choose-offer .row .col-12 p {
         font-size: 20px !important;
     }
+
     .account-details .create-offer {
         width: 400px !important;
     }
+
     .account-details .modal-footer .aggree {
         height: 35px;
         bottom: -19px;
@@ -3653,15 +3833,20 @@ footer .item-brand {
     .account-details .modal.order .modal-body h2 {
         font-size: 25px;
     }
+
     .my-account .leftSide .account-info label {
         font-size: 12px;
         margin-bottom: 6px;
     }
 
-    .my-account .notifications li p.fs-18,.my-account .notifications li span ,
-    .orders-table td.fs-18 ,.orders-table th.fs-18,
-    .account-details .fs-18,.my-account table th.fs-18,
-    .my-account table td.fs-18 ,.settlementation .fs-18{
+    .my-account .notifications li p.fs-18,
+    .my-account .notifications li span,
+    .orders-table td.fs-18,
+    .orders-table th.fs-18,
+    .account-details .fs-18,
+    .my-account table th.fs-18,
+    .my-account table td.fs-18,
+    .settlementation .fs-18 {
         font-size: 14px !important;
     }
 
@@ -3678,11 +3863,25 @@ footer .item-brand {
     .my-account .statistics .earnings .bg-main-blue div img.total {
         width: 70px;
     }
-    .resources-products .sidebar .header h5{
+
+    .resources-products .sidebar .header h5 {
         font-size: 33px;
     }
+    .service-details.service-one input+span{
+        right: 24%;
+    }
+    .service-details.service-one input+span+span{
+        left: 24%;
+    }
 }
-
+@media (max-width:1199.95px) {
+    .service-details.service-one input+span{
+        right: 12%;
+    }
+    .service-details.service-one input+span+span{
+        left: 12%;
+    }
+}
 @media (max-width:1024.95px) {
     .home-page .our-clients .d-flex .item {
         width: calc(100% / 3) !important;
@@ -3742,29 +3941,35 @@ footer .item-brand {
         margin-right: 150px;
     }
 
-    .resources .resources-khalasha p{
+    .resources .resources-khalasha p {
         width: 73% !important;
         font-size: 16px;
     }
-    .resources-cards h4{
+
+    .resources-cards h4 {
         font-size: 22px;
     }
-    .resources-cards .item p{
+
+    .resources-cards .item p {
         font-size: 15px !important;
     }
+
     .resources-cards .icon-header img {
         width: 85px;
         height: 85px;
-    }   
-    .resources-cards .show-button{
+    }
+
+    .resources-cards .show-button {
         font-size: 18px;
         padding: 0 50px;
-    } 
-    .resources-cards{
-        padding: 40px ;
+    }
+
+    .resources-cards {
+        padding: 40px;
         margin-top: -110px;
     }
-    .resources-products .product-item{
+
+    .resources-products .product-item {
         margin-bottom: 50px;
     }
 }
@@ -3792,23 +3997,28 @@ footer .item-brand {
     h1::before {
         right: 60px;
     }
+
     .navbar {
         padding: 8px;
     }
-    .navbar-toggler:focus{
+
+    .navbar-toggler:focus {
         outline: none !important;
         box-shadow: none !important;
     }
-    .navbar-nav{
-        --bs-scroll-height:unset !important;
+
+    .navbar-nav {
+        --bs-scroll-height: unset !important;
         padding: 0;
         margin: 0;
     }
+
     .navbar-collapse {
         border-top: 1px solid #eee;
         margin-top: 21px;
         padding-bottom: 15px;
     }
+
     .home-page .statics h5 {
         font-size: 20px;
         line-height: 30px;
@@ -3820,11 +4030,13 @@ footer .item-brand {
         bottom: -80px;
         height: 110px;
     }
+
     .home-page .service-item .service-button {
-            font-size: 14px;
-            width: 200px;
-            height: 44px;
+        font-size: 14px;
+        width: 200px;
+        height: 44px;
     }
+
     footer .list-none li {
         margin-bottom: 14px;
     }
@@ -3929,63 +4141,82 @@ footer .item-brand {
         padding: 0 5px;
         line-height: 26px;
         margin-left: 9px;
-        font-size: 12px !important; 
+        font-size: 12px !important;
         white-space: nowrap;
     }
 
     .my-account .statistics .earnings .bg-main-blue div img:not(.total) {
         width: 80px;
     }
+
     .register .buttons button.fs-18,
-    .register .text .login{
+    .register .text .login {
         font-size: 14px;
     }
-    .register .text p{
+
+    .register .text p {
         font-size: 17px;
     }
-    .register .text .login{
+
+    .register .text .login {
         width: 207px;
     }
+
     .register form {
         padding: 19px;
     }
+
     .register label div {
         font-size: 13px;
         text-align: right;
         padding: 0 5px;
     }
+
     .contact-us .contact-form {
         margin: 87px 0px 87px 54px;
     }
-    
+
     .contact-us .contact-us-card h4 {
         font-size: 18px;
         line-height: 26px;
     }
-    .blogs-title .resources-khalasha p{
+
+    .blogs-title .resources-khalasha p {
         width: 73% !important;
         font-size: 16px;
     }
-    .resources-cards{
-        padding: 0 ;
+
+    .resources-cards {
+        padding: 0;
         margin-top: -30px;
     }
-    .resources-products .sidebar .header h5{
+
+    .resources-products .sidebar .header h5 {
         font-size: 25px;
     }
-    .resources-products .sidebar ul{
+
+    .resources-products .sidebar ul {
         padding: 15px;
     }
-    .resources-products .sidebar li{
+
+    .resources-products .sidebar li {
         font-size: 14px;
         margin-bottom: 15px;
     }
+
     .resources-products .product-item .product-item-image img {
         width: 174px;
         height: 90px;
     }
-    .resources-products .sidebar .header{
+
+    .resources-products .sidebar .header {
         padding: 25px;
+    }
+    .service-details.service-one input+span{
+        right: 16%;
+    }
+    .service-details.service-one input+span+span{
+        left: 16%;
     }
 }
 
@@ -4203,52 +4434,62 @@ footer .item-brand {
     .my-account .statistics .earnings .bg-main-blue div img.total {
         width: 55px !important;
     }
-    .contact-us{
+
+    .contact-us {
         padding: 0;
     }
+
     .contact-us .contact-us-card h4 {
         text-align: center;
-        padding:15px 0 10px;
+        padding: 15px 0 10px;
     }
+
     .contact-us .contact-us-card p {
         font-size: 12px;
         margin-top: 15px;
         text-align: center;
     }
-    .contact-us .contact-us-card .icons{
+
+    .contact-us .contact-us-card .icons {
         justify-content: center;
-    } 
-    .contact-us .contact-form{
+    }
+
+    .contact-us .contact-form {
         width: 85%;
-       margin: 55px auto 55px 
+        margin: 55px auto 55px
     }
 
     .blog-cards .blog-item h4 {
         font-size: 16px;
         line-height: 7px;
-    }    
+    }
+
     .blog-cards .blog-item {
         border-radius: 13px;
         margin-bottom: 40px;
         padding: 12px;
     }
+
     .blogs-title .resources-khalasha h1,
-    .resources .resources-khalasha h1{
+    .resources .resources-khalasha h1 {
         font-size: 22px !important;
     }
+
     .questions .rounded-button {
         padding: 7px 68px;
         font-size: 20px;
     }
+
     .questions .items {
         padding-top: 20px;
     }
+
     .questions .item {
         padding: 40px 40px 40px 114px;
-    }    
+    }
 }
 
-@media (max-width:575px) {
+@media (max-width:575.95px) {
     h1 {
         font-size: 23px;
     }
@@ -4703,34 +4944,60 @@ footer .item-brand {
     .my-account .statistics .chart {
         margin-top: 20px;
     }
-    .blogs-title .resources-khalasha h1{
+
+    .blogs-title .resources-khalasha h1 {
         font-size: 17px !important;
     }
+
     .blogs-title .resources-khalasha p,
-    .resources .resources-khalasha p{
+    .resources .resources-khalasha p {
         width: 85% !important;
         line-height: 26px;
     }
+
     .questions .item {
         padding: 30px;
-    } 
-    .questions .question-header{
+    }
+
+    .questions .question-header {
         font-size: 17px;
         white-space: nowrap;
     }
-    .questions .question-body .item-inner{
+
+    .questions .question-body .item-inner {
         font-size: 14px;
     }
+
     .blogs-title .resources-khalasha h1::after,
-    .blogs-title .resources-khalasha h1::before{
+    .blogs-title .resources-khalasha h1::before {
         width: 50px !important;
     }
-    .blogs-title .resources-khalasha{
+
+    .blogs-title .resources-khalasha {
         padding-bottom: 30px !important;
     }
-    .resources-khalasha{
+
+    .resources-khalasha {
         padding: 60px 0 !important;
     }
+
+    .formContainer2 form .fs-16,
+    .formContainer2 form .fs-14 {
+
+        font-size: 12px !important;
+    }
+
+    .formContainer2 form .w-25 {
+        width: 32% !important;
+    }
+    .service-details .info .modal-body input, .service-details .info .modal-body select{
+        width: 100%;
+    }
+    .service-details .modal.fade.info input+span+span{
+        left: 11px;
+        right: unset;
+    }
+
 }
 
 @media (max-width:375px) {
@@ -4740,13 +5007,21 @@ footer .item-brand {
         width: 50px;
         height: 50px;
     }
+
     .using-way .owl-carousel .header {
         padding: 14px 25px 11px;
     }
-        .using-way .owl-carousel h4 {
+
+    .using-way .owl-carousel h4 {
         font-size: 12px;
     }
-    .blogs-title .resources-khalasha h1{
+
+    .blogs-title .resources-khalasha h1 {
         font-size: 15px !important;
     }
+    .formContainer2 form .row{
+        margin: 15px 5px 0 !important;
+        padding: 10px 6px !important;
+    }
+
 }

@@ -1,28 +1,57 @@
+let selects = Array.from(document.querySelectorAll('select'))
+
+selects.forEach(ele => {
+  ele.parentElement.classList.add("position-relative")
+  let span = document.createElement("span");
+  ele.after(span);
+})
+
+
+let inputNumbers = Array.from(document.querySelectorAll('input[type="number"]'))
+
+inputNumbers.forEach(ele => {
+  ele.value=0
+  ele.parentElement.classList.add("position-relative")
+  let plus = document.createElement("span");
+  plus.innerText='+'
+  let minus = document.createElement("span");
+  minus.innerText='-'
+  ele.after(plus);
+  plus.after(minus);
+  plus.addEventListener('click',()=>{
+    ele.value++
+  })
+  minus.addEventListener('click',()=>{
+    ele.value--
+  })
+
+})
+
 $(document).ready(function () {
-    $(".home-header-slider").owlCarousel({
-        autoplay: true,
-        smartSpeed: 800,
-        dots: true,
-        mouseDrag: true,
-        margin: 10,
-        navigation: true,
-        slideBy: 1,
-        items: 1,
-    }) ;
-    $(".about-us-slider").owlCarousel({
-        autoplay: true,
-        smartSpeed: 800,
-        dots: true,
-        mouseDrag: true,
-        margin: 10,
-        navigation: true,
-        slideBy: 1,
-        items: 1,
-    })
+  $(".home-header-slider").owlCarousel({
+    autoplay: true,
+    smartSpeed: 800,
+    dots: true,
+    mouseDrag: true,
+    margin: 10,
+    navigation: true,
+    slideBy: 1,
+    items: 1,
+  });
+  $(".about-us-slider").owlCarousel({
+    autoplay: true,
+    smartSpeed: 800,
+    dots: true,
+    mouseDrag: true,
+    margin: 10,
+    navigation: true,
+    slideBy: 1,
+    items: 1,
+  })
 });
 $(document).ready(function () {
-  function changeContent(links, content , className) {
-    
+  function changeContent(links, content, className) {
+
     var linksList = Array.from(document.querySelectorAll(links));
     var contentList = Array.from(document.querySelectorAll(content));
 
@@ -50,21 +79,20 @@ $(document).ready(function () {
     });
   }
 
- // account-steper-detais
-  changeContent('.leaflets.two span', '.mini-table.two','d-block')
-  changeContent('.leaflets.one span', '.mini-table.one','d-block')
-  changeContent('.leaflets.three span', '.chart','d-block')
+  // account-steper-detais
+  changeContent('.leaflets.two span', '.mini-table.two', 'd-block')
+  changeContent('.leaflets.one span', '.mini-table.one', 'd-block')
+  changeContent('.leaflets.three span', '.chart', 'd-block')
   toggleActiveClass('.leaflets.two span')
   toggleActiveClass('.leaflets.one span')
   toggleActiveClass('.leaflets.three span')
-  changeContent('.account-details .steps span:nth-child(odd)', '.account-details .steper .content','d-block')
+  changeContent('.account-details .steps span:nth-child(odd)', '.account-details .steper .content', 'd-block')
   toggleActiveClass('.account-details .steper .steps span:nth-child(odd)')
-  changeContent('.account-details button.creation-price', '.account-details .content','d-block')
+  changeContent('.account-details button.creation-price', '.account-details .content', 'd-block')
 
   var step = 300;
 
   $(".preSlide").bind("click", function (event) {
-    console.log("hhhhhhhhhhhhhh")
     event.preventDefault();
     $(".slideouter").animate({
       scrollLeft: "+=" + step + "px"
@@ -72,7 +100,6 @@ $(document).ready(function () {
   });
 
   $(".nextSlide").bind("click", function (event) {
-    console.log("yyyyyyyyu")
     event.preventDefault();
     $(".slideouter").animate({
       scrollLeft: "-=" + step + "px"
