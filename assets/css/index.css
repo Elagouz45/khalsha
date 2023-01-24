@@ -18,6 +18,10 @@
     --gray-bold-color: #5B5B5B
 }
 
+::placeholder {
+    text-align: center !important;
+}
+
 .bg-main-blue {
     background-color: var(--main-blue-color) !important;
 }
@@ -212,8 +216,10 @@ h3 {
     ;
 }
 
-select , input[type='number'] ,input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button{
+select,
+input[type='number'],
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     appearance: none;
 }
@@ -253,26 +259,36 @@ input+span+span {
     font-size: 28px;
 
 }
-.service-details .modal.fade.info input+span{
+
+.service-details .modal.fade.info input+span {
     right: 19px;
 }
-.service-details .modal.fade.info input+span+span{
+
+.service-details .modal.fade.info input+span+span {
     right: 112px;
 }
-.service-details.service-one input+span{
+
+.service-details.service-one input+span {
     right: 16%;
 }
-.service-details.service-one input+span+span{
+
+.service-details.service-one input+span+span {
     left: 16%;
 }
 
-
-.service-details.service2 input+span+span{
+.service-details.service2 input+span+span {
     left: -3%;
 }
-.service-details.service2 input+span{
+
+.service-details.service2 input+span {
     right: 5%;
 }
+
+
+.service-details.service-three input+span+span {
+    left: 52%;
+}
+
 /*footer*/
 footer {
     background-color: #628CA5;
@@ -1541,7 +1557,8 @@ footer ul.list-none {
     left: 3px;
 }
 
-.service-details table .two-input input:not([type="radio"]) {
+.service-details table .two-input input:not([type="radio"]),
+.service-details table .two-input select {
     width: 190px;
 }
 
@@ -1682,9 +1699,6 @@ footer ul.list-none {
     width: 100%;
 }
 
-.service-details .update-button {
-    margin-right: 250px;
-}
 
 .service-details .fill-application div p {
     margin: 76px 0 35px;
@@ -3799,7 +3813,7 @@ footer .item-brand {
     .service-details table .two-input input:not([type="radio"]),
     .service-details table .two-input select {
         color: #AAAAAA;
-        width: 170px;
+        width: 140px;
     }
 
 
@@ -3867,21 +3881,30 @@ footer .item-brand {
     .resources-products .sidebar .header h5 {
         font-size: 33px;
     }
-    .service-details.service-one input+span{
+
+    .service-details.service-one input+span {
         right: 24%;
     }
-    .service-details.service-one input+span+span{
+
+    .service-details.service-one input+span+span {
         left: 24%;
     }
+
+
 }
+
 @media (max-width:1199.95px) {
-    .service-details.service-one input+span{
+    .service-details.service-one input+span {
         right: 12%;
     }
-    .service-details.service-one input+span+span{
+
+    .service-details.service-one input+span+span {
         left: 12%;
     }
+
+ 
 }
+
 @media (max-width:1024.95px) {
     .home-page .our-clients .d-flex .item {
         width: calc(100% / 3) !important;
@@ -3937,9 +3960,7 @@ footer .item-brand {
         height: 480;
     }
 
-    .service-details .update-button {
-        margin-right: 150px;
-    }
+
 
     .resources .resources-khalasha p {
         width: 73% !important;
@@ -4082,9 +4103,6 @@ footer .item-brand {
         width: 90% !important;
     }
 
-    .service-details .update-button {
-        margin-right: 110px;
-    }
 
     .settlementation .settlementation-form .data-entry {
         width: 80% !important;
@@ -4212,12 +4230,15 @@ footer .item-brand {
     .resources-products .sidebar .header {
         padding: 25px;
     }
-    .service-details.service-one input+span{
+
+    .service-details.service-one input+span {
         right: 16%;
     }
-    .service-details.service-one input+span+span{
+
+    .service-details.service-one input+span+span {
         left: 16%;
     }
+
 }
 
 @media (max-width:767.95px) {
@@ -4279,7 +4300,7 @@ footer .item-brand {
 
     .service-details .fs-22,
     .service-details .buttons button {
-        font-size: 13px;
+        font-size: 12px;
     }
 
     .service-details table input:not([type="radio"]).fs-18,
@@ -4344,7 +4365,8 @@ footer .item-brand {
         margin-bottom: 75px;
     }
 
-    .service-details table .two-input input:not([type="radio"]) {
+    .service-details table .two-input input:not([type="radio"]),
+    .service-details table .two-input select {
         width: 125px;
     }
 
@@ -4487,6 +4509,11 @@ footer .item-brand {
     .questions .item {
         padding: 40px 40px 40px 114px;
     }
+
+    .service-details table .two-input select+span {
+        margin-right: -22px;
+    }
+
 }
 
 @media (max-width:575.95px) {
@@ -4511,6 +4538,10 @@ footer .item-brand {
 
     h1::before {
         right: 60px;
+    }
+
+    .navbar-brand img {
+        width: 100px;
     }
 
     .home-header-banner .item {
@@ -4677,6 +4708,10 @@ footer .item-brand {
         width: 200px;
     }
 
+    .service-details .header p {
+        font-size: 12px;
+    }
+
     .service-details .buttons button {
         height: 39px;
         width: 110px;
@@ -4717,13 +4752,11 @@ footer .item-brand {
         font-size: 10px;
     }
 
-    .service-details .update-button {
-        margin-right: 50px;
-    }
 
-    .service-details table .two-input input:not([type="radio"]) {
+
+    /* .service-details table .two-input input:not([type="radio"]) {
         width: 100px;
-    }
+    } */
 
     .settlementation .settlementation-form .data-entry {
         width: 95% !important;
@@ -4990,10 +5023,13 @@ footer .item-brand {
     .formContainer2 form .w-25 {
         width: 32% !important;
     }
-    .service-details .info .modal-body input, .service-details .info .modal-body select{
+
+    .service-details .info .modal-body input,
+    .service-details .info .modal-body select {
         width: 100%;
     }
-    .service-details .modal.fade.info input+span+span{
+
+    .service-details .modal.fade.info input+span+span {
         left: 11px;
         right: unset;
     }
@@ -5019,7 +5055,8 @@ footer .item-brand {
     .blogs-title .resources-khalasha h1 {
         font-size: 15px !important;
     }
-    .formContainer2 form .row{
+
+    .formContainer2 form .row {
         margin: 15px 5px 0 !important;
         padding: 10px 6px !important;
     }

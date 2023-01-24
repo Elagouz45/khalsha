@@ -112,7 +112,7 @@
                                     <tr>
                                         <td class=" fs-22 text-center text-bold-gray font-bold">مجال الخدمة</td>
                                         <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                            <input type="text" placeholder="إصدار شهادة سابر" class="fs-18">
+                                            <input type="text" value="إصدار شهادة سابر" class="fs-18">
                                         </td>
                                         <td class=" fs-22 text-center text-bold-gray">
                                             <span class="msg-icn">؟</span>
@@ -124,7 +124,7 @@
                                             الغرض من الخدمة
                                         </td>
                                         <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                            <input type="text" placeholder="إصدار شهادة سابر" class="fs-18">
+                                            <input type="text" value="إصدار شهادة سابر" class="fs-18">
                                         </td>
                                         <td class=" fs-22 text-center text-bold-gray">
                                             <span class="msg-icn">؟</span>
@@ -135,8 +135,8 @@
                                     <tr class="two-input">
                                         <td class=" fs-22 text-center text-bold-gray font-bold">اسم الصنف</td>
                                         <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                            <input type="text" placeholder="عربي" class="fs-18">
-                                            <input type="text" placeholder="انجليزي" class="fs-18">
+                                            <input type="text" value="عربي" class="fs-18">
+                                            <input type="text" value="انجليزي" class="fs-18">
                                         </td>
                                         <td class=" fs-22 text-center text-bold-gray">
                                             <span class="msg-icn">؟</span>
@@ -215,13 +215,16 @@
                                 <tr>
                                     <td class=" fs-22 text-center text-bold-gray font-bold">متوفر لدي المورد Text report
                                     </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <input name="text-report" type="radio" id="yes">
-                                        <label for="yes"> نعم</label>
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <input name="text-report" type="radio" id="no">
-                                        <label for="no">لا</label>
+
+                                    <td class=" fs-22 text-center text-bold-gray " colspan="2">
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input name="text-report" type="radio" id="yes">
+                                            <label for="yes"> نعم</label>
+                                        </div>
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input name="text-report" type="radio" id="no">
+                                            <label for="no">لا</label>
+                                        </div>
                                     </td>
                                     <td class=" fs-22 text-center text-bold-gray">
                                         <span class="msg-icn">؟</span>
@@ -247,14 +250,20 @@
                                 <tr>
                                     <td class=" fs-22 text-center text-bold-gray font-bold">متوفر لدي المورد Factory
                                         aduit report</td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <input name="aduit-report" type="radio" id="yes2">
-                                        <label for="yes2"> نعم</label>
+
+                                    <td class=" fs-22 text-center text-bold-gray " colspan="2">
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input name="aduit-report" type="radio" id="yes2">
+                                            <label for="yes2"> نعم</label>
+                                        </div>
+                                        <div class="d-inline-block w-50 px-3">
+                                            <input name="aduit-report" type="radio" id="no2">
+                                            <label for="no2">لا</label>
+                                        </div>
                                     </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <input name="aduit-report" type="radio" id="no2">
-                                        <label for="no2">لا</label>
-                                    </td>
+
+
+
                                     <td class=" fs-22 text-center text-bold-gray">
                                         <span class="msg-icn">؟</span>
                                     </td>
@@ -262,14 +271,19 @@
                                 <tr>
                                     <td class=" fs-22 text-center text-bold-gray font-bold">المساعدة في تسجيل شهادات
                                         حسابك</td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <input name="help" type="radio" id="yes3">
-                                        <label for="yes3"> نعم</label>
-                                    </td>
-                                    <td class=" fs-22 text-center text-bold-gray">
-                                        <input name="help" type="radio" id="no3">
-                                        <label for="no3">لا</label>
-                                    </td>
+
+                                        <td class=" fs-22 text-center text-bold-gray " colspan="2">
+                                            <div class="d-inline-block w-50 px-3">
+                                                <input name="help" type="radio" id="yes3">
+                                                <label for="yes3"> نعم</label>
+                                            </div>
+                                            <div class="d-inline-block w-50 px-3">
+                                                <input name="help" type="radio" id="no3">
+                                                <label for="no3">لا</label>
+                                            </div>
+                                        </td>
+
+                              
                                     <td class=" fs-22 text-center text-bold-gray">
                                         <span class="msg-icn">؟</span>
                                     </td>
@@ -279,7 +293,7 @@
 
                                 <tr>
                                     <td class=" fs-22 text-center text-bold-gray font-bold">اذكر الشهادات المطلوبة</td>
-                                    <td class=" fs-22 text-center text-bold-gray" colspan="2">
+                                    <td class=" fs-22 text-center certificate-text text-bold-gray" colspan="2">
                                         <button data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                                             class="btn text-main-brown font-bold">
                                             تحديد الشهادات
@@ -292,12 +306,12 @@
 
 
 
-                                <tr>
+                                <tr class="other-certificate d-none">
                                     <td class=" fs-22 text-center text-bold-gray font-bold">
                                         هل يوجد شهادات آخرى
                                     </td>
                                     <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="text" placeholder="" class="fs-18">
+                                        <input type="text" class="fs-18">
                                     </td>
                                     <td class=" fs-22 text-center text-bold-gray">
                                         <span class="msg-icn">؟</span>
@@ -315,7 +329,7 @@
                                 <tr>
                                     <td class=" fs-22 text-center text-bold-gray font-bold">اسم الشخص المسؤول</td>
                                     <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="text" placeholder="عبد الكريم محمد" class="fs-18">
+                                        <input type="text" value="عبد الكريم محمد" class="fs-18">
                                     </td>
                                     <td class=" fs-22 text-center text-bold-gray">
                                         <span class="msg-icn">؟</span>
@@ -327,7 +341,7 @@
                                         رقم الجوال
                                     </td>
                                     <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="text" placeholder="800 XXX XXXX" class="fs-18">
+                                        <input type="text" value="800 XXX XXXX" class="fs-18">
                                     </td>
                                     <td class=" fs-22 text-center text-bold-gray">
                                         <span class="msg-icn">؟</span>
@@ -337,7 +351,7 @@
                                 <tr>
                                     <td class=" fs-22 text-center text-bold-gray font-bold">الإيميل</td>
                                     <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="text" placeholder="Support@khlasha.com" class="fs-18">
+                                        <input type="text" value="Support@khlasha.com" class="fs-18">
                                     </td>
                                     <td class=" fs-22 text-center text-bold-gray">
                                         <span class="msg-icn">؟</span>
@@ -807,6 +821,13 @@
             }
         }
 
+        document.querySelector('.certifications .confirm').addEventListener('click', () => {
+            document.querySelector('.other-certificate').classList.remove('d-none')
+            document.querySelector('.certificate-text button').classList.remove('text-main-brown')
+            document.querySelector('.certificate-text button').classList.add('text-main-blue')
+            document.querySelector('.certificate-text button').innerHTML = 'تعديل الشهادات المختارة'
+        })
+
         function addOtherProduct() {
             document.querySelector('.fill-application div').innerHTML += `<table class="w-100">
             <P class=" text-center fs-22 text-main-blue font-bold">المنتج الثاني</p>
@@ -827,7 +848,7 @@
                                         الغرض من الخدمة
                                     </td>
                                     <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="text" placeholder="إصدار شهادة سابر" class="fs-18">
+                                        <input type="text" value="إصدار شهادة سابر" class="fs-18">
                                     </td>
                                     <td class=" fs-22 text-center text-bold-gray">
                                         <span class="msg-icn">؟</span>
@@ -838,8 +859,8 @@
                                 <tr class="two-input">
                                     <td class=" fs-22 text-center text-bold-gray font-bold">اسم الصنف</td>
                                     <td class=" fs-22 text-center text-bold-gray" colspan="2">
-                                        <input type="text" placeholder="عربي" class="fs-18">
-                                        <input type="text" placeholder="انجليزي" class="fs-18">
+                                        <input type="text" value="عربي" class="fs-18">
+                                        <input type="text" value="انجليزي" class="fs-18">
                                     </td>
                                     <td class=" fs-22 text-center text-bold-gray">
                                         <span class="msg-icn">؟</span>
